@@ -1,0 +1,163 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.HasDataValueRestriction;
+import WatERP.WatERPPackage;
+import WatERP.dataType;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Has Data Value Restriction</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.HasDataValueRestrictionImpl#getHasDataValueLiteral <em>Has Data Value Literal</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class HasDataValueRestrictionImpl extends RestrictionImpl implements HasDataValueRestriction {
+	/**
+	 * The default value of the '{@link #getHasDataValueLiteral() <em>Has Data Value Literal</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getHasDataValueLiteral()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final dataType HAS_DATA_VALUE_LITERAL_EDEFAULT = dataType.STRING;
+
+	/**
+	 * The cached value of the '{@link #getHasDataValueLiteral() <em>Has Data Value Literal</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getHasDataValueLiteral()
+	 * @generated
+	 * @ordered
+	 */
+	protected dataType hasDataValueLiteral = HAS_DATA_VALUE_LITERAL_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected HasDataValueRestrictionImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.HAS_DATA_VALUE_RESTRICTION;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public dataType getHasDataValueLiteral() {
+		return hasDataValueLiteral;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setHasDataValueLiteral(dataType newHasDataValueLiteral) {
+		dataType oldHasDataValueLiteral = hasDataValueLiteral;
+		hasDataValueLiteral = newHasDataValueLiteral == null ? HAS_DATA_VALUE_LITERAL_EDEFAULT : newHasDataValueLiteral;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.HAS_DATA_VALUE_RESTRICTION__HAS_DATA_VALUE_LITERAL, oldHasDataValueLiteral, hasDataValueLiteral));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.HAS_DATA_VALUE_RESTRICTION__HAS_DATA_VALUE_LITERAL:
+				return getHasDataValueLiteral();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.HAS_DATA_VALUE_RESTRICTION__HAS_DATA_VALUE_LITERAL:
+				setHasDataValueLiteral((dataType)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.HAS_DATA_VALUE_RESTRICTION__HAS_DATA_VALUE_LITERAL:
+				setHasDataValueLiteral(HAS_DATA_VALUE_LITERAL_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.HAS_DATA_VALUE_RESTRICTION__HAS_DATA_VALUE_LITERAL:
+				return hasDataValueLiteral != HAS_DATA_VALUE_LITERAL_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (hasDataValueLiteral: ");
+		result.append(hasDataValueLiteral);
+		result.append(')');
+		return result.toString();
+	}
+
+} //HasDataValueRestrictionImpl

@@ -1,0 +1,152 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.Atom;
+import WatERP.Head;
+import WatERP.WatERPPackage;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Head</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.HeadImpl#getAtoms <em>Atoms</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class HeadImpl extends MinimalEObjectImpl.Container implements Head {
+	/**
+	 * The cached value of the '{@link #getAtoms() <em>Atoms</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAtoms()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Atom> atoms;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected HeadImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.HEAD;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Atom> getAtoms() {
+		if (atoms == null) {
+			atoms = new EObjectContainmentEList<Atom>(Atom.class, this, WatERPPackage.HEAD__ATOMS);
+		}
+		return atoms;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case WatERPPackage.HEAD__ATOMS:
+				return ((InternalEList<?>)getAtoms()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.HEAD__ATOMS:
+				return getAtoms();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.HEAD__ATOMS:
+				getAtoms().clear();
+				getAtoms().addAll((Collection<? extends Atom>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.HEAD__ATOMS:
+				getAtoms().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.HEAD__ATOMS:
+				return atoms != null && !atoms.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //HeadImpl

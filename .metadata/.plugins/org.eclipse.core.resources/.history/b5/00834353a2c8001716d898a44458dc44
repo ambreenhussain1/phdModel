@@ -1,0 +1,298 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.Expression;
+import WatERP.MProperty;
+import WatERP.OProperty;
+import WatERP.PropertyAnnotation;
+import WatERP.WatERPPackage;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Property Annotation</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.PropertyAnnotationImpl#getAnnotatedProperty <em>Annotated Property</em>}</li>
+ *   <li>{@link WatERP.impl.PropertyAnnotationImpl#getAnnotatingProperty <em>Annotating Property</em>}</li>
+ *   <li>{@link WatERP.impl.PropertyAnnotationImpl#getExpression <em>Expression</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class PropertyAnnotationImpl extends MinimalEObjectImpl.Container implements PropertyAnnotation {
+	/**
+	 * The cached value of the '{@link #getAnnotatedProperty() <em>Annotated Property</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAnnotatedProperty()
+	 * @generated
+	 * @ordered
+	 */
+	protected MProperty annotatedProperty;
+
+	/**
+	 * The cached value of the '{@link #getAnnotatingProperty() <em>Annotating Property</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAnnotatingProperty()
+	 * @generated
+	 * @ordered
+	 */
+	protected OProperty annotatingProperty;
+
+	/**
+	 * The cached value of the '{@link #getExpression() <em>Expression</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getExpression()
+	 * @generated
+	 * @ordered
+	 */
+	protected Expression expression;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected PropertyAnnotationImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.PROPERTY_ANNOTATION;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MProperty getAnnotatedProperty() {
+		if (annotatedProperty != null && annotatedProperty.eIsProxy()) {
+			InternalEObject oldAnnotatedProperty = (InternalEObject)annotatedProperty;
+			annotatedProperty = (MProperty)eResolveProxy(oldAnnotatedProperty);
+			if (annotatedProperty != oldAnnotatedProperty) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, WatERPPackage.PROPERTY_ANNOTATION__ANNOTATED_PROPERTY, oldAnnotatedProperty, annotatedProperty));
+			}
+		}
+		return annotatedProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MProperty basicGetAnnotatedProperty() {
+		return annotatedProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAnnotatedProperty(MProperty newAnnotatedProperty) {
+		MProperty oldAnnotatedProperty = annotatedProperty;
+		annotatedProperty = newAnnotatedProperty;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.PROPERTY_ANNOTATION__ANNOTATED_PROPERTY, oldAnnotatedProperty, annotatedProperty));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OProperty getAnnotatingProperty() {
+		if (annotatingProperty != null && annotatingProperty.eIsProxy()) {
+			InternalEObject oldAnnotatingProperty = (InternalEObject)annotatingProperty;
+			annotatingProperty = (OProperty)eResolveProxy(oldAnnotatingProperty);
+			if (annotatingProperty != oldAnnotatingProperty) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, WatERPPackage.PROPERTY_ANNOTATION__ANNOTATING_PROPERTY, oldAnnotatingProperty, annotatingProperty));
+			}
+		}
+		return annotatingProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OProperty basicGetAnnotatingProperty() {
+		return annotatingProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAnnotatingProperty(OProperty newAnnotatingProperty) {
+		OProperty oldAnnotatingProperty = annotatingProperty;
+		annotatingProperty = newAnnotatingProperty;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.PROPERTY_ANNOTATION__ANNOTATING_PROPERTY, oldAnnotatingProperty, annotatingProperty));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Expression getExpression() {
+		return expression;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetExpression(Expression newExpression, NotificationChain msgs) {
+		Expression oldExpression = expression;
+		expression = newExpression;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, WatERPPackage.PROPERTY_ANNOTATION__EXPRESSION, oldExpression, newExpression);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setExpression(Expression newExpression) {
+		if (newExpression != expression) {
+			NotificationChain msgs = null;
+			if (expression != null)
+				msgs = ((InternalEObject)expression).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.PROPERTY_ANNOTATION__EXPRESSION, null, msgs);
+			if (newExpression != null)
+				msgs = ((InternalEObject)newExpression).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.PROPERTY_ANNOTATION__EXPRESSION, null, msgs);
+			msgs = basicSetExpression(newExpression, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.PROPERTY_ANNOTATION__EXPRESSION, newExpression, newExpression));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case WatERPPackage.PROPERTY_ANNOTATION__EXPRESSION:
+				return basicSetExpression(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.PROPERTY_ANNOTATION__ANNOTATED_PROPERTY:
+				if (resolve) return getAnnotatedProperty();
+				return basicGetAnnotatedProperty();
+			case WatERPPackage.PROPERTY_ANNOTATION__ANNOTATING_PROPERTY:
+				if (resolve) return getAnnotatingProperty();
+				return basicGetAnnotatingProperty();
+			case WatERPPackage.PROPERTY_ANNOTATION__EXPRESSION:
+				return getExpression();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.PROPERTY_ANNOTATION__ANNOTATED_PROPERTY:
+				setAnnotatedProperty((MProperty)newValue);
+				return;
+			case WatERPPackage.PROPERTY_ANNOTATION__ANNOTATING_PROPERTY:
+				setAnnotatingProperty((OProperty)newValue);
+				return;
+			case WatERPPackage.PROPERTY_ANNOTATION__EXPRESSION:
+				setExpression((Expression)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.PROPERTY_ANNOTATION__ANNOTATED_PROPERTY:
+				setAnnotatedProperty((MProperty)null);
+				return;
+			case WatERPPackage.PROPERTY_ANNOTATION__ANNOTATING_PROPERTY:
+				setAnnotatingProperty((OProperty)null);
+				return;
+			case WatERPPackage.PROPERTY_ANNOTATION__EXPRESSION:
+				setExpression((Expression)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.PROPERTY_ANNOTATION__ANNOTATED_PROPERTY:
+				return annotatedProperty != null;
+			case WatERPPackage.PROPERTY_ANNOTATION__ANNOTATING_PROPERTY:
+				return annotatingProperty != null;
+			case WatERPPackage.PROPERTY_ANNOTATION__EXPRESSION:
+				return expression != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //PropertyAnnotationImpl

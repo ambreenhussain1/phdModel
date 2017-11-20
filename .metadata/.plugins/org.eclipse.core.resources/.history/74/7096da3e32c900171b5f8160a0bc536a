@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.example.WatERP:TopNode xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.example.WatERP="http://org/eclipse/example/WatERP">
+  <Model name="Water">
+    <MClass name="ObservedProperty">
+      <dataproperty name="flow" value="flowDischarge"/>
+    </MClass>
+    <MClass xsi:type="org.eclipse.example.WatERP:Sensor" name="FlowSensor">
+      <id name="ID" value="14753" type="Integer"/>
+      <uri name="URN" value="urn:ogc:object:feature:sensor:14753"/>
+      <desc name="DESC" value="This is Flow Sensor"/>
+    </MClass>
+    <MClass xsi:type="org.eclipse.example.WatERP:Observation" name="Obs" assignedSensorID="14753">
+      <foi name="Foi" value="urn:ogc:object:featureMainReservoir"/>
+      <procedure name="Procedure" value="urn:ogc:object:feature:sensor:14753"/>
+      <observedProperty name="ObservedProperty" value="Temperature" classType="//@Model/@MClass.0"/>
+      <result name="Result" value="1675.5834" type="Integer"/>
+      <unit name="Unit" value="C"/>
+    </MClass>
+    <MClass name="Observation">
+      <dataproperty name="Procedure" value="urn:ogc:object:feature:sensor:14753"/>
+      <dataproperty name="Result" value="1675.5834" type="Integer"/>
+      <dataproperty name="Unit" value="m3/h"/>
+      <classProperty name="ObservedProperty" value="FlowDischarge" classType="//@Model/@MClass.0"/>
+    </MClass>
+    <MClass name="Results">
+      <dataproperty name="res" value=""/>
+      <classProperty name="unit" value="" classType="//@Model/@MClass.5"/>
+    </MClass>
+    <MClass name="Unit">
+      <dataproperty name="tu" value=""/>
+    </MClass>
+  </Model>
+  <Ontology name="Water">
+    <OClass name="Observations" someValuesFromRestriction="//@Ontology/@OClass.1/@objectProperty.0/@propertyRestriction.0">
+      <dataProperty name="assignedSensorID" domain="//@Ontology/@OClass.0" range="Integer">
+        <propertyRestriction xsi:type="org.eclipse.example.WatERP:CardinalityRestriction" cardinality="1"/>
+      </dataProperty>
+      <objectProperty name="hasPhenomenon" domain="//@Ontology/@OClass.0" range="//@Ontology/@OClass.1" inverseOf="//@Ontology/@OClass.1/@objectProperty.0">
+        <propertyRestriction xsi:type="org.eclipse.example.WatERP:CardinalityRestriction" cardinality="1"/>
+      </objectProperty>
+      <objectProperty name="hasFeature" domain="//@Ontology/@OClass.0" range="//@Ontology/@OClass.5" inverseOf="//@Ontology/@OClass.5/@objectProperty.0">
+        <propertyRestriction xsi:type="org.eclipse.example.WatERP:CardinalityRestriction" cardinality="1"/>
+      </objectProperty>
+      <objectProperty name="hasObservationResults" domain="//@Ontology/@OClass.0" range="//@Ontology/@OClass.4">
+        <propertyRestriction xsi:type="org.eclipse.example.WatERP:CardinalityRestriction" cardinality="1"/>
+      </objectProperty>
+      <objectProperty name="hasProcedure" domain="//@Ontology/@OClass.0" range="//@Ontology/@OClass.2">
+        <propertyRestriction xsi:type="org.eclipse.example.WatERP:CardinalityRestriction" cardinality="1"/>
+      </objectProperty>
+      <rule>
+        <head>
+          <atoms xsi:type="org.eclipse.example.WatERP:ObjectPropertyAtom" objectProperty="//@Ontology/@OClass.4/@objectProperty.0" variable="//@Ontology/@OClass.0/@rule.0/@body/@atoms.1/@variable" namedIndividual="m3/h"/>
+        </head>
+        <body>
+          <atoms xsi:type="org.eclipse.example.WatERP:ClassAtom" class="//@Ontology/@OClass.0">
+            <variable name="obs"/>
+          </atoms>
+          <atoms xsi:type="org.eclipse.example.WatERP:ClassAtom" class="//@Ontology/@OClass.4">
+            <variable name="res"/>
+          </atoms>
+          <atoms xsi:type="org.eclipse.example.WatERP:ObjectPropertyAtom" objectProperty="//@Ontology/@OClass.0/@objectProperty.2" variable="//@Ontology/@OClass.0/@rule.0/@body/@atoms.1/@variable //@Ontology/@OClass.0/@rule.0/@body/@atoms.0/@variable"/>
+          <atoms xsi:type="org.eclipse.example.WatERP:ObjectPropertyAtom" objectProperty="//@Ontology/@OClass.0/@objectProperty.0" variable="//@Ontology/@OClass.0/@rule.0/@body/@atoms.0/@variable" namedIndividual="FlowDischarge"/>
+        </body>
+      </rule>
+    </OClass>
+    <OClass name="Phenomenon">
+      <objectProperty name="isObservedBy" domain="//@Ontology/@OClass.1" range="//@Ontology/@OClass.0" inverseOf="//@Ontology/@OClass.0/@objectProperty.0">
+        <propertyRestriction xsi:type="org.eclipse.example.WatERP:SomeValuesFromClassRestriction" someValuesFromClass="//@Ontology/@OClass.0"/>
+      </objectProperty>
+    </OClass>
+    <OClass name="Procedure"/>
+    <OClass name="Sensor">
+      <dataProperty name="hasUniqueID" domain="//@Ontology/@OClass.3" range="Integer">
+        <propertyRestriction xsi:type="org.eclipse.example.WatERP:CardinalityRestriction" cardinality="1"/>
+        <propertyRestriction xsi:type="org.eclipse.example.WatERP:HasDataValueRestriction" hasDataValueLiteral="Integer"/>
+      </dataProperty>
+      <dataProperty name="hasURN" domain="//@Ontology/@OClass.3">
+        <propertyRestriction xsi:type="org.eclipse.example.WatERP:CardinalityRestriction" cardinality="1"/>
+        <propertyRestriction xsi:type="org.eclipse.example.WatERP:HasDataValueRestriction"/>
+      </dataProperty>
+    </OClass>
+    <OClass name="Results" subClass="//@Ontology/@OClass.7 //@Ontology/@OClass.8 //@Ontology/@OClass.6" equivalentClass="//@Ontology/@OClass.8 //@Ontology/@OClass.7">
+      <objectProperty name="hasUnit" domain="//@Ontology/@OClass.4" range="//@Ontology/@OClass.6">
+        <propertyRestriction xsi:type="org.eclipse.example.WatERP:CardinalityRestriction" cardinality="1"/>
+      </objectProperty>
+    </OClass>
+    <OClass name="FeatureOfInterest" someValuesFromRestriction="//@Ontology/@OClass.5/@objectProperty.0/@propertyRestriction.0">
+      <objectProperty name="hasObservations" domain="//@Ontology/@OClass.5" range="//@Ontology/@OClass.0">
+        <propertyRestriction xsi:type="org.eclipse.example.WatERP:SomeValuesFromClassRestriction" someValuesFromClass="//@Ontology/@OClass.5"/>
+      </objectProperty>
+    </OClass>
+    <OClass name="Unit" subClassOf="//@Ontology/@OClass.4"/>
+    <OClass name="TimeValuePair" subClassOf="//@Ontology/@OClass.4"/>
+    <OClass name="Point" subClass="//@Ontology/@OClass.9" subClassOf="//@Ontology/@OClass.4"/>
+    <OClass name="Position" subClassOf="//@Ontology/@OClass.8">
+      <dataProperty name="coordinates" range="Integer">
+        <propertyRestriction xsi:type="org.eclipse.example.WatERP:CardinalityRestriction" cardinality="2"/>
+      </dataProperty>
+    </OClass>
+  </Ontology>
+  <Annotation annotatedModel="//@Model" annotatingModel="//@Ontology">
+    <annotations annotatingClass="//@Ontology/@OClass.3" annotatedClass="//@Model/@MClass.1">
+      <propertyAnnotations annotatedProperty="//@Model/@MClass.1/@id" annotatingProperty="//@Ontology/@OClass.3/@dataProperty.0">
+        <expression value="ID is only one Integer"/>
+      </propertyAnnotations>
+      <propertyAnnotations annotatedProperty="//@Model/@MClass.1/@uri" annotatingProperty="//@Ontology/@OClass.3/@dataProperty.1">
+        <expression value="Only one URN of type String"/>
+      </propertyAnnotations>
+    </annotations>
+    <annotations annotatingClass="//@Ontology/@OClass.1" annotatedClass="//@Model/@MClass.0">
+      <expression value="ObservedProperty = Phenomenon"/>
+    </annotations>
+    <annotations annotatingClass="//@Ontology/@OClass.0" annotatedClass="//@Model/@MClass.2">
+      <propertyAnnotations annotatedProperty="//@Model/@MClass.2/@procedure" annotatingProperty="//@Ontology/@OClass.0/@objectProperty.3">
+        <expression value="exactly 1 procedure"/>
+      </propertyAnnotations>
+      <propertyAnnotations annotatedProperty="//@Model/@MClass.2/@observedProperty" annotatingProperty="//@Ontology/@OClass.0/@objectProperty.0">
+        <expression value="observation has only one observedProperty"/>
+      </propertyAnnotations>
+      <propertyAnnotations annotatedProperty="//@Model/@MClass.2/@foi" annotatingProperty="//@Ontology/@OClass.0/@objectProperty.1">
+        <expression value="exactly 1 FOI"/>
+      </propertyAnnotations>
+      <propertyAnnotations annotatedProperty="//@Model/@MClass.2/@result" annotatingProperty="//@Ontology/@OClass.0/@objectProperty.2">
+        <expression value="result has exactly 1 unit"/>
+      </propertyAnnotations>
+      <expression type="ruleConstraint" value="ObservedProperty = FlowDischarge means unit = m3/h"/>
+      <expression type="ruleConstraint" value="ObservedProperty = Temperature means unit = C"/>
+    </annotations>
+  </Annotation>
+</org.eclipse.example.WatERP:TopNode>

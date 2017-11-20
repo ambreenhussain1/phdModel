@@ -1,0 +1,52 @@
+/**
+ */
+package WatERP;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Some Values From Data Restriction</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.SomeValuesFromDataRestriction#getSomeValuesFromData <em>Some Values From Data</em>}</li>
+ * </ul>
+ *
+ * @see WatERP.WatERPPackage#getSomeValuesFromDataRestriction()
+ * @model
+ * @generated
+ */
+public interface SomeValuesFromDataRestriction extends SomeValuesFromRestriction {
+	/**
+	 * Returns the value of the '<em><b>Some Values From Data</b></em>' attribute.
+	 * The literals are from the enumeration {@link WatERP.dataType}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Some Values From Data</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Some Values From Data</em>' attribute.
+	 * @see WatERP.dataType
+	 * @see #setSomeValuesFromData(dataType)
+	 * @see WatERP.WatERPPackage#getSomeValuesFromDataRestriction_SomeValuesFromData()
+	 * @model
+	 * @generated
+	 */
+	dataType getSomeValuesFromData();
+
+	/**
+	 * Sets the value of the '{@link WatERP.SomeValuesFromDataRestriction#getSomeValuesFromData <em>Some Values From Data</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Some Values From Data</em>' attribute.
+	 * @see WatERP.dataType
+	 * @see #getSomeValuesFromData()
+	 * @generated
+	 */
+	void setSomeValuesFromData(dataType value);
+
+} // SomeValuesFromDataRestriction

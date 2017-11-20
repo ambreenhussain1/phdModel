@@ -1,0 +1,49 @@
+/**
+ */
+package WatERP;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>MC Property</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.MCProperty#getClassType <em>Class Type</em>}</li>
+ * </ul>
+ *
+ * @see WatERP.WatERPPackage#getMCProperty()
+ * @model
+ * @generated
+ */
+public interface MCProperty extends MProperty {
+	/**
+	 * Returns the value of the '<em><b>Class Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Class Type</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Class Type</em>' reference.
+	 * @see #setClassType(MClass)
+	 * @see WatERP.WatERPPackage#getMCProperty_ClassType()
+	 * @model required="true"
+	 * @generated
+	 */
+	MClass getClassType();
+
+	/**
+	 * Sets the value of the '{@link WatERP.MCProperty#getClassType <em>Class Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Class Type</em>' reference.
+	 * @see #getClassType()
+	 * @generated
+	 */
+	void setClassType(MClass value);
+
+} // MCProperty

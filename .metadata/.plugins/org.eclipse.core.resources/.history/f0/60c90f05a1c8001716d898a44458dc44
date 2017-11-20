@@ -1,0 +1,37 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.Export;
+import WatERP.WatERPPackage;
+
+import org.eclipse.emf.ecore.EClass;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Export</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * @generated
+ */
+public class ExportImpl extends MClassImpl implements Export {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ExportImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.EXPORT;
+	}
+
+} //ExportImpl

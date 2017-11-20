@@ -1,0 +1,168 @@
+/**
+ */
+package WatERP;
+
+import org.eclipse.emf.common.util.EList;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>OProperty</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.OProperty#getIsDeprecated <em>Is Deprecated</em>}</li>
+ *   <li>{@link WatERP.OProperty#getIsFunctional <em>Is Functional</em>}</li>
+ *   <li>{@link WatERP.OProperty#getSubProperty <em>Sub Property</em>}</li>
+ *   <li>{@link WatERP.OProperty#getSubPropertyOf <em>Sub Property Of</em>}</li>
+ *   <li>{@link WatERP.OProperty#getDomain <em>Domain</em>}</li>
+ *   <li>{@link WatERP.OProperty#getEquivalentProperty <em>Equivalent Property</em>}</li>
+ *   <li>{@link WatERP.OProperty#getPropertyRestriction <em>Property Restriction</em>}</li>
+ * </ul>
+ *
+ * @see WatERP.WatERPPackage#getOProperty()
+ * @model
+ * @generated
+ */
+public interface OProperty extends Property {
+	/**
+	 * Returns the value of the '<em><b>Is Deprecated</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Is Deprecated</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Is Deprecated</em>' attribute.
+	 * @see #setIsDeprecated(Boolean)
+	 * @see WatERP.WatERPPackage#getOProperty_IsDeprecated()
+	 * @model dataType="WatERP.Boolean"
+	 * @generated
+	 */
+	Boolean getIsDeprecated();
+
+	/**
+	 * Sets the value of the '{@link WatERP.OProperty#getIsDeprecated <em>Is Deprecated</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Is Deprecated</em>' attribute.
+	 * @see #getIsDeprecated()
+	 * @generated
+	 */
+	void setIsDeprecated(Boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Is Functional</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Is Functional</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Is Functional</em>' attribute.
+	 * @see #setIsFunctional(Boolean)
+	 * @see WatERP.WatERPPackage#getOProperty_IsFunctional()
+	 * @model dataType="WatERP.Boolean"
+	 * @generated
+	 */
+	Boolean getIsFunctional();
+
+	/**
+	 * Sets the value of the '{@link WatERP.OProperty#getIsFunctional <em>Is Functional</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Is Functional</em>' attribute.
+	 * @see #getIsFunctional()
+	 * @generated
+	 */
+	void setIsFunctional(Boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Sub Property</b></em>' reference list.
+	 * The list contents are of type {@link WatERP.OProperty}.
+	 * It is bidirectional and its opposite is '{@link WatERP.OProperty#getSubPropertyOf <em>Sub Property Of</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Sub Property</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Sub Property</em>' reference list.
+	 * @see WatERP.WatERPPackage#getOProperty_SubProperty()
+	 * @see WatERP.OProperty#getSubPropertyOf
+	 * @model opposite="subPropertyOf"
+	 * @generated
+	 */
+	EList<OProperty> getSubProperty();
+
+	/**
+	 * Returns the value of the '<em><b>Sub Property Of</b></em>' reference list.
+	 * The list contents are of type {@link WatERP.OProperty}.
+	 * It is bidirectional and its opposite is '{@link WatERP.OProperty#getSubProperty <em>Sub Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Sub Property Of</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Sub Property Of</em>' reference list.
+	 * @see WatERP.WatERPPackage#getOProperty_SubPropertyOf()
+	 * @see WatERP.OProperty#getSubProperty
+	 * @model opposite="subProperty"
+	 * @generated
+	 */
+	EList<OProperty> getSubPropertyOf();
+
+	/**
+	 * Returns the value of the '<em><b>Domain</b></em>' reference list.
+	 * The list contents are of type {@link WatERP.OClass}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Domain</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Domain</em>' reference list.
+	 * @see WatERP.WatERPPackage#getOProperty_Domain()
+	 * @model
+	 * @generated
+	 */
+	EList<OClass> getDomain();
+
+	/**
+	 * Returns the value of the '<em><b>Equivalent Property</b></em>' reference list.
+	 * The list contents are of type {@link WatERP.OProperty}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Equivalent Property</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Equivalent Property</em>' reference list.
+	 * @see WatERP.WatERPPackage#getOProperty_EquivalentProperty()
+	 * @model
+	 * @generated
+	 */
+	EList<OProperty> getEquivalentProperty();
+
+	/**
+	 * Returns the value of the '<em><b>Property Restriction</b></em>' containment reference list.
+	 * The list contents are of type {@link WatERP.Restriction}.
+	 * It is bidirectional and its opposite is '{@link WatERP.Restriction#getOnProperty <em>On Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Property Restriction</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Property Restriction</em>' containment reference list.
+	 * @see WatERP.WatERPPackage#getOProperty_PropertyRestriction()
+	 * @see WatERP.Restriction#getOnProperty
+	 * @model opposite="onProperty" containment="true"
+	 * @generated
+	 */
+	EList<Restriction> getPropertyRestriction();
+
+} // OProperty

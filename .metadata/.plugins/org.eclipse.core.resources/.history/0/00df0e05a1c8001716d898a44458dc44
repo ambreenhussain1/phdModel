@@ -1,0 +1,373 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.OClass;
+import WatERP.ObjectProperty;
+import WatERP.WatERPPackage;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Object Property</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.ObjectPropertyImpl#getIsInverseFunctional <em>Is Inverse Functional</em>}</li>
+ *   <li>{@link WatERP.impl.ObjectPropertyImpl#getIsTransitive <em>Is Transitive</em>}</li>
+ *   <li>{@link WatERP.impl.ObjectPropertyImpl#getIsSymmetric <em>Is Symmetric</em>}</li>
+ *   <li>{@link WatERP.impl.ObjectPropertyImpl#getRange <em>Range</em>}</li>
+ *   <li>{@link WatERP.impl.ObjectPropertyImpl#getInverseOf <em>Inverse Of</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class ObjectPropertyImpl extends OPropertyImpl implements ObjectProperty {
+	/**
+	 * The default value of the '{@link #getIsInverseFunctional() <em>Is Inverse Functional</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIsInverseFunctional()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Boolean IS_INVERSE_FUNCTIONAL_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getIsInverseFunctional() <em>Is Inverse Functional</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIsInverseFunctional()
+	 * @generated
+	 * @ordered
+	 */
+	protected Boolean isInverseFunctional = IS_INVERSE_FUNCTIONAL_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getIsTransitive() <em>Is Transitive</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIsTransitive()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Boolean IS_TRANSITIVE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getIsTransitive() <em>Is Transitive</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIsTransitive()
+	 * @generated
+	 * @ordered
+	 */
+	protected Boolean isTransitive = IS_TRANSITIVE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getIsSymmetric() <em>Is Symmetric</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIsSymmetric()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Boolean IS_SYMMETRIC_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getIsSymmetric() <em>Is Symmetric</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIsSymmetric()
+	 * @generated
+	 * @ordered
+	 */
+	protected Boolean isSymmetric = IS_SYMMETRIC_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getRange() <em>Range</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRange()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<OClass> range;
+
+	/**
+	 * The cached value of the '{@link #getInverseOf() <em>Inverse Of</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInverseOf()
+	 * @generated
+	 * @ordered
+	 */
+	protected ObjectProperty inverseOf;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ObjectPropertyImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.OBJECT_PROPERTY;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Boolean getIsInverseFunctional() {
+		return isInverseFunctional;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setIsInverseFunctional(Boolean newIsInverseFunctional) {
+		Boolean oldIsInverseFunctional = isInverseFunctional;
+		isInverseFunctional = newIsInverseFunctional;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.OBJECT_PROPERTY__IS_INVERSE_FUNCTIONAL, oldIsInverseFunctional, isInverseFunctional));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Boolean getIsTransitive() {
+		return isTransitive;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setIsTransitive(Boolean newIsTransitive) {
+		Boolean oldIsTransitive = isTransitive;
+		isTransitive = newIsTransitive;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.OBJECT_PROPERTY__IS_TRANSITIVE, oldIsTransitive, isTransitive));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Boolean getIsSymmetric() {
+		return isSymmetric;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setIsSymmetric(Boolean newIsSymmetric) {
+		Boolean oldIsSymmetric = isSymmetric;
+		isSymmetric = newIsSymmetric;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.OBJECT_PROPERTY__IS_SYMMETRIC, oldIsSymmetric, isSymmetric));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<OClass> getRange() {
+		if (range == null) {
+			range = new EObjectResolvingEList<OClass>(OClass.class, this, WatERPPackage.OBJECT_PROPERTY__RANGE);
+		}
+		return range;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ObjectProperty getInverseOf() {
+		if (inverseOf != null && inverseOf.eIsProxy()) {
+			InternalEObject oldInverseOf = (InternalEObject)inverseOf;
+			inverseOf = (ObjectProperty)eResolveProxy(oldInverseOf);
+			if (inverseOf != oldInverseOf) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, WatERPPackage.OBJECT_PROPERTY__INVERSE_OF, oldInverseOf, inverseOf));
+			}
+		}
+		return inverseOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ObjectProperty basicGetInverseOf() {
+		return inverseOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setInverseOf(ObjectProperty newInverseOf) {
+		ObjectProperty oldInverseOf = inverseOf;
+		inverseOf = newInverseOf;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.OBJECT_PROPERTY__INVERSE_OF, oldInverseOf, inverseOf));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.OBJECT_PROPERTY__IS_INVERSE_FUNCTIONAL:
+				return getIsInverseFunctional();
+			case WatERPPackage.OBJECT_PROPERTY__IS_TRANSITIVE:
+				return getIsTransitive();
+			case WatERPPackage.OBJECT_PROPERTY__IS_SYMMETRIC:
+				return getIsSymmetric();
+			case WatERPPackage.OBJECT_PROPERTY__RANGE:
+				return getRange();
+			case WatERPPackage.OBJECT_PROPERTY__INVERSE_OF:
+				if (resolve) return getInverseOf();
+				return basicGetInverseOf();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.OBJECT_PROPERTY__IS_INVERSE_FUNCTIONAL:
+				setIsInverseFunctional((Boolean)newValue);
+				return;
+			case WatERPPackage.OBJECT_PROPERTY__IS_TRANSITIVE:
+				setIsTransitive((Boolean)newValue);
+				return;
+			case WatERPPackage.OBJECT_PROPERTY__IS_SYMMETRIC:
+				setIsSymmetric((Boolean)newValue);
+				return;
+			case WatERPPackage.OBJECT_PROPERTY__RANGE:
+				getRange().clear();
+				getRange().addAll((Collection<? extends OClass>)newValue);
+				return;
+			case WatERPPackage.OBJECT_PROPERTY__INVERSE_OF:
+				setInverseOf((ObjectProperty)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.OBJECT_PROPERTY__IS_INVERSE_FUNCTIONAL:
+				setIsInverseFunctional(IS_INVERSE_FUNCTIONAL_EDEFAULT);
+				return;
+			case WatERPPackage.OBJECT_PROPERTY__IS_TRANSITIVE:
+				setIsTransitive(IS_TRANSITIVE_EDEFAULT);
+				return;
+			case WatERPPackage.OBJECT_PROPERTY__IS_SYMMETRIC:
+				setIsSymmetric(IS_SYMMETRIC_EDEFAULT);
+				return;
+			case WatERPPackage.OBJECT_PROPERTY__RANGE:
+				getRange().clear();
+				return;
+			case WatERPPackage.OBJECT_PROPERTY__INVERSE_OF:
+				setInverseOf((ObjectProperty)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.OBJECT_PROPERTY__IS_INVERSE_FUNCTIONAL:
+				return IS_INVERSE_FUNCTIONAL_EDEFAULT == null ? isInverseFunctional != null : !IS_INVERSE_FUNCTIONAL_EDEFAULT.equals(isInverseFunctional);
+			case WatERPPackage.OBJECT_PROPERTY__IS_TRANSITIVE:
+				return IS_TRANSITIVE_EDEFAULT == null ? isTransitive != null : !IS_TRANSITIVE_EDEFAULT.equals(isTransitive);
+			case WatERPPackage.OBJECT_PROPERTY__IS_SYMMETRIC:
+				return IS_SYMMETRIC_EDEFAULT == null ? isSymmetric != null : !IS_SYMMETRIC_EDEFAULT.equals(isSymmetric);
+			case WatERPPackage.OBJECT_PROPERTY__RANGE:
+				return range != null && !range.isEmpty();
+			case WatERPPackage.OBJECT_PROPERTY__INVERSE_OF:
+				return inverseOf != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (IsInverseFunctional: ");
+		result.append(isInverseFunctional);
+		result.append(", isTransitive: ");
+		result.append(isTransitive);
+		result.append(", IsSymmetric: ");
+		result.append(isSymmetric);
+		result.append(')');
+		return result.toString();
+	}
+
+} //ObjectPropertyImpl

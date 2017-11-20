@@ -1,0 +1,352 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.MDProperty;
+import WatERP.Observation;
+import WatERP.Sensor;
+import WatERP.WatERPPackage;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Sensor</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.SensorImpl#getId <em>Id</em>}</li>
+ *   <li>{@link WatERP.impl.SensorImpl#getUri <em>Uri</em>}</li>
+ *   <li>{@link WatERP.impl.SensorImpl#getDesc <em>Desc</em>}</li>
+ *   <li>{@link WatERP.impl.SensorImpl#getObservations <em>Observations</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class SensorImpl extends MClassImpl implements Sensor {
+	/**
+	 * The cached value of the '{@link #getId() <em>Id</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getId()
+	 * @generated
+	 * @ordered
+	 */
+	protected MDProperty id;
+
+	/**
+	 * The cached value of the '{@link #getUri() <em>Uri</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUri()
+	 * @generated
+	 * @ordered
+	 */
+	protected MDProperty uri;
+
+	/**
+	 * The cached value of the '{@link #getDesc() <em>Desc</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDesc()
+	 * @generated
+	 * @ordered
+	 */
+	protected MDProperty desc;
+
+	/**
+	 * The cached value of the '{@link #getObservations() <em>Observations</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getObservations()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Observation> observations;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected SensorImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.SENSOR;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MDProperty getId() {
+		return id;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetId(MDProperty newId, NotificationChain msgs) {
+		MDProperty oldId = id;
+		id = newId;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, WatERPPackage.SENSOR__ID, oldId, newId);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setId(MDProperty newId) {
+		if (newId != id) {
+			NotificationChain msgs = null;
+			if (id != null)
+				msgs = ((InternalEObject)id).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.SENSOR__ID, null, msgs);
+			if (newId != null)
+				msgs = ((InternalEObject)newId).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.SENSOR__ID, null, msgs);
+			msgs = basicSetId(newId, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.SENSOR__ID, newId, newId));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MDProperty getUri() {
+		return uri;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetUri(MDProperty newUri, NotificationChain msgs) {
+		MDProperty oldUri = uri;
+		uri = newUri;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, WatERPPackage.SENSOR__URI, oldUri, newUri);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setUri(MDProperty newUri) {
+		if (newUri != uri) {
+			NotificationChain msgs = null;
+			if (uri != null)
+				msgs = ((InternalEObject)uri).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.SENSOR__URI, null, msgs);
+			if (newUri != null)
+				msgs = ((InternalEObject)newUri).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.SENSOR__URI, null, msgs);
+			msgs = basicSetUri(newUri, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.SENSOR__URI, newUri, newUri));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MDProperty getDesc() {
+		return desc;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetDesc(MDProperty newDesc, NotificationChain msgs) {
+		MDProperty oldDesc = desc;
+		desc = newDesc;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, WatERPPackage.SENSOR__DESC, oldDesc, newDesc);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDesc(MDProperty newDesc) {
+		if (newDesc != desc) {
+			NotificationChain msgs = null;
+			if (desc != null)
+				msgs = ((InternalEObject)desc).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.SENSOR__DESC, null, msgs);
+			if (newDesc != null)
+				msgs = ((InternalEObject)newDesc).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.SENSOR__DESC, null, msgs);
+			msgs = basicSetDesc(newDesc, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.SENSOR__DESC, newDesc, newDesc));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Observation> getObservations() {
+		if (observations == null) {
+			observations = new EObjectContainmentEList<Observation>(Observation.class, this, WatERPPackage.SENSOR__OBSERVATIONS);
+		}
+		return observations;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case WatERPPackage.SENSOR__ID:
+				return basicSetId(null, msgs);
+			case WatERPPackage.SENSOR__URI:
+				return basicSetUri(null, msgs);
+			case WatERPPackage.SENSOR__DESC:
+				return basicSetDesc(null, msgs);
+			case WatERPPackage.SENSOR__OBSERVATIONS:
+				return ((InternalEList<?>)getObservations()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.SENSOR__ID:
+				return getId();
+			case WatERPPackage.SENSOR__URI:
+				return getUri();
+			case WatERPPackage.SENSOR__DESC:
+				return getDesc();
+			case WatERPPackage.SENSOR__OBSERVATIONS:
+				return getObservations();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.SENSOR__ID:
+				setId((MDProperty)newValue);
+				return;
+			case WatERPPackage.SENSOR__URI:
+				setUri((MDProperty)newValue);
+				return;
+			case WatERPPackage.SENSOR__DESC:
+				setDesc((MDProperty)newValue);
+				return;
+			case WatERPPackage.SENSOR__OBSERVATIONS:
+				getObservations().clear();
+				getObservations().addAll((Collection<? extends Observation>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.SENSOR__ID:
+				setId((MDProperty)null);
+				return;
+			case WatERPPackage.SENSOR__URI:
+				setUri((MDProperty)null);
+				return;
+			case WatERPPackage.SENSOR__DESC:
+				setDesc((MDProperty)null);
+				return;
+			case WatERPPackage.SENSOR__OBSERVATIONS:
+				getObservations().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.SENSOR__ID:
+				return id != null;
+			case WatERPPackage.SENSOR__URI:
+				return uri != null;
+			case WatERPPackage.SENSOR__DESC:
+				return desc != null;
+			case WatERPPackage.SENSOR__OBSERVATIONS:
+				return observations != null && !observations.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //SensorImpl

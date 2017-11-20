@@ -1,0 +1,17 @@
+/**
+ */
+package WatERP;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Observed Property</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ *
+ * @see WatERP.WatERPPackage#getObservedProperty()
+ * @model
+ * @generated
+ */
+public interface ObservedProperty extends MClass {
+} // ObservedProperty

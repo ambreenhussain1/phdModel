@@ -1,0 +1,881 @@
+/**
+ */
+package WatERP.util;
+
+import WatERP.*;
+
+import java.util.Map;
+
+import org.eclipse.emf.common.util.Diagnostic;
+import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.ResourceLocator;
+
+import org.eclipse.emf.ecore.EPackage;
+
+import org.eclipse.emf.ecore.util.EObjectValidator;
+
+/**
+ * <!-- begin-user-doc -->
+ * The <b>Validator</b> for the model.
+ * <!-- end-user-doc -->
+ * @see WatERP.WatERPPackage
+ * @generated
+ */
+public class WatERPValidator extends EObjectValidator {
+	/**
+	 * The cached model package
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final WatERPValidator INSTANCE = new WatERPValidator();
+
+	/**
+	 * A constant for the {@link org.eclipse.emf.common.util.Diagnostic#getSource() source} of diagnostic {@link org.eclipse.emf.common.util.Diagnostic#getCode() codes} from this package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.emf.common.util.Diagnostic#getSource()
+	 * @see org.eclipse.emf.common.util.Diagnostic#getCode()
+	 * @generated
+	 */
+	public static final String DIAGNOSTIC_SOURCE = "WatERP";
+
+	/**
+	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 0;
+
+	/**
+	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final int DIAGNOSTIC_CODE_COUNT = GENERATED_DIAGNOSTIC_CODE_COUNT;
+
+	/**
+	 * Creates an instance of the switch.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public WatERPValidator() {
+		super();
+	}
+
+	/**
+	 * Returns the package of this validator switch.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EPackage getEPackage() {
+	  return WatERPPackage.eINSTANCE;
+	}
+
+	/**
+	 * Calls <code>validateXXX</code> for the corresponding classifier of the model.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		switch (classifierID) {
+			case WatERPPackage.MODEL_ANNOTATION:
+				return validateModelAnnotation((ModelAnnotation)value, diagnostics, context);
+			case WatERPPackage.CLASS_ANNOTATION:
+				return validateClassAnnotation((ClassAnnotation)value, diagnostics, context);
+			case WatERPPackage.ONTOLOGY:
+				return validateOntology((Ontology)value, diagnostics, context);
+			case WatERPPackage.MODEL:
+				return validateModel((Model)value, diagnostics, context);
+			case WatERPPackage.PROPERTY_ANNOTATION:
+				return validatePropertyAnnotation((PropertyAnnotation)value, diagnostics, context);
+			case WatERPPackage.EXPRESSION:
+				return validateExpression((Expression)value, diagnostics, context);
+			case WatERPPackage.PROPERTY:
+				return validateProperty((Property)value, diagnostics, context);
+			case WatERPPackage.MCLASS:
+				return validateMClass((MClass)value, diagnostics, context);
+			case WatERPPackage.MPROPERTY:
+				return validateMProperty((MProperty)value, diagnostics, context);
+			case WatERPPackage.MC_PROPERTY:
+				return validateMCProperty((MCProperty)value, diagnostics, context);
+			case WatERPPackage.MD_PROPERTY:
+				return validateMDProperty((MDProperty)value, diagnostics, context);
+			case WatERPPackage.OCLASS:
+				return validateOClass((OClass)value, diagnostics, context);
+			case WatERPPackage.OPROPERTY:
+				return validateOProperty((OProperty)value, diagnostics, context);
+			case WatERPPackage.ONTOLOGY_CONSTRAINT:
+				return validateOntologyConstraint((OntologyConstraint)value, diagnostics, context);
+			case WatERPPackage.EQUIVALENCE:
+				return validateEquivalence((Equivalence)value, diagnostics, context);
+			case WatERPPackage.UNION_CLASS:
+				return validateUnionClass((UnionClass)value, diagnostics, context);
+			case WatERPPackage.OBJECT_PROPERTY:
+				return validateObjectProperty((ObjectProperty)value, diagnostics, context);
+			case WatERPPackage.RESTRICTION:
+				return validateRestriction((Restriction)value, diagnostics, context);
+			case WatERPPackage.HAS_DATA_VALUE_RESTRICTION:
+				return validateHasDataValueRestriction((HasDataValueRestriction)value, diagnostics, context);
+			case WatERPPackage.ALL_VALUES_FROM_RESTRICTION:
+				return validateAllValuesFromRestriction((AllValuesFromRestriction)value, diagnostics, context);
+			case WatERPPackage.ALL_VALUES_FROM_DATA_RESTRICTION:
+				return validateAllValuesFromDataRestriction((AllValuesFromDataRestriction)value, diagnostics, context);
+			case WatERPPackage.ALL_VALUES_FROM_CLASS_RESTRICTION:
+				return validateAllValuesFromClassRestriction((AllValuesFromClassRestriction)value, diagnostics, context);
+			case WatERPPackage.DATA_PROPERTY:
+				return validateDataProperty((DataProperty)value, diagnostics, context);
+			case WatERPPackage.SOME_VALUES_FROM_RESTRICTION:
+				return validateSomeValuesFromRestriction((SomeValuesFromRestriction)value, diagnostics, context);
+			case WatERPPackage.SOME_VALUES_FROM_DATA_RESTRICTION:
+				return validateSomeValuesFromDataRestriction((SomeValuesFromDataRestriction)value, diagnostics, context);
+			case WatERPPackage.SOME_VALUES_FROM_CLASS_RESTRICTION:
+				return validateSomeValuesFromClassRestriction((SomeValuesFromClassRestriction)value, diagnostics, context);
+			case WatERPPackage.CARDINALITY_RESTRICTION:
+				return validateCardinalityRestriction((CardinalityRestriction)value, diagnostics, context);
+			case WatERPPackage.MAXIMUM_CARDINALITY_RESTRICTION:
+				return validateMaximumCardinalityRestriction((MaximumCardinalityRestriction)value, diagnostics, context);
+			case WatERPPackage.MINIMUM_CARDINALITY_RESTRICTION:
+				return validateMinimumCardinalityRestriction((MinimumCardinalityRestriction)value, diagnostics, context);
+			case WatERPPackage.TOP_NODE:
+				return validateTopNode((TopNode)value, diagnostics, context);
+			case WatERPPackage.OBSERVATION:
+				return validateObservation((Observation)value, diagnostics, context);
+			case WatERPPackage.SENSOR:
+				return validateSensor((Sensor)value, diagnostics, context);
+			case WatERPPackage.EXPORT:
+				return validateExport((Export)value, diagnostics, context);
+			case WatERPPackage.OBSERVED_PROPERTY:
+				return validateObservedProperty((ObservedProperty)value, diagnostics, context);
+			case WatERPPackage.DL_SAFE_RULE:
+				return validateDLSafeRule((DLSafeRule)value, diagnostics, context);
+			case WatERPPackage.HEAD:
+				return validateHead((Head)value, diagnostics, context);
+			case WatERPPackage.BODY:
+				return validateBody((Body)value, diagnostics, context);
+			case WatERPPackage.ATOM:
+				return validateAtom((Atom)value, diagnostics, context);
+			case WatERPPackage.OBJECT_PROPERTY_ATOM:
+				return validateObjectPropertyAtom((ObjectPropertyAtom)value, diagnostics, context);
+			case WatERPPackage.CLASS_ATOM:
+				return validateClassAtom((ClassAtom)value, diagnostics, context);
+			case WatERPPackage.VARIABLE:
+				return validateVariable((Variable)value, diagnostics, context);
+			case WatERPPackage.EXPRESSION_TYPE:
+				return validateExpressionType((ExpressionType)value, diagnostics, context);
+			case WatERPPackage.DATA_TYPE:
+				return validatedataType((dataType)value, diagnostics, context);
+			case WatERPPackage.CONSTRAINT_TYPE:
+				return validateconstraintType((constraintType)value, diagnostics, context);
+			case WatERPPackage.STRING:
+				return validateString((String)value, diagnostics, context);
+			case WatERPPackage.INTEGER:
+				return validateInteger((Integer)value, diagnostics, context);
+			case WatERPPackage.BOOLEAN:
+				return validateBoolean((Boolean)value, diagnostics, context);
+			default:
+				return true;
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateModelAnnotation(ModelAnnotation modelAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(modelAnnotation, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateClassAnnotation(ClassAnnotation classAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(classAnnotation, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOntology(Ontology ontology, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(ontology, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateModel(Model model, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(model, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePropertyAnnotation(PropertyAnnotation propertyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(propertyAnnotation, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateExpression(Expression expression, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(expression, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProperty(Property property, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(property, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMClass(MClass mClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(mClass, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(mClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(mClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(mClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(mClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(mClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(mClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(mClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(mClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMClass_coOccuranceConstraint(mClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMClass_count(mClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMClass_ProcedureCount(mClass, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * The cached validation expression for the coOccuranceConstraint constraint of '<em>MClass</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final String MCLASS__CO_OCCURANCE_CONSTRAINT__EEXPRESSION = "\n" +
+		"\t\tself.name = 'Observation' implies \n" +
+		"\t\tlet c = self.classProperty->select(i|i.name ='ObservedProperty'), v = c.value->at(1)  \n" +
+		"\t\tin self.dataproperty->select(d|d.name='Unit').value->asSequence()->at(1) = 'm3/h' and v='FlowDischarge'";
+
+	/**
+	 * Validates the coOccuranceConstraint constraint of '<em>MClass</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMClass_coOccuranceConstraint(MClass mClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return
+			validate
+				(WatERPPackage.Literals.MCLASS,
+				 mClass,
+				 diagnostics,
+				 context,
+				 "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+				 "coOccuranceConstraint",
+				 MCLASS__CO_OCCURANCE_CONSTRAINT__EEXPRESSION,
+				 Diagnostic.ERROR,
+				 DIAGNOSTIC_SOURCE,
+				 0);
+	}
+
+	/**
+	 * The cached validation expression for the count constraint of '<em>MClass</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final String MCLASS__COUNT__EEXPRESSION = "\n" +
+		"\t\tself.name = 'Observation' implies\n" +
+		"\t\tself.dataproperty.name->count('Procedure') = 1 and\n" +
+		"\t\tself.dataproperty.name->count('Result') = 1 and\n" +
+		"\t\tself.classProperty.name->count('ObservedProperty') = 1";
+
+	/**
+	 * Validates the count constraint of '<em>MClass</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMClass_count(MClass mClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return
+			validate
+				(WatERPPackage.Literals.MCLASS,
+				 mClass,
+				 diagnostics,
+				 context,
+				 "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+				 "count",
+				 MCLASS__COUNT__EEXPRESSION,
+				 Diagnostic.ERROR,
+				 DIAGNOSTIC_SOURCE,
+				 0);
+	}
+
+	/**
+	 * The cached validation expression for the ProcedureCount constraint of '<em>MClass</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final String MCLASS__PROCEDURE_COUNT__EEXPRESSION = "\n" +
+		"\t\tlet mc = MClass.allInstances()->select(mc|mc.name.indexOf('Obs') = 1),\n" +
+		"\t\t c = ClassAnnotation.allInstances()->select(e|e.annotatedClass.name.indexOf('Obs') =1 ),\n" +
+		"\t\tpa= PropertyAnnotation.allInstances()->select(p|p.annotatedProperty.name = 'Procedure' ) \t\t\n" +
+		"\t\tin mc.dataproperty.name->count('Procedure') = 1 and pa.expression.value.indexOf('1') <> -1";
+
+	/**
+	 * Validates the ProcedureCount constraint of '<em>MClass</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMClass_ProcedureCount(MClass mClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return
+			validate
+				(WatERPPackage.Literals.MCLASS,
+				 mClass,
+				 diagnostics,
+				 context,
+				 "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+				 "ProcedureCount",
+				 MCLASS__PROCEDURE_COUNT__EEXPRESSION,
+				 Diagnostic.ERROR,
+				 DIAGNOSTIC_SOURCE,
+				 0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMProperty(MProperty mProperty, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(mProperty, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMCProperty(MCProperty mcProperty, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(mcProperty, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMDProperty(MDProperty mdProperty, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(mdProperty, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOClass(OClass oClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(oClass, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOProperty(OProperty oProperty, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(oProperty, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOntologyConstraint(OntologyConstraint ontologyConstraint, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(ontologyConstraint, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEquivalence(Equivalence equivalence, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(equivalence, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUnionClass(UnionClass unionClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(unionClass, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateObjectProperty(ObjectProperty objectProperty, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(objectProperty, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRestriction(Restriction restriction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(restriction, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHasDataValueRestriction(HasDataValueRestriction hasDataValueRestriction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(hasDataValueRestriction, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllValuesFromRestriction(AllValuesFromRestriction allValuesFromRestriction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(allValuesFromRestriction, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllValuesFromDataRestriction(AllValuesFromDataRestriction allValuesFromDataRestriction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(allValuesFromDataRestriction, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllValuesFromClassRestriction(AllValuesFromClassRestriction allValuesFromClassRestriction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(allValuesFromClassRestriction, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDataProperty(DataProperty dataProperty, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(dataProperty, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSomeValuesFromRestriction(SomeValuesFromRestriction someValuesFromRestriction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(someValuesFromRestriction, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSomeValuesFromDataRestriction(SomeValuesFromDataRestriction someValuesFromDataRestriction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(someValuesFromDataRestriction, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSomeValuesFromClassRestriction(SomeValuesFromClassRestriction someValuesFromClassRestriction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(someValuesFromClassRestriction, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCardinalityRestriction(CardinalityRestriction cardinalityRestriction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(cardinalityRestriction, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMaximumCardinalityRestriction(MaximumCardinalityRestriction maximumCardinalityRestriction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(maximumCardinalityRestriction, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMinimumCardinalityRestriction(MinimumCardinalityRestriction minimumCardinalityRestriction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(minimumCardinalityRestriction, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTopNode(TopNode topNode, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(topNode, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateObservation(Observation observation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(observation, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(observation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(observation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(observation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(observation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(observation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(observation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(observation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(observation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMClass_coOccuranceConstraint(observation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMClass_count(observation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMClass_ProcedureCount(observation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateObservation_coconstraintOP(observation, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * The cached validation expression for the coconstraintOP constraint of '<em>Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final String OBSERVATION__COCONSTRAINT_OP__EEXPRESSION = "\n" +
+		"\t\tlet c = ClassAnnotation.allInstances()->select(e|e.annotatedClass.name = self.name )->asSequence()->at(1) in \n" +
+		"\t\tif (c.expression.value->at(1) = 'ObservedProperty = FlowDischarge means unit = m3/h') and (self.observedProperty.value ='FlowDischarge') then\t\t \n" +
+		"\t\tself.unit.value = 'm3/h'\n" +
+		"\t\telse if (c.expression.value->at(2) = 'ObservedProperty = Temperature means unit = C') and (self.observedProperty.value ='Temperature') then\t\t\n" +
+		"\t\tself.unit.value = 'C'\n" +
+		"\t\telse 'no matched rule' endif endif\n" +
+		"\t\t";
+
+	/**
+	 * Validates the coconstraintOP constraint of '<em>Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateObservation_coconstraintOP(Observation observation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return
+			validate
+				(WatERPPackage.Literals.OBSERVATION,
+				 observation,
+				 diagnostics,
+				 context,
+				 "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+				 "coconstraintOP",
+				 OBSERVATION__COCONSTRAINT_OP__EEXPRESSION,
+				 Diagnostic.ERROR,
+				 DIAGNOSTIC_SOURCE,
+				 0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSensor(Sensor sensor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(sensor, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(sensor, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(sensor, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(sensor, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(sensor, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(sensor, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(sensor, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(sensor, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(sensor, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMClass_coOccuranceConstraint(sensor, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMClass_count(sensor, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMClass_ProcedureCount(sensor, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSensor_mustIntId(sensor, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSensor_validateURI(sensor, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * The cached validation expression for the mustIntId constraint of '<em>Sensor</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final String SENSOR__MUST_INT_ID__EEXPRESSION = "\n" +
+		"\t\tself.id.value.toInteger().oclIsTypeOf(Integer)";
+
+	/**
+	 * Validates the mustIntId constraint of '<em>Sensor</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSensor_mustIntId(Sensor sensor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return
+			validate
+				(WatERPPackage.Literals.SENSOR,
+				 sensor,
+				 diagnostics,
+				 context,
+				 "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+				 "mustIntId",
+				 SENSOR__MUST_INT_ID__EEXPRESSION,
+				 Diagnostic.ERROR,
+				 DIAGNOSTIC_SOURCE,
+				 0);
+	}
+
+	/**
+	 * The cached validation expression for the validateURI constraint of '<em>Sensor</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final String SENSOR__VALIDATE_URI__EEXPRESSION = "self.uri.value = 'urn:ogc:object:feature:sensor:' + self.id.value ";
+
+	/**
+	 * Validates the validateURI constraint of '<em>Sensor</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSensor_validateURI(Sensor sensor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return
+			validate
+				(WatERPPackage.Literals.SENSOR,
+				 sensor,
+				 diagnostics,
+				 context,
+				 "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+				 "validateURI",
+				 SENSOR__VALIDATE_URI__EEXPRESSION,
+				 Diagnostic.ERROR,
+				 DIAGNOSTIC_SOURCE,
+				 0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateExport(Export export, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(export, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(export, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(export, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(export, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(export, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(export, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(export, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(export, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(export, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMClass_coOccuranceConstraint(export, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMClass_count(export, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMClass_ProcedureCount(export, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateObservedProperty(ObservedProperty observedProperty, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(observedProperty, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(observedProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(observedProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(observedProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(observedProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(observedProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(observedProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(observedProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(observedProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMClass_coOccuranceConstraint(observedProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMClass_count(observedProperty, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMClass_ProcedureCount(observedProperty, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDLSafeRule(DLSafeRule dlSafeRule, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(dlSafeRule, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHead(Head head, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(head, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateBody(Body body, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(body, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAtom(Atom atom, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(atom, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateObjectPropertyAtom(ObjectPropertyAtom objectPropertyAtom, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(objectPropertyAtom, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateClassAtom(ClassAtom classAtom, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(classAtom, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateVariable(Variable variable, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(variable, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateExpressionType(ExpressionType expressionType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return true;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatedataType(dataType dataType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return true;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateconstraintType(constraintType constraintType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return true;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateString(String string, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return true;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInteger(Integer integer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return true;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateBoolean(Boolean boolean_, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return true;
+	}
+
+	/**
+	 * Returns the resource locator that will be used to fetch messages for this validator's diagnostics.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ResourceLocator getResourceLocator() {
+		// TODO
+		// Specialize this to return a resource locator for messages specific to this validator.
+		// Ensure that you remove @generated or mark it @generated NOT
+		return super.getResourceLocator();
+	}
+
+} //WatERPValidator

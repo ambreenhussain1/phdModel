@@ -1,0 +1,51 @@
+/**
+ */
+package WatERP;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Some Values From Class Restriction</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.SomeValuesFromClassRestriction#getSomeValuesFromClass <em>Some Values From Class</em>}</li>
+ * </ul>
+ *
+ * @see WatERP.WatERPPackage#getSomeValuesFromClassRestriction()
+ * @model
+ * @generated
+ */
+public interface SomeValuesFromClassRestriction extends SomeValuesFromRestriction {
+	/**
+	 * Returns the value of the '<em><b>Some Values From Class</b></em>' reference.
+	 * It is bidirectional and its opposite is '{@link WatERP.OClass#getSomeValuesFromRestriction <em>Some Values From Restriction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Some Values From Class</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Some Values From Class</em>' reference.
+	 * @see #setSomeValuesFromClass(OClass)
+	 * @see WatERP.WatERPPackage#getSomeValuesFromClassRestriction_SomeValuesFromClass()
+	 * @see WatERP.OClass#getSomeValuesFromRestriction
+	 * @model opposite="someValuesFromRestriction" required="true"
+	 * @generated
+	 */
+	OClass getSomeValuesFromClass();
+
+	/**
+	 * Sets the value of the '{@link WatERP.SomeValuesFromClassRestriction#getSomeValuesFromClass <em>Some Values From Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Some Values From Class</em>' reference.
+	 * @see #getSomeValuesFromClass()
+	 * @generated
+	 */
+	void setSomeValuesFromClass(OClass value);
+
+} // SomeValuesFromClassRestriction

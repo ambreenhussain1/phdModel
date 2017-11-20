@@ -1,0 +1,276 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.ClassAnnotation;
+import WatERP.Model;
+import WatERP.ModelAnnotation;
+import WatERP.Ontology;
+import WatERP.WatERPPackage;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Model Annotation</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.ModelAnnotationImpl#getAnnotations <em>Annotations</em>}</li>
+ *   <li>{@link WatERP.impl.ModelAnnotationImpl#getAnnotatedModel <em>Annotated Model</em>}</li>
+ *   <li>{@link WatERP.impl.ModelAnnotationImpl#getAnnotatingModel <em>Annotating Model</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class ModelAnnotationImpl extends MinimalEObjectImpl.Container implements ModelAnnotation {
+	/**
+	 * The cached value of the '{@link #getAnnotations() <em>Annotations</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAnnotations()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<ClassAnnotation> annotations;
+
+	/**
+	 * The cached value of the '{@link #getAnnotatedModel() <em>Annotated Model</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAnnotatedModel()
+	 * @generated
+	 * @ordered
+	 */
+	protected Model annotatedModel;
+
+	/**
+	 * The cached value of the '{@link #getAnnotatingModel() <em>Annotating Model</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAnnotatingModel()
+	 * @generated
+	 * @ordered
+	 */
+	protected Ontology annotatingModel;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ModelAnnotationImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.MODEL_ANNOTATION;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ClassAnnotation> getAnnotations() {
+		if (annotations == null) {
+			annotations = new EObjectContainmentEList<ClassAnnotation>(ClassAnnotation.class, this, WatERPPackage.MODEL_ANNOTATION__ANNOTATIONS);
+		}
+		return annotations;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Model getAnnotatedModel() {
+		if (annotatedModel != null && annotatedModel.eIsProxy()) {
+			InternalEObject oldAnnotatedModel = (InternalEObject)annotatedModel;
+			annotatedModel = (Model)eResolveProxy(oldAnnotatedModel);
+			if (annotatedModel != oldAnnotatedModel) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, WatERPPackage.MODEL_ANNOTATION__ANNOTATED_MODEL, oldAnnotatedModel, annotatedModel));
+			}
+		}
+		return annotatedModel;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Model basicGetAnnotatedModel() {
+		return annotatedModel;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAnnotatedModel(Model newAnnotatedModel) {
+		Model oldAnnotatedModel = annotatedModel;
+		annotatedModel = newAnnotatedModel;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.MODEL_ANNOTATION__ANNOTATED_MODEL, oldAnnotatedModel, annotatedModel));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Ontology getAnnotatingModel() {
+		if (annotatingModel != null && annotatingModel.eIsProxy()) {
+			InternalEObject oldAnnotatingModel = (InternalEObject)annotatingModel;
+			annotatingModel = (Ontology)eResolveProxy(oldAnnotatingModel);
+			if (annotatingModel != oldAnnotatingModel) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, WatERPPackage.MODEL_ANNOTATION__ANNOTATING_MODEL, oldAnnotatingModel, annotatingModel));
+			}
+		}
+		return annotatingModel;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Ontology basicGetAnnotatingModel() {
+		return annotatingModel;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAnnotatingModel(Ontology newAnnotatingModel) {
+		Ontology oldAnnotatingModel = annotatingModel;
+		annotatingModel = newAnnotatingModel;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.MODEL_ANNOTATION__ANNOTATING_MODEL, oldAnnotatingModel, annotatingModel));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case WatERPPackage.MODEL_ANNOTATION__ANNOTATIONS:
+				return ((InternalEList<?>)getAnnotations()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.MODEL_ANNOTATION__ANNOTATIONS:
+				return getAnnotations();
+			case WatERPPackage.MODEL_ANNOTATION__ANNOTATED_MODEL:
+				if (resolve) return getAnnotatedModel();
+				return basicGetAnnotatedModel();
+			case WatERPPackage.MODEL_ANNOTATION__ANNOTATING_MODEL:
+				if (resolve) return getAnnotatingModel();
+				return basicGetAnnotatingModel();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.MODEL_ANNOTATION__ANNOTATIONS:
+				getAnnotations().clear();
+				getAnnotations().addAll((Collection<? extends ClassAnnotation>)newValue);
+				return;
+			case WatERPPackage.MODEL_ANNOTATION__ANNOTATED_MODEL:
+				setAnnotatedModel((Model)newValue);
+				return;
+			case WatERPPackage.MODEL_ANNOTATION__ANNOTATING_MODEL:
+				setAnnotatingModel((Ontology)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.MODEL_ANNOTATION__ANNOTATIONS:
+				getAnnotations().clear();
+				return;
+			case WatERPPackage.MODEL_ANNOTATION__ANNOTATED_MODEL:
+				setAnnotatedModel((Model)null);
+				return;
+			case WatERPPackage.MODEL_ANNOTATION__ANNOTATING_MODEL:
+				setAnnotatingModel((Ontology)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.MODEL_ANNOTATION__ANNOTATIONS:
+				return annotations != null && !annotations.isEmpty();
+			case WatERPPackage.MODEL_ANNOTATION__ANNOTATED_MODEL:
+				return annotatedModel != null;
+			case WatERPPackage.MODEL_ANNOTATION__ANNOTATING_MODEL:
+				return annotatingModel != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //ModelAnnotationImpl

@@ -1,0 +1,122 @@
+/**
+ */
+package WatERP;
+
+import org.eclipse.emf.common.util.EList;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Sensor</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.Sensor#getId <em>Id</em>}</li>
+ *   <li>{@link WatERP.Sensor#getUri <em>Uri</em>}</li>
+ *   <li>{@link WatERP.Sensor#getDesc <em>Desc</em>}</li>
+ *   <li>{@link WatERP.Sensor#getObservations <em>Observations</em>}</li>
+ * </ul>
+ *
+ * @see WatERP.WatERPPackage#getSensor()
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='mustIntId validateURI'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot mustIntId='\n\t\tself.id.value.toInteger().oclIsTypeOf(Integer)' validateURI='self.uri.value = \'urn:ogc:object:feature:sensor:\' + self.id.value '"
+ * @generated
+ */
+public interface Sensor extends MClass {
+	/**
+	 * Returns the value of the '<em><b>Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Id</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Id</em>' containment reference.
+	 * @see #setId(MDProperty)
+	 * @see WatERP.WatERPPackage#getSensor_Id()
+	 * @model containment="true" required="true"
+	 * @generated
+	 */
+	MDProperty getId();
+
+	/**
+	 * Sets the value of the '{@link WatERP.Sensor#getId <em>Id</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Id</em>' containment reference.
+	 * @see #getId()
+	 * @generated
+	 */
+	void setId(MDProperty value);
+
+	/**
+	 * Returns the value of the '<em><b>Uri</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Uri</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Uri</em>' containment reference.
+	 * @see #setUri(MDProperty)
+	 * @see WatERP.WatERPPackage#getSensor_Uri()
+	 * @model containment="true" required="true"
+	 * @generated
+	 */
+	MDProperty getUri();
+
+	/**
+	 * Sets the value of the '{@link WatERP.Sensor#getUri <em>Uri</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Uri</em>' containment reference.
+	 * @see #getUri()
+	 * @generated
+	 */
+	void setUri(MDProperty value);
+
+	/**
+	 * Returns the value of the '<em><b>Desc</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Desc</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Desc</em>' containment reference.
+	 * @see #setDesc(MDProperty)
+	 * @see WatERP.WatERPPackage#getSensor_Desc()
+	 * @model containment="true"
+	 * @generated
+	 */
+	MDProperty getDesc();
+
+	/**
+	 * Sets the value of the '{@link WatERP.Sensor#getDesc <em>Desc</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Desc</em>' containment reference.
+	 * @see #getDesc()
+	 * @generated
+	 */
+	void setDesc(MDProperty value);
+
+	/**
+	 * Returns the value of the '<em><b>Observations</b></em>' containment reference list.
+	 * The list contents are of type {@link WatERP.Observation}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Observations</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Observations</em>' containment reference list.
+	 * @see WatERP.WatERPPackage#getSensor_Observations()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Observation> getObservations();
+
+} // Sensor

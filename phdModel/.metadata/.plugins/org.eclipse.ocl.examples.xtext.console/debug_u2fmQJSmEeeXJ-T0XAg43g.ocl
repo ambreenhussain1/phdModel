@@ -1,0 +1,6 @@
+import 'http://www.eclipse.org/emf/2002/Ecore'
+
+context ecore::EPackage
+def: oclDebuggerExpression() : OclAny = 
+	let c:ecore::EClass = ClassAnnotation.allInstances()->select (inst|inst.annotatedClass = self.previousDiploma)
+			 in Equivalence.allInstances()->exists(eq|eq.right.uri='m' and eq.left = c.name)

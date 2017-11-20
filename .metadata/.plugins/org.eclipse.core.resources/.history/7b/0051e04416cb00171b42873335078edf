@@ -1,0 +1,37 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.SomeValuesFromRestriction;
+import WatERP.WatERPPackage;
+
+import org.eclipse.emf.ecore.EClass;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Some Values From Restriction</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * @generated
+ */
+public class SomeValuesFromRestrictionImpl extends RestrictionImpl implements SomeValuesFromRestriction {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected SomeValuesFromRestrictionImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.SOME_VALUES_FROM_RESTRICTION;
+	}
+
+} //SomeValuesFromRestrictionImpl

@@ -1,0 +1,52 @@
+/**
+ */
+package WatERP;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Has Data Value Restriction</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.HasDataValueRestriction#getHasDataValueLiteral <em>Has Data Value Literal</em>}</li>
+ * </ul>
+ *
+ * @see WatERP.WatERPPackage#getHasDataValueRestriction()
+ * @model
+ * @generated
+ */
+public interface HasDataValueRestriction extends Restriction {
+	/**
+	 * Returns the value of the '<em><b>Has Data Value Literal</b></em>' attribute.
+	 * The literals are from the enumeration {@link WatERP.dataType}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Has Data Value Literal</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Has Data Value Literal</em>' attribute.
+	 * @see WatERP.dataType
+	 * @see #setHasDataValueLiteral(dataType)
+	 * @see WatERP.WatERPPackage#getHasDataValueRestriction_HasDataValueLiteral()
+	 * @model
+	 * @generated
+	 */
+	dataType getHasDataValueLiteral();
+
+	/**
+	 * Sets the value of the '{@link WatERP.HasDataValueRestriction#getHasDataValueLiteral <em>Has Data Value Literal</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Has Data Value Literal</em>' attribute.
+	 * @see WatERP.dataType
+	 * @see #getHasDataValueLiteral()
+	 * @generated
+	 */
+	void setHasDataValueLiteral(dataType value);
+
+} // HasDataValueRestriction

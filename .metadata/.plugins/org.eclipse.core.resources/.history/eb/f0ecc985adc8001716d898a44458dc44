@@ -1,0 +1,40 @@
+/**
+ */
+package WatERP;
+
+import org.eclipse.emf.common.util.EList;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Union Class</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.UnionClass#getUnionOf <em>Union Of</em>}</li>
+ * </ul>
+ *
+ * @see WatERP.WatERPPackage#getUnionClass()
+ * @model
+ * @generated
+ */
+public interface UnionClass extends OClass {
+	/**
+	 * Returns the value of the '<em><b>Union Of</b></em>' reference list.
+	 * The list contents are of type {@link WatERP.OClass}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Union Of</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Union Of</em>' reference list.
+	 * @see WatERP.WatERPPackage#getUnionClass_UnionOf()
+	 * @model lower="2"
+	 * @generated
+	 */
+	EList<OClass> getUnionOf();
+
+} // UnionClass

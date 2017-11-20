@@ -1,0 +1,994 @@
+/**
+ */
+package WatERP.util;
+
+import WatERP.*;
+
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
+
+import org.eclipse.emf.ecore.util.Switch;
+
+/**
+ * <!-- begin-user-doc -->
+ * The <b>Switch</b> for the model's inheritance hierarchy.
+ * It supports the call {@link #doSwitch(EObject) doSwitch(object)}
+ * to invoke the <code>caseXXX</code> method for each class of the model,
+ * starting with the actual class of the object
+ * and proceeding up the inheritance hierarchy
+ * until a non-null result is returned,
+ * which is the result of the switch.
+ * <!-- end-user-doc -->
+ * @see WatERP.WatERPPackage
+ * @generated
+ */
+public class WatERPSwitch<T> extends Switch<T> {
+	/**
+	 * The cached model package
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static WatERPPackage modelPackage;
+
+	/**
+	 * Creates an instance of the switch.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public WatERPSwitch() {
+		if (modelPackage == null) {
+			modelPackage = WatERPPackage.eINSTANCE;
+		}
+	}
+
+	/**
+	 * Checks whether this is a switch for the given package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param ePackage the package in question.
+	 * @return whether this is a switch for the given package.
+	 * @generated
+	 */
+	@Override
+	protected boolean isSwitchFor(EPackage ePackage) {
+		return ePackage == modelPackage;
+	}
+
+	/**
+	 * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the first non-null result returned by a <code>caseXXX</code> call.
+	 * @generated
+	 */
+	@Override
+	protected T doSwitch(int classifierID, EObject theEObject) {
+		switch (classifierID) {
+			case WatERPPackage.MODEL_ANNOTATION: {
+				ModelAnnotation modelAnnotation = (ModelAnnotation)theEObject;
+				T result = caseModelAnnotation(modelAnnotation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.CLASS_ANNOTATION: {
+				ClassAnnotation classAnnotation = (ClassAnnotation)theEObject;
+				T result = caseClassAnnotation(classAnnotation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.ONTOLOGY: {
+				Ontology ontology = (Ontology)theEObject;
+				T result = caseOntology(ontology);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.MODEL: {
+				Model model = (Model)theEObject;
+				T result = caseModel(model);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.PROPERTY_ANNOTATION: {
+				PropertyAnnotation propertyAnnotation = (PropertyAnnotation)theEObject;
+				T result = casePropertyAnnotation(propertyAnnotation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.EXPRESSION: {
+				Expression expression = (Expression)theEObject;
+				T result = caseExpression(expression);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.PROPERTY: {
+				Property property = (Property)theEObject;
+				T result = caseProperty(property);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.MCLASS: {
+				MClass mClass = (MClass)theEObject;
+				T result = caseMClass(mClass);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.MPROPERTY: {
+				MProperty mProperty = (MProperty)theEObject;
+				T result = caseMProperty(mProperty);
+				if (result == null) result = caseProperty(mProperty);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.MC_PROPERTY: {
+				MCProperty mcProperty = (MCProperty)theEObject;
+				T result = caseMCProperty(mcProperty);
+				if (result == null) result = caseMProperty(mcProperty);
+				if (result == null) result = caseProperty(mcProperty);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.MD_PROPERTY: {
+				MDProperty mdProperty = (MDProperty)theEObject;
+				T result = caseMDProperty(mdProperty);
+				if (result == null) result = caseMProperty(mdProperty);
+				if (result == null) result = caseProperty(mdProperty);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.OCLASS: {
+				OClass oClass = (OClass)theEObject;
+				T result = caseOClass(oClass);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.OPROPERTY: {
+				OProperty oProperty = (OProperty)theEObject;
+				T result = caseOProperty(oProperty);
+				if (result == null) result = caseProperty(oProperty);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.ONTOLOGY_CONSTRAINT: {
+				OntologyConstraint ontologyConstraint = (OntologyConstraint)theEObject;
+				T result = caseOntologyConstraint(ontologyConstraint);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.EQUIVALENCE: {
+				Equivalence equivalence = (Equivalence)theEObject;
+				T result = caseEquivalence(equivalence);
+				if (result == null) result = caseOntologyConstraint(equivalence);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.UNION_CLASS: {
+				UnionClass unionClass = (UnionClass)theEObject;
+				T result = caseUnionClass(unionClass);
+				if (result == null) result = caseOClass(unionClass);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.OBJECT_PROPERTY: {
+				ObjectProperty objectProperty = (ObjectProperty)theEObject;
+				T result = caseObjectProperty(objectProperty);
+				if (result == null) result = caseOProperty(objectProperty);
+				if (result == null) result = caseProperty(objectProperty);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.RESTRICTION: {
+				Restriction restriction = (Restriction)theEObject;
+				T result = caseRestriction(restriction);
+				if (result == null) result = caseOntologyConstraint(restriction);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.HAS_DATA_VALUE_RESTRICTION: {
+				HasDataValueRestriction hasDataValueRestriction = (HasDataValueRestriction)theEObject;
+				T result = caseHasDataValueRestriction(hasDataValueRestriction);
+				if (result == null) result = caseRestriction(hasDataValueRestriction);
+				if (result == null) result = caseOntologyConstraint(hasDataValueRestriction);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.ALL_VALUES_FROM_RESTRICTION: {
+				AllValuesFromRestriction allValuesFromRestriction = (AllValuesFromRestriction)theEObject;
+				T result = caseAllValuesFromRestriction(allValuesFromRestriction);
+				if (result == null) result = caseRestriction(allValuesFromRestriction);
+				if (result == null) result = caseOntologyConstraint(allValuesFromRestriction);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.ALL_VALUES_FROM_DATA_RESTRICTION: {
+				AllValuesFromDataRestriction allValuesFromDataRestriction = (AllValuesFromDataRestriction)theEObject;
+				T result = caseAllValuesFromDataRestriction(allValuesFromDataRestriction);
+				if (result == null) result = caseAllValuesFromRestriction(allValuesFromDataRestriction);
+				if (result == null) result = caseRestriction(allValuesFromDataRestriction);
+				if (result == null) result = caseOntologyConstraint(allValuesFromDataRestriction);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.ALL_VALUES_FROM_CLASS_RESTRICTION: {
+				AllValuesFromClassRestriction allValuesFromClassRestriction = (AllValuesFromClassRestriction)theEObject;
+				T result = caseAllValuesFromClassRestriction(allValuesFromClassRestriction);
+				if (result == null) result = caseAllValuesFromRestriction(allValuesFromClassRestriction);
+				if (result == null) result = caseRestriction(allValuesFromClassRestriction);
+				if (result == null) result = caseOntologyConstraint(allValuesFromClassRestriction);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.DATA_PROPERTY: {
+				DataProperty dataProperty = (DataProperty)theEObject;
+				T result = caseDataProperty(dataProperty);
+				if (result == null) result = caseOProperty(dataProperty);
+				if (result == null) result = caseProperty(dataProperty);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.SOME_VALUES_FROM_RESTRICTION: {
+				SomeValuesFromRestriction someValuesFromRestriction = (SomeValuesFromRestriction)theEObject;
+				T result = caseSomeValuesFromRestriction(someValuesFromRestriction);
+				if (result == null) result = caseRestriction(someValuesFromRestriction);
+				if (result == null) result = caseOntologyConstraint(someValuesFromRestriction);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.SOME_VALUES_FROM_DATA_RESTRICTION: {
+				SomeValuesFromDataRestriction someValuesFromDataRestriction = (SomeValuesFromDataRestriction)theEObject;
+				T result = caseSomeValuesFromDataRestriction(someValuesFromDataRestriction);
+				if (result == null) result = caseSomeValuesFromRestriction(someValuesFromDataRestriction);
+				if (result == null) result = caseRestriction(someValuesFromDataRestriction);
+				if (result == null) result = caseOntologyConstraint(someValuesFromDataRestriction);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.SOME_VALUES_FROM_CLASS_RESTRICTION: {
+				SomeValuesFromClassRestriction someValuesFromClassRestriction = (SomeValuesFromClassRestriction)theEObject;
+				T result = caseSomeValuesFromClassRestriction(someValuesFromClassRestriction);
+				if (result == null) result = caseSomeValuesFromRestriction(someValuesFromClassRestriction);
+				if (result == null) result = caseRestriction(someValuesFromClassRestriction);
+				if (result == null) result = caseOntologyConstraint(someValuesFromClassRestriction);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.CARDINALITY_RESTRICTION: {
+				CardinalityRestriction cardinalityRestriction = (CardinalityRestriction)theEObject;
+				T result = caseCardinalityRestriction(cardinalityRestriction);
+				if (result == null) result = caseRestriction(cardinalityRestriction);
+				if (result == null) result = caseOntologyConstraint(cardinalityRestriction);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.MAXIMUM_CARDINALITY_RESTRICTION: {
+				MaximumCardinalityRestriction maximumCardinalityRestriction = (MaximumCardinalityRestriction)theEObject;
+				T result = caseMaximumCardinalityRestriction(maximumCardinalityRestriction);
+				if (result == null) result = caseRestriction(maximumCardinalityRestriction);
+				if (result == null) result = caseOntologyConstraint(maximumCardinalityRestriction);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.MINIMUM_CARDINALITY_RESTRICTION: {
+				MinimumCardinalityRestriction minimumCardinalityRestriction = (MinimumCardinalityRestriction)theEObject;
+				T result = caseMinimumCardinalityRestriction(minimumCardinalityRestriction);
+				if (result == null) result = caseRestriction(minimumCardinalityRestriction);
+				if (result == null) result = caseOntologyConstraint(minimumCardinalityRestriction);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.TOP_NODE: {
+				TopNode topNode = (TopNode)theEObject;
+				T result = caseTopNode(topNode);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.OBSERVATION: {
+				Observation observation = (Observation)theEObject;
+				T result = caseObservation(observation);
+				if (result == null) result = caseMClass(observation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.SENSOR: {
+				Sensor sensor = (Sensor)theEObject;
+				T result = caseSensor(sensor);
+				if (result == null) result = caseMClass(sensor);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.EXPORT: {
+				Export export = (Export)theEObject;
+				T result = caseExport(export);
+				if (result == null) result = caseMClass(export);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.OBSERVED_PROPERTY: {
+				ObservedProperty observedProperty = (ObservedProperty)theEObject;
+				T result = caseObservedProperty(observedProperty);
+				if (result == null) result = caseMClass(observedProperty);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.DL_SAFE_RULE: {
+				DLSafeRule dlSafeRule = (DLSafeRule)theEObject;
+				T result = caseDLSafeRule(dlSafeRule);
+				if (result == null) result = caseOntologyConstraint(dlSafeRule);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.HEAD: {
+				Head head = (Head)theEObject;
+				T result = caseHead(head);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.BODY: {
+				Body body = (Body)theEObject;
+				T result = caseBody(body);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.ATOM: {
+				Atom atom = (Atom)theEObject;
+				T result = caseAtom(atom);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.OBJECT_PROPERTY_ATOM: {
+				ObjectPropertyAtom objectPropertyAtom = (ObjectPropertyAtom)theEObject;
+				T result = caseObjectPropertyAtom(objectPropertyAtom);
+				if (result == null) result = caseAtom(objectPropertyAtom);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.CLASS_ATOM: {
+				ClassAtom classAtom = (ClassAtom)theEObject;
+				T result = caseClassAtom(classAtom);
+				if (result == null) result = caseAtom(classAtom);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case WatERPPackage.VARIABLE: {
+				Variable variable = (Variable)theEObject;
+				T result = caseVariable(variable);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			default: return defaultCase(theEObject);
+		}
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Model Annotation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Model Annotation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseModelAnnotation(ModelAnnotation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Class Annotation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Class Annotation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseClassAnnotation(ClassAnnotation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ontology</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ontology</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOntology(Ontology object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Model</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Model</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseModel(Model object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Property Annotation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Property Annotation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePropertyAnnotation(PropertyAnnotation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Expression</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Expression</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseExpression(Expression object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Property</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseProperty(Property object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>MClass</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>MClass</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMClass(MClass object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>MProperty</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>MProperty</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMProperty(MProperty object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>MC Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>MC Property</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMCProperty(MCProperty object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>MD Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>MD Property</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMDProperty(MDProperty object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>OClass</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>OClass</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOClass(OClass object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>OProperty</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>OProperty</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOProperty(OProperty object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ontology Constraint</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ontology Constraint</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOntologyConstraint(OntologyConstraint object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Equivalence</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Equivalence</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEquivalence(Equivalence object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Union Class</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Union Class</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUnionClass(UnionClass object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Object Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Object Property</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseObjectProperty(ObjectProperty object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Restriction</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRestriction(Restriction object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Has Data Value Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Has Data Value Restriction</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHasDataValueRestriction(HasDataValueRestriction object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>All Values From Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>All Values From Restriction</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAllValuesFromRestriction(AllValuesFromRestriction object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>All Values From Data Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>All Values From Data Restriction</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAllValuesFromDataRestriction(AllValuesFromDataRestriction object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>All Values From Class Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>All Values From Class Restriction</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAllValuesFromClassRestriction(AllValuesFromClassRestriction object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Data Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Data Property</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDataProperty(DataProperty object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Some Values From Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Some Values From Restriction</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSomeValuesFromRestriction(SomeValuesFromRestriction object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Some Values From Data Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Some Values From Data Restriction</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSomeValuesFromDataRestriction(SomeValuesFromDataRestriction object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Some Values From Class Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Some Values From Class Restriction</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSomeValuesFromClassRestriction(SomeValuesFromClassRestriction object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Cardinality Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Cardinality Restriction</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCardinalityRestriction(CardinalityRestriction object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Maximum Cardinality Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Maximum Cardinality Restriction</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMaximumCardinalityRestriction(MaximumCardinalityRestriction object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Minimum Cardinality Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Minimum Cardinality Restriction</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMinimumCardinalityRestriction(MinimumCardinalityRestriction object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Top Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Top Node</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseTopNode(TopNode object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseObservation(Observation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Sensor</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Sensor</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSensor(Sensor object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Export</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Export</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseExport(Export object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Observed Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Observed Property</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseObservedProperty(ObservedProperty object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>DL Safe Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>DL Safe Rule</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDLSafeRule(DLSafeRule object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Head</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Head</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHead(Head object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Body</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Body</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBody(Body object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Atom</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Atom</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAtom(Atom object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Object Property Atom</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Object Property Atom</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseObjectPropertyAtom(ObjectPropertyAtom object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Class Atom</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Class Atom</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseClassAtom(ClassAtom object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Variable</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Variable</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVariable(Variable object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>EObject</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch, but this is the last case anyway.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>EObject</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject)
+	 * @generated
+	 */
+	@Override
+	public T defaultCase(EObject object) {
+		return null;
+	}
+
+} //WatERPSwitch

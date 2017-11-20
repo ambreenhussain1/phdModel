@@ -1,0 +1,76 @@
+/**
+ */
+package WatERP;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Equivalence</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.Equivalence#getRight <em>Right</em>}</li>
+ *   <li>{@link WatERP.Equivalence#getLeft <em>Left</em>}</li>
+ * </ul>
+ *
+ * @see WatERP.WatERPPackage#getEquivalence()
+ * @model
+ * @generated
+ */
+public interface Equivalence extends OntologyConstraint {
+	/**
+	 * Returns the value of the '<em><b>Right</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Right</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Right</em>' reference.
+	 * @see #setRight(OClass)
+	 * @see WatERP.WatERPPackage#getEquivalence_Right()
+	 * @model required="true"
+	 * @generated
+	 */
+	OClass getRight();
+
+	/**
+	 * Sets the value of the '{@link WatERP.Equivalence#getRight <em>Right</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Right</em>' reference.
+	 * @see #getRight()
+	 * @generated
+	 */
+	void setRight(OClass value);
+
+	/**
+	 * Returns the value of the '<em><b>Left</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Left</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Left</em>' reference.
+	 * @see #setLeft(OClass)
+	 * @see WatERP.WatERPPackage#getEquivalence_Left()
+	 * @model required="true"
+	 * @generated
+	 */
+	OClass getLeft();
+
+	/**
+	 * Sets the value of the '{@link WatERP.Equivalence#getLeft <em>Left</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Left</em>' reference.
+	 * @see #getLeft()
+	 * @generated
+	 */
+	void setLeft(OClass value);
+
+} // Equivalence

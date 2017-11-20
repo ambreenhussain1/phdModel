@@ -1,0 +1,156 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.MCProperty;
+import WatERP.MClass;
+import WatERP.WatERPPackage;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>MC Property</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.MCPropertyImpl#getClassType <em>Class Type</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class MCPropertyImpl extends MPropertyImpl implements MCProperty {
+	/**
+	 * The cached value of the '{@link #getClassType() <em>Class Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getClassType()
+	 * @generated
+	 * @ordered
+	 */
+	protected MClass classType;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MCPropertyImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.MC_PROPERTY;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MClass getClassType() {
+		if (classType != null && classType.eIsProxy()) {
+			InternalEObject oldClassType = (InternalEObject)classType;
+			classType = (MClass)eResolveProxy(oldClassType);
+			if (classType != oldClassType) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, WatERPPackage.MC_PROPERTY__CLASS_TYPE, oldClassType, classType));
+			}
+		}
+		return classType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MClass basicGetClassType() {
+		return classType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setClassType(MClass newClassType) {
+		MClass oldClassType = classType;
+		classType = newClassType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.MC_PROPERTY__CLASS_TYPE, oldClassType, classType));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.MC_PROPERTY__CLASS_TYPE:
+				if (resolve) return getClassType();
+				return basicGetClassType();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.MC_PROPERTY__CLASS_TYPE:
+				setClassType((MClass)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.MC_PROPERTY__CLASS_TYPE:
+				setClassType((MClass)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.MC_PROPERTY__CLASS_TYPE:
+				return classType != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //MCPropertyImpl

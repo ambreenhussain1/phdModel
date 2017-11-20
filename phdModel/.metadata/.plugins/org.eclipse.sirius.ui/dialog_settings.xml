@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExportRepresentationsAsImagesDialog">
+		<item value="JPG" key="ExportRepresentationsAsImagesDialog.imageFormat"/>
+		<list key="ExportRepresentationsAsImagesDialog.file">
+			<item value="C:\Users\Ambreen\Dropbox\My PhD Thesis\IEEEConf\Final"/>
+			<item value="C:\Users\Ambreen\Dropbox\My PhD Thesis\IEEEConf\Final\EMSModel class diagram.jpg"/>
+		</list>
+	</section>
+</section>

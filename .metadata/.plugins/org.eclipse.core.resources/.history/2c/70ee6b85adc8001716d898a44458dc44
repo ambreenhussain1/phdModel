@@ -1,0 +1,236 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.ClassAtom;
+import WatERP.OClass;
+import WatERP.Variable;
+import WatERP.WatERPPackage;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Class Atom</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.ClassAtomImpl#getClass_ <em>Class</em>}</li>
+ *   <li>{@link WatERP.impl.ClassAtomImpl#getVariable <em>Variable</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class ClassAtomImpl extends AtomImpl implements ClassAtom {
+	/**
+	 * The cached value of the '{@link #getClass_() <em>Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getClass_()
+	 * @generated
+	 * @ordered
+	 */
+	protected OClass class_;
+
+	/**
+	 * The cached value of the '{@link #getVariable() <em>Variable</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getVariable()
+	 * @generated
+	 * @ordered
+	 */
+	protected Variable variable;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ClassAtomImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.CLASS_ATOM;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OClass getClass_() {
+		if (class_ != null && class_.eIsProxy()) {
+			InternalEObject oldClass = (InternalEObject)class_;
+			class_ = (OClass)eResolveProxy(oldClass);
+			if (class_ != oldClass) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, WatERPPackage.CLASS_ATOM__CLASS, oldClass, class_));
+			}
+		}
+		return class_;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OClass basicGetClass() {
+		return class_;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setClass(OClass newClass) {
+		OClass oldClass = class_;
+		class_ = newClass;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.CLASS_ATOM__CLASS, oldClass, class_));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Variable getVariable() {
+		return variable;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetVariable(Variable newVariable, NotificationChain msgs) {
+		Variable oldVariable = variable;
+		variable = newVariable;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, WatERPPackage.CLASS_ATOM__VARIABLE, oldVariable, newVariable);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setVariable(Variable newVariable) {
+		if (newVariable != variable) {
+			NotificationChain msgs = null;
+			if (variable != null)
+				msgs = ((InternalEObject)variable).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.CLASS_ATOM__VARIABLE, null, msgs);
+			if (newVariable != null)
+				msgs = ((InternalEObject)newVariable).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.CLASS_ATOM__VARIABLE, null, msgs);
+			msgs = basicSetVariable(newVariable, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.CLASS_ATOM__VARIABLE, newVariable, newVariable));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case WatERPPackage.CLASS_ATOM__VARIABLE:
+				return basicSetVariable(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.CLASS_ATOM__CLASS:
+				if (resolve) return getClass_();
+				return basicGetClass();
+			case WatERPPackage.CLASS_ATOM__VARIABLE:
+				return getVariable();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.CLASS_ATOM__CLASS:
+				setClass((OClass)newValue);
+				return;
+			case WatERPPackage.CLASS_ATOM__VARIABLE:
+				setVariable((Variable)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.CLASS_ATOM__CLASS:
+				setClass((OClass)null);
+				return;
+			case WatERPPackage.CLASS_ATOM__VARIABLE:
+				setVariable((Variable)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.CLASS_ATOM__CLASS:
+				return class_ != null;
+			case WatERPPackage.CLASS_ATOM__VARIABLE:
+				return variable != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //ClassAtomImpl

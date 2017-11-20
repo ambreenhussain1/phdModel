@@ -1,0 +1,2180 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.AllValuesFromClassRestriction;
+import WatERP.AllValuesFromDataRestriction;
+import WatERP.AllValuesFromRestriction;
+import WatERP.Atom;
+import WatERP.Body;
+import WatERP.CardinalityRestriction;
+import WatERP.ClassAnnotation;
+import WatERP.ClassAtom;
+import WatERP.DLSafeRule;
+import WatERP.DataProperty;
+import WatERP.Equivalence;
+import WatERP.Export;
+import WatERP.Expression;
+import WatERP.ExpressionType;
+import WatERP.HasDataValueRestriction;
+import WatERP.Head;
+import WatERP.MCProperty;
+import WatERP.MClass;
+import WatERP.MDProperty;
+import WatERP.MProperty;
+import WatERP.MaximumCardinalityRestriction;
+import WatERP.MinimumCardinalityRestriction;
+import WatERP.Model;
+import WatERP.ModelAnnotation;
+import WatERP.OClass;
+import WatERP.OProperty;
+import WatERP.ObjectProperty;
+import WatERP.ObjectPropertyAtom;
+import WatERP.Observation;
+import WatERP.ObservedProperty;
+import WatERP.Ontology;
+import WatERP.OntologyConstraint;
+import WatERP.Property;
+import WatERP.PropertyAnnotation;
+import WatERP.Restriction;
+import WatERP.Sensor;
+import WatERP.SomeValuesFromClassRestriction;
+import WatERP.SomeValuesFromDataRestriction;
+import WatERP.SomeValuesFromRestriction;
+import WatERP.TopNode;
+import WatERP.UnionClass;
+import WatERP.Variable;
+import WatERP.WatERPFactory;
+import WatERP.WatERPPackage;
+import WatERP.constraintType;
+import WatERP.dataType;
+
+import WatERP.util.WatERPValidator;
+
+import org.eclipse.emf.ecore.EAttribute;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
+import org.eclipse.emf.ecore.EEnum;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
+import org.eclipse.emf.ecore.EValidator;
+
+import org.eclipse.emf.ecore.impl.EPackageImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model <b>Package</b>.
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class WatERPPackageImpl extends EPackageImpl implements WatERPPackage {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass modelAnnotationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass classAnnotationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ontologyEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass modelEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass propertyAnnotationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass expressionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass propertyEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mClassEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mPropertyEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mcPropertyEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mdPropertyEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass oClassEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass oPropertyEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass ontologyConstraintEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass equivalenceEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass unionClassEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass objectPropertyEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass restrictionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass hasDataValueRestrictionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass allValuesFromRestrictionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass allValuesFromDataRestrictionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass allValuesFromClassRestrictionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass dataPropertyEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass someValuesFromRestrictionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass someValuesFromDataRestrictionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass someValuesFromClassRestrictionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass cardinalityRestrictionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass maximumCardinalityRestrictionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass minimumCardinalityRestrictionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass topNodeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass observationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass sensorEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass exportEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass observedPropertyEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass dlSafeRuleEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass headEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass bodyEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass atomEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass objectPropertyAtomEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass classAtomEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass variableEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum expressionTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum dataTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum constraintTypeEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EDataType stringEDataType = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EDataType integerEDataType = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EDataType booleanEDataType = null;
+
+	/**
+	 * Creates an instance of the model <b>Package</b>, registered with
+	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
+	 * package URI value.
+	 * <p>Note: the correct way to create the package is via the static
+	 * factory method {@link #init init()}, which also performs
+	 * initialization of the package, or returns the registered package,
+	 * if one already exists.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.emf.ecore.EPackage.Registry
+	 * @see WatERP.WatERPPackage#eNS_URI
+	 * @see #init()
+	 * @generated
+	 */
+	private WatERPPackageImpl() {
+		super(eNS_URI, WatERPFactory.eINSTANCE);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private static boolean isInited = false;
+
+	/**
+	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
+	 * 
+	 * <p>This method is used to initialize {@link WatERPPackage#eINSTANCE} when that field is accessed.
+	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #eNS_URI
+	 * @see #createPackageContents()
+	 * @see #initializePackageContents()
+	 * @generated
+	 */
+	public static WatERPPackage init() {
+		if (isInited) return (WatERPPackage)EPackage.Registry.INSTANCE.getEPackage(WatERPPackage.eNS_URI);
+
+		// Obtain or create and register package
+		WatERPPackageImpl theWatERPPackage = (WatERPPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof WatERPPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new WatERPPackageImpl());
+
+		isInited = true;
+
+		// Create package meta-data objects
+		theWatERPPackage.createPackageContents();
+
+		// Initialize created meta-data
+		theWatERPPackage.initializePackageContents();
+
+		// Register package validator
+		EValidator.Registry.INSTANCE.put
+			(theWatERPPackage, 
+			 new EValidator.Descriptor() {
+				 public EValidator getEValidator() {
+					 return WatERPValidator.INSTANCE;
+				 }
+			 });
+
+		// Mark meta-data to indicate it can't be changed
+		theWatERPPackage.freeze();
+
+  
+		// Update the registry and return the package
+		EPackage.Registry.INSTANCE.put(WatERPPackage.eNS_URI, theWatERPPackage);
+		return theWatERPPackage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getModelAnnotation() {
+		return modelAnnotationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getModelAnnotation_Annotations() {
+		return (EReference)modelAnnotationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getModelAnnotation_AnnotatedModel() {
+		return (EReference)modelAnnotationEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getModelAnnotation_AnnotatingModel() {
+		return (EReference)modelAnnotationEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getClassAnnotation() {
+		return classAnnotationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getClassAnnotation_AnnotatingClass() {
+		return (EReference)classAnnotationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getClassAnnotation_AnnotatedClass() {
+		return (EReference)classAnnotationEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getClassAnnotation_PropertyAnnotations() {
+		return (EReference)classAnnotationEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getClassAnnotation_Expression() {
+		return (EReference)classAnnotationEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getOntology() {
+		return ontologyEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getOntology_OClass() {
+		return (EReference)ontologyEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getOntology_Name() {
+		return (EAttribute)ontologyEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getModel() {
+		return modelEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getModel_MClass() {
+		return (EReference)modelEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getModel_Name() {
+		return (EAttribute)modelEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPropertyAnnotation() {
+		return propertyAnnotationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPropertyAnnotation_AnnotatedProperty() {
+		return (EReference)propertyAnnotationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPropertyAnnotation_AnnotatingProperty() {
+		return (EReference)propertyAnnotationEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getPropertyAnnotation_Expression() {
+		return (EReference)propertyAnnotationEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getExpression() {
+		return expressionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getExpression_Type() {
+		return (EAttribute)expressionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getExpression_Value() {
+		return (EAttribute)expressionEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getProperty() {
+		return propertyEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getProperty_Name() {
+		return (EAttribute)propertyEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMClass() {
+		return mClassEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMClass_Name() {
+		return (EAttribute)mClassEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMClass_Dataproperty() {
+		return (EReference)mClassEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMClass_ClassProperty() {
+		return (EReference)mClassEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMProperty() {
+		return mPropertyEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMProperty_Value() {
+		return (EAttribute)mPropertyEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMCProperty() {
+		return mcPropertyEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMCProperty_ClassType() {
+		return (EReference)mcPropertyEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMDProperty() {
+		return mdPropertyEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMDProperty_Type() {
+		return (EAttribute)mdPropertyEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getOClass() {
+		return oClassEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getOClass_Name() {
+		return (EAttribute)oClassEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getOClass_IsDeprecated() {
+		return (EAttribute)oClassEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getOClass_SubClass() {
+		return (EReference)oClassEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getOClass_SubClassOf() {
+		return (EReference)oClassEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getOClass_EquivalentClass() {
+		return (EReference)oClassEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getOClass_UnionClass() {
+		return (EReference)oClassEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getOClass_DisjointClass() {
+		return (EReference)oClassEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getOClass_AllValuesFromRestriction() {
+		return (EReference)oClassEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getOClass_SomeValuesFromRestriction() {
+		return (EReference)oClassEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getOClass_DataProperty() {
+		return (EReference)oClassEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getOClass_ObjectProperty() {
+		return (EReference)oClassEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getOClass_Rule() {
+		return (EReference)oClassEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getOProperty() {
+		return oPropertyEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getOProperty_IsDeprecated() {
+		return (EAttribute)oPropertyEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getOProperty_IsFunctional() {
+		return (EAttribute)oPropertyEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getOProperty_SubProperty() {
+		return (EReference)oPropertyEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getOProperty_SubPropertyOf() {
+		return (EReference)oPropertyEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getOProperty_Domain() {
+		return (EReference)oPropertyEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getOProperty_EquivalentProperty() {
+		return (EReference)oPropertyEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getOProperty_PropertyRestriction() {
+		return (EReference)oPropertyEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getOntologyConstraint() {
+		return ontologyConstraintEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEquivalence() {
+		return equivalenceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getEquivalence_Right() {
+		return (EReference)equivalenceEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getEquivalence_Left() {
+		return (EReference)equivalenceEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getUnionClass() {
+		return unionClassEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getUnionClass_UnionOf() {
+		return (EReference)unionClassEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getObjectProperty() {
+		return objectPropertyEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getObjectProperty_IsInverseFunctional() {
+		return (EAttribute)objectPropertyEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getObjectProperty_IsTransitive() {
+		return (EAttribute)objectPropertyEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getObjectProperty_IsSymmetric() {
+		return (EAttribute)objectPropertyEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getObjectProperty_Range() {
+		return (EReference)objectPropertyEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getObjectProperty_InverseOf() {
+		return (EReference)objectPropertyEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getRestriction() {
+		return restrictionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getRestriction_OnProperty() {
+		return (EReference)restrictionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getHasDataValueRestriction() {
+		return hasDataValueRestrictionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getHasDataValueRestriction_HasDataValueLiteral() {
+		return (EAttribute)hasDataValueRestrictionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAllValuesFromRestriction() {
+		return allValuesFromRestrictionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAllValuesFromDataRestriction() {
+		return allValuesFromDataRestrictionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAllValuesFromDataRestriction_AllValuesFromData() {
+		return (EAttribute)allValuesFromDataRestrictionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAllValuesFromClassRestriction() {
+		return allValuesFromClassRestrictionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAllValuesFromClassRestriction_AllValuesFromClass() {
+		return (EReference)allValuesFromClassRestrictionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDataProperty() {
+		return dataPropertyEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getDataProperty_Range() {
+		return (EAttribute)dataPropertyEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSomeValuesFromRestriction() {
+		return someValuesFromRestrictionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSomeValuesFromDataRestriction() {
+		return someValuesFromDataRestrictionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getSomeValuesFromDataRestriction_SomeValuesFromData() {
+		return (EAttribute)someValuesFromDataRestrictionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSomeValuesFromClassRestriction() {
+		return someValuesFromClassRestrictionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSomeValuesFromClassRestriction_SomeValuesFromClass() {
+		return (EReference)someValuesFromClassRestrictionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getCardinalityRestriction() {
+		return cardinalityRestrictionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCardinalityRestriction_Cardinality() {
+		return (EAttribute)cardinalityRestrictionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMaximumCardinalityRestriction() {
+		return maximumCardinalityRestrictionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMaximumCardinalityRestriction_MaxCardinality() {
+		return (EAttribute)maximumCardinalityRestrictionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMinimumCardinalityRestriction() {
+		return minimumCardinalityRestrictionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMinimumCardinalityRestriction_MinCardinality() {
+		return (EAttribute)minimumCardinalityRestrictionEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getTopNode() {
+		return topNodeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getTopNode_Model() {
+		return (EReference)topNodeEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getTopNode_Ontology() {
+		return (EReference)topNodeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getTopNode_Annotation() {
+		return (EReference)topNodeEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getObservation() {
+		return observationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getObservation_Foi() {
+		return (EReference)observationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getObservation_Procedure() {
+		return (EReference)observationEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getObservation_ObservedProperty() {
+		return (EReference)observationEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getObservation_Result() {
+		return (EReference)observationEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getObservation_Unit() {
+		return (EReference)observationEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getObservation_AssignedSensorID() {
+		return (EAttribute)observationEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSensor() {
+		return sensorEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSensor_Id() {
+		return (EReference)sensorEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSensor_Uri() {
+		return (EReference)sensorEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSensor_Desc() {
+		return (EReference)sensorEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSensor_Observations() {
+		return (EReference)sensorEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getExport() {
+		return exportEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getObservedProperty() {
+		return observedPropertyEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDLSafeRule() {
+		return dlSafeRuleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDLSafeRule_Head() {
+		return (EReference)dlSafeRuleEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getDLSafeRule_Body() {
+		return (EReference)dlSafeRuleEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getHead() {
+		return headEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getHead_Atoms() {
+		return (EReference)headEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getBody() {
+		return bodyEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getBody_Atoms() {
+		return (EReference)bodyEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAtom() {
+		return atomEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getObjectPropertyAtom() {
+		return objectPropertyAtomEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getObjectPropertyAtom_ObjectProperty() {
+		return (EReference)objectPropertyAtomEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getObjectPropertyAtom_Variable() {
+		return (EReference)objectPropertyAtomEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getObjectPropertyAtom_NamedIndividual() {
+		return (EAttribute)objectPropertyAtomEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getClassAtom() {
+		return classAtomEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getClassAtom_Class() {
+		return (EReference)classAtomEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getClassAtom_Variable() {
+		return (EReference)classAtomEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getVariable() {
+		return variableEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getVariable_Name() {
+		return (EAttribute)variableEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getExpressionType() {
+		return expressionTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getdataType() {
+		return dataTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getconstraintType() {
+		return constraintTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EDataType getString() {
+		return stringEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EDataType getInteger() {
+		return integerEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EDataType getBoolean() {
+		return booleanEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public WatERPFactory getWatERPFactory() {
+		return (WatERPFactory)getEFactoryInstance();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private boolean isCreated = false;
+
+	/**
+	 * Creates the meta-model objects for the package.  This method is
+	 * guarded to have no affect on any invocation but its first.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void createPackageContents() {
+		if (isCreated) return;
+		isCreated = true;
+
+		// Create classes and their features
+		modelAnnotationEClass = createEClass(MODEL_ANNOTATION);
+		createEReference(modelAnnotationEClass, MODEL_ANNOTATION__ANNOTATIONS);
+		createEReference(modelAnnotationEClass, MODEL_ANNOTATION__ANNOTATED_MODEL);
+		createEReference(modelAnnotationEClass, MODEL_ANNOTATION__ANNOTATING_MODEL);
+
+		classAnnotationEClass = createEClass(CLASS_ANNOTATION);
+		createEReference(classAnnotationEClass, CLASS_ANNOTATION__ANNOTATING_CLASS);
+		createEReference(classAnnotationEClass, CLASS_ANNOTATION__ANNOTATED_CLASS);
+		createEReference(classAnnotationEClass, CLASS_ANNOTATION__PROPERTY_ANNOTATIONS);
+		createEReference(classAnnotationEClass, CLASS_ANNOTATION__EXPRESSION);
+
+		ontologyEClass = createEClass(ONTOLOGY);
+		createEReference(ontologyEClass, ONTOLOGY__OCLASS);
+		createEAttribute(ontologyEClass, ONTOLOGY__NAME);
+
+		modelEClass = createEClass(MODEL);
+		createEReference(modelEClass, MODEL__MCLASS);
+		createEAttribute(modelEClass, MODEL__NAME);
+
+		propertyAnnotationEClass = createEClass(PROPERTY_ANNOTATION);
+		createEReference(propertyAnnotationEClass, PROPERTY_ANNOTATION__ANNOTATED_PROPERTY);
+		createEReference(propertyAnnotationEClass, PROPERTY_ANNOTATION__ANNOTATING_PROPERTY);
+		createEReference(propertyAnnotationEClass, PROPERTY_ANNOTATION__EXPRESSION);
+
+		expressionEClass = createEClass(EXPRESSION);
+		createEAttribute(expressionEClass, EXPRESSION__TYPE);
+		createEAttribute(expressionEClass, EXPRESSION__VALUE);
+
+		propertyEClass = createEClass(PROPERTY);
+		createEAttribute(propertyEClass, PROPERTY__NAME);
+
+		mClassEClass = createEClass(MCLASS);
+		createEAttribute(mClassEClass, MCLASS__NAME);
+		createEReference(mClassEClass, MCLASS__DATAPROPERTY);
+		createEReference(mClassEClass, MCLASS__CLASS_PROPERTY);
+
+		mPropertyEClass = createEClass(MPROPERTY);
+		createEAttribute(mPropertyEClass, MPROPERTY__VALUE);
+
+		mcPropertyEClass = createEClass(MC_PROPERTY);
+		createEReference(mcPropertyEClass, MC_PROPERTY__CLASS_TYPE);
+
+		mdPropertyEClass = createEClass(MD_PROPERTY);
+		createEAttribute(mdPropertyEClass, MD_PROPERTY__TYPE);
+
+		oClassEClass = createEClass(OCLASS);
+		createEAttribute(oClassEClass, OCLASS__NAME);
+		createEAttribute(oClassEClass, OCLASS__IS_DEPRECATED);
+		createEReference(oClassEClass, OCLASS__SUB_CLASS);
+		createEReference(oClassEClass, OCLASS__SUB_CLASS_OF);
+		createEReference(oClassEClass, OCLASS__EQUIVALENT_CLASS);
+		createEReference(oClassEClass, OCLASS__UNION_CLASS);
+		createEReference(oClassEClass, OCLASS__DISJOINT_CLASS);
+		createEReference(oClassEClass, OCLASS__ALL_VALUES_FROM_RESTRICTION);
+		createEReference(oClassEClass, OCLASS__SOME_VALUES_FROM_RESTRICTION);
+		createEReference(oClassEClass, OCLASS__DATA_PROPERTY);
+		createEReference(oClassEClass, OCLASS__OBJECT_PROPERTY);
+		createEReference(oClassEClass, OCLASS__RULE);
+
+		oPropertyEClass = createEClass(OPROPERTY);
+		createEAttribute(oPropertyEClass, OPROPERTY__IS_DEPRECATED);
+		createEAttribute(oPropertyEClass, OPROPERTY__IS_FUNCTIONAL);
+		createEReference(oPropertyEClass, OPROPERTY__SUB_PROPERTY);
+		createEReference(oPropertyEClass, OPROPERTY__SUB_PROPERTY_OF);
+		createEReference(oPropertyEClass, OPROPERTY__DOMAIN);
+		createEReference(oPropertyEClass, OPROPERTY__EQUIVALENT_PROPERTY);
+		createEReference(oPropertyEClass, OPROPERTY__PROPERTY_RESTRICTION);
+
+		ontologyConstraintEClass = createEClass(ONTOLOGY_CONSTRAINT);
+
+		equivalenceEClass = createEClass(EQUIVALENCE);
+		createEReference(equivalenceEClass, EQUIVALENCE__RIGHT);
+		createEReference(equivalenceEClass, EQUIVALENCE__LEFT);
+
+		unionClassEClass = createEClass(UNION_CLASS);
+		createEReference(unionClassEClass, UNION_CLASS__UNION_OF);
+
+		objectPropertyEClass = createEClass(OBJECT_PROPERTY);
+		createEAttribute(objectPropertyEClass, OBJECT_PROPERTY__IS_INVERSE_FUNCTIONAL);
+		createEAttribute(objectPropertyEClass, OBJECT_PROPERTY__IS_TRANSITIVE);
+		createEAttribute(objectPropertyEClass, OBJECT_PROPERTY__IS_SYMMETRIC);
+		createEReference(objectPropertyEClass, OBJECT_PROPERTY__RANGE);
+		createEReference(objectPropertyEClass, OBJECT_PROPERTY__INVERSE_OF);
+
+		restrictionEClass = createEClass(RESTRICTION);
+		createEReference(restrictionEClass, RESTRICTION__ON_PROPERTY);
+
+		hasDataValueRestrictionEClass = createEClass(HAS_DATA_VALUE_RESTRICTION);
+		createEAttribute(hasDataValueRestrictionEClass, HAS_DATA_VALUE_RESTRICTION__HAS_DATA_VALUE_LITERAL);
+
+		allValuesFromRestrictionEClass = createEClass(ALL_VALUES_FROM_RESTRICTION);
+
+		allValuesFromDataRestrictionEClass = createEClass(ALL_VALUES_FROM_DATA_RESTRICTION);
+		createEAttribute(allValuesFromDataRestrictionEClass, ALL_VALUES_FROM_DATA_RESTRICTION__ALL_VALUES_FROM_DATA);
+
+		allValuesFromClassRestrictionEClass = createEClass(ALL_VALUES_FROM_CLASS_RESTRICTION);
+		createEReference(allValuesFromClassRestrictionEClass, ALL_VALUES_FROM_CLASS_RESTRICTION__ALL_VALUES_FROM_CLASS);
+
+		dataPropertyEClass = createEClass(DATA_PROPERTY);
+		createEAttribute(dataPropertyEClass, DATA_PROPERTY__RANGE);
+
+		someValuesFromRestrictionEClass = createEClass(SOME_VALUES_FROM_RESTRICTION);
+
+		someValuesFromDataRestrictionEClass = createEClass(SOME_VALUES_FROM_DATA_RESTRICTION);
+		createEAttribute(someValuesFromDataRestrictionEClass, SOME_VALUES_FROM_DATA_RESTRICTION__SOME_VALUES_FROM_DATA);
+
+		someValuesFromClassRestrictionEClass = createEClass(SOME_VALUES_FROM_CLASS_RESTRICTION);
+		createEReference(someValuesFromClassRestrictionEClass, SOME_VALUES_FROM_CLASS_RESTRICTION__SOME_VALUES_FROM_CLASS);
+
+		cardinalityRestrictionEClass = createEClass(CARDINALITY_RESTRICTION);
+		createEAttribute(cardinalityRestrictionEClass, CARDINALITY_RESTRICTION__CARDINALITY);
+
+		maximumCardinalityRestrictionEClass = createEClass(MAXIMUM_CARDINALITY_RESTRICTION);
+		createEAttribute(maximumCardinalityRestrictionEClass, MAXIMUM_CARDINALITY_RESTRICTION__MAX_CARDINALITY);
+
+		minimumCardinalityRestrictionEClass = createEClass(MINIMUM_CARDINALITY_RESTRICTION);
+		createEAttribute(minimumCardinalityRestrictionEClass, MINIMUM_CARDINALITY_RESTRICTION__MIN_CARDINALITY);
+
+		topNodeEClass = createEClass(TOP_NODE);
+		createEReference(topNodeEClass, TOP_NODE__MODEL);
+		createEReference(topNodeEClass, TOP_NODE__ONTOLOGY);
+		createEReference(topNodeEClass, TOP_NODE__ANNOTATION);
+
+		observationEClass = createEClass(OBSERVATION);
+		createEReference(observationEClass, OBSERVATION__FOI);
+		createEReference(observationEClass, OBSERVATION__PROCEDURE);
+		createEReference(observationEClass, OBSERVATION__OBSERVED_PROPERTY);
+		createEReference(observationEClass, OBSERVATION__RESULT);
+		createEReference(observationEClass, OBSERVATION__UNIT);
+		createEAttribute(observationEClass, OBSERVATION__ASSIGNED_SENSOR_ID);
+
+		sensorEClass = createEClass(SENSOR);
+		createEReference(sensorEClass, SENSOR__ID);
+		createEReference(sensorEClass, SENSOR__URI);
+		createEReference(sensorEClass, SENSOR__DESC);
+		createEReference(sensorEClass, SENSOR__OBSERVATIONS);
+
+		exportEClass = createEClass(EXPORT);
+
+		observedPropertyEClass = createEClass(OBSERVED_PROPERTY);
+
+		dlSafeRuleEClass = createEClass(DL_SAFE_RULE);
+		createEReference(dlSafeRuleEClass, DL_SAFE_RULE__HEAD);
+		createEReference(dlSafeRuleEClass, DL_SAFE_RULE__BODY);
+
+		headEClass = createEClass(HEAD);
+		createEReference(headEClass, HEAD__ATOMS);
+
+		bodyEClass = createEClass(BODY);
+		createEReference(bodyEClass, BODY__ATOMS);
+
+		atomEClass = createEClass(ATOM);
+
+		objectPropertyAtomEClass = createEClass(OBJECT_PROPERTY_ATOM);
+		createEReference(objectPropertyAtomEClass, OBJECT_PROPERTY_ATOM__OBJECT_PROPERTY);
+		createEReference(objectPropertyAtomEClass, OBJECT_PROPERTY_ATOM__VARIABLE);
+		createEAttribute(objectPropertyAtomEClass, OBJECT_PROPERTY_ATOM__NAMED_INDIVIDUAL);
+
+		classAtomEClass = createEClass(CLASS_ATOM);
+		createEReference(classAtomEClass, CLASS_ATOM__CLASS);
+		createEReference(classAtomEClass, CLASS_ATOM__VARIABLE);
+
+		variableEClass = createEClass(VARIABLE);
+		createEAttribute(variableEClass, VARIABLE__NAME);
+
+		// Create enums
+		expressionTypeEEnum = createEEnum(EXPRESSION_TYPE);
+		dataTypeEEnum = createEEnum(DATA_TYPE);
+		constraintTypeEEnum = createEEnum(CONSTRAINT_TYPE);
+
+		// Create data types
+		stringEDataType = createEDataType(STRING);
+		integerEDataType = createEDataType(INTEGER);
+		booleanEDataType = createEDataType(BOOLEAN);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private boolean isInitialized = false;
+
+	/**
+	 * Complete the initialization of the package and its meta-model.  This
+	 * method is guarded to have no affect on any invocation but its first.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void initializePackageContents() {
+		if (isInitialized) return;
+		isInitialized = true;
+
+		// Initialize package
+		setName(eNAME);
+		setNsPrefix(eNS_PREFIX);
+		setNsURI(eNS_URI);
+
+		// Create type parameters
+
+		// Set bounds for type parameters
+
+		// Add supertypes to classes
+		mPropertyEClass.getESuperTypes().add(this.getProperty());
+		mcPropertyEClass.getESuperTypes().add(this.getMProperty());
+		mdPropertyEClass.getESuperTypes().add(this.getMProperty());
+		oPropertyEClass.getESuperTypes().add(this.getProperty());
+		equivalenceEClass.getESuperTypes().add(this.getOntologyConstraint());
+		unionClassEClass.getESuperTypes().add(this.getOClass());
+		objectPropertyEClass.getESuperTypes().add(this.getOProperty());
+		restrictionEClass.getESuperTypes().add(this.getOntologyConstraint());
+		hasDataValueRestrictionEClass.getESuperTypes().add(this.getRestriction());
+		allValuesFromRestrictionEClass.getESuperTypes().add(this.getRestriction());
+		allValuesFromDataRestrictionEClass.getESuperTypes().add(this.getAllValuesFromRestriction());
+		allValuesFromClassRestrictionEClass.getESuperTypes().add(this.getAllValuesFromRestriction());
+		dataPropertyEClass.getESuperTypes().add(this.getOProperty());
+		someValuesFromRestrictionEClass.getESuperTypes().add(this.getRestriction());
+		someValuesFromDataRestrictionEClass.getESuperTypes().add(this.getSomeValuesFromRestriction());
+		someValuesFromClassRestrictionEClass.getESuperTypes().add(this.getSomeValuesFromRestriction());
+		cardinalityRestrictionEClass.getESuperTypes().add(this.getRestriction());
+		maximumCardinalityRestrictionEClass.getESuperTypes().add(this.getRestriction());
+		minimumCardinalityRestrictionEClass.getESuperTypes().add(this.getRestriction());
+		observationEClass.getESuperTypes().add(this.getMClass());
+		sensorEClass.getESuperTypes().add(this.getMClass());
+		exportEClass.getESuperTypes().add(this.getMClass());
+		observedPropertyEClass.getESuperTypes().add(this.getMClass());
+		dlSafeRuleEClass.getESuperTypes().add(this.getOntologyConstraint());
+		objectPropertyAtomEClass.getESuperTypes().add(this.getAtom());
+		classAtomEClass.getESuperTypes().add(this.getAtom());
+
+		// Initialize classes, features, and operations; add parameters
+		initEClass(modelAnnotationEClass, ModelAnnotation.class, "ModelAnnotation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getModelAnnotation_Annotations(), this.getClassAnnotation(), null, "annotations", null, 0, -1, ModelAnnotation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getModelAnnotation_AnnotatedModel(), this.getModel(), null, "annotatedModel", null, 1, 1, ModelAnnotation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getModelAnnotation_AnnotatingModel(), this.getOntology(), null, "annotatingModel", null, 1, 1, ModelAnnotation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(classAnnotationEClass, ClassAnnotation.class, "ClassAnnotation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getClassAnnotation_AnnotatingClass(), this.getOClass(), null, "annotatingClass", null, 1, 1, ClassAnnotation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getClassAnnotation_AnnotatedClass(), this.getMClass(), null, "annotatedClass", null, 1, 1, ClassAnnotation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getClassAnnotation_PropertyAnnotations(), this.getPropertyAnnotation(), null, "propertyAnnotations", null, 0, -1, ClassAnnotation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getClassAnnotation_Expression(), this.getExpression(), null, "expression", null, 0, -1, ClassAnnotation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(ontologyEClass, Ontology.class, "Ontology", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getOntology_OClass(), this.getOClass(), null, "OClass", null, 0, -1, Ontology.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOntology_Name(), this.getString(), "name", null, 0, 1, Ontology.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(modelEClass, Model.class, "Model", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getModel_MClass(), this.getMClass(), null, "MClass", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getModel_Name(), this.getString(), "name", null, 0, 1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(propertyAnnotationEClass, PropertyAnnotation.class, "PropertyAnnotation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getPropertyAnnotation_AnnotatedProperty(), this.getMProperty(), null, "annotatedProperty", null, 1, 1, PropertyAnnotation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPropertyAnnotation_AnnotatingProperty(), this.getOProperty(), null, "annotatingProperty", null, 1, 1, PropertyAnnotation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPropertyAnnotation_Expression(), this.getExpression(), null, "expression", null, 1, 1, PropertyAnnotation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(expressionEClass, Expression.class, "Expression", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getExpression_Type(), this.getExpressionType(), "type", null, 0, 1, Expression.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getExpression_Value(), this.getString(), "value", null, 0, 1, Expression.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(propertyEClass, Property.class, "Property", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getProperty_Name(), this.getString(), "name", null, 0, 1, Property.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(mClassEClass, MClass.class, "MClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getMClass_Name(), this.getString(), "name", null, 0, 1, MClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMClass_Dataproperty(), this.getMDProperty(), null, "dataproperty", null, 0, -1, MClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMClass_ClassProperty(), this.getMCProperty(), null, "classProperty", null, 0, -1, MClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(mPropertyEClass, MProperty.class, "MProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getMProperty_Value(), this.getString(), "value", null, 0, 1, MProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(mcPropertyEClass, MCProperty.class, "MCProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getMCProperty_ClassType(), this.getMClass(), null, "classType", null, 1, 1, MCProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(mdPropertyEClass, MDProperty.class, "MDProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getMDProperty_Type(), this.getdataType(), "type", null, 0, 1, MDProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(oClassEClass, OClass.class, "OClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getOClass_Name(), this.getString(), "name", null, 0, 1, OClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOClass_IsDeprecated(), this.getBoolean(), "isDeprecated", null, 0, 1, OClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOClass_SubClass(), this.getOClass(), this.getOClass_SubClassOf(), "subClass", null, 0, -1, OClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOClass_SubClassOf(), this.getOClass(), this.getOClass_SubClass(), "subClassOf", null, 0, -1, OClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOClass_EquivalentClass(), this.getOClass(), null, "equivalentClass", null, 0, -1, OClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOClass_UnionClass(), this.getUnionClass(), null, "unionClass", null, 0, -1, OClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOClass_DisjointClass(), this.getOClass(), null, "disjointClass", null, 0, -1, OClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOClass_AllValuesFromRestriction(), this.getAllValuesFromClassRestriction(), this.getAllValuesFromClassRestriction_AllValuesFromClass(), "allValuesFromRestriction", null, 0, -1, OClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOClass_SomeValuesFromRestriction(), this.getSomeValuesFromClassRestriction(), this.getSomeValuesFromClassRestriction_SomeValuesFromClass(), "someValuesFromRestriction", null, 0, -1, OClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOClass_DataProperty(), this.getDataProperty(), null, "dataProperty", null, 0, -1, OClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOClass_ObjectProperty(), this.getObjectProperty(), null, "objectProperty", null, 0, -1, OClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOClass_Rule(), this.getDLSafeRule(), null, "rule", null, 0, -1, OClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(oPropertyEClass, OProperty.class, "OProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getOProperty_IsDeprecated(), this.getBoolean(), "isDeprecated", null, 0, 1, OProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOProperty_IsFunctional(), this.getBoolean(), "isFunctional", null, 0, 1, OProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOProperty_SubProperty(), this.getOProperty(), this.getOProperty_SubPropertyOf(), "subProperty", null, 0, -1, OProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOProperty_SubPropertyOf(), this.getOProperty(), this.getOProperty_SubProperty(), "subPropertyOf", null, 0, -1, OProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOProperty_Domain(), this.getOClass(), null, "domain", null, 0, -1, OProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOProperty_EquivalentProperty(), this.getOProperty(), null, "equivalentProperty", null, 0, -1, OProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOProperty_PropertyRestriction(), this.getRestriction(), this.getRestriction_OnProperty(), "propertyRestriction", null, 0, -1, OProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(ontologyConstraintEClass, OntologyConstraint.class, "OntologyConstraint", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(equivalenceEClass, Equivalence.class, "Equivalence", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getEquivalence_Right(), this.getOClass(), null, "right", null, 1, 1, Equivalence.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getEquivalence_Left(), this.getOClass(), null, "left", null, 1, 1, Equivalence.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(unionClassEClass, UnionClass.class, "UnionClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getUnionClass_UnionOf(), this.getOClass(), null, "unionOf", null, 2, -1, UnionClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(objectPropertyEClass, ObjectProperty.class, "ObjectProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getObjectProperty_IsInverseFunctional(), this.getBoolean(), "IsInverseFunctional", null, 0, 1, ObjectProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getObjectProperty_IsTransitive(), this.getBoolean(), "isTransitive", null, 0, 1, ObjectProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getObjectProperty_IsSymmetric(), this.getBoolean(), "IsSymmetric", null, 0, 1, ObjectProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getObjectProperty_Range(), this.getOClass(), null, "range", null, 0, -1, ObjectProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getObjectProperty_InverseOf(), this.getObjectProperty(), null, "inverseOf", null, 0, 1, ObjectProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(restrictionEClass, Restriction.class, "Restriction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getRestriction_OnProperty(), this.getOProperty(), this.getOProperty_PropertyRestriction(), "onProperty", null, 1, 1, Restriction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(hasDataValueRestrictionEClass, HasDataValueRestriction.class, "HasDataValueRestriction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getHasDataValueRestriction_HasDataValueLiteral(), this.getdataType(), "hasDataValueLiteral", null, 0, 1, HasDataValueRestriction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(allValuesFromRestrictionEClass, AllValuesFromRestriction.class, "AllValuesFromRestriction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(allValuesFromDataRestrictionEClass, AllValuesFromDataRestriction.class, "AllValuesFromDataRestriction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAllValuesFromDataRestriction_AllValuesFromData(), this.getdataType(), "allValuesFromData", null, 0, 1, AllValuesFromDataRestriction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(allValuesFromClassRestrictionEClass, AllValuesFromClassRestriction.class, "AllValuesFromClassRestriction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getAllValuesFromClassRestriction_AllValuesFromClass(), this.getOClass(), this.getOClass_AllValuesFromRestriction(), "allValuesFromClass", null, 1, 1, AllValuesFromClassRestriction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(dataPropertyEClass, DataProperty.class, "DataProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDataProperty_Range(), this.getdataType(), "range", null, 0, 1, DataProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(someValuesFromRestrictionEClass, SomeValuesFromRestriction.class, "SomeValuesFromRestriction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(someValuesFromDataRestrictionEClass, SomeValuesFromDataRestriction.class, "SomeValuesFromDataRestriction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSomeValuesFromDataRestriction_SomeValuesFromData(), this.getdataType(), "someValuesFromData", null, 0, 1, SomeValuesFromDataRestriction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(someValuesFromClassRestrictionEClass, SomeValuesFromClassRestriction.class, "SomeValuesFromClassRestriction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getSomeValuesFromClassRestriction_SomeValuesFromClass(), this.getOClass(), this.getOClass_SomeValuesFromRestriction(), "someValuesFromClass", null, 1, 1, SomeValuesFromClassRestriction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(cardinalityRestrictionEClass, CardinalityRestriction.class, "CardinalityRestriction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCardinalityRestriction_Cardinality(), this.getInteger(), "cardinality", null, 0, 1, CardinalityRestriction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(maximumCardinalityRestrictionEClass, MaximumCardinalityRestriction.class, "MaximumCardinalityRestriction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getMaximumCardinalityRestriction_MaxCardinality(), this.getInteger(), "maxCardinality", null, 0, 1, MaximumCardinalityRestriction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(minimumCardinalityRestrictionEClass, MinimumCardinalityRestriction.class, "MinimumCardinalityRestriction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getMinimumCardinalityRestriction_MinCardinality(), this.getInteger(), "minCardinality", null, 0, 1, MinimumCardinalityRestriction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(topNodeEClass, TopNode.class, "TopNode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getTopNode_Model(), this.getModel(), null, "Model", null, 1, 1, TopNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTopNode_Ontology(), this.getOntology(), null, "Ontology", null, 1, 1, TopNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTopNode_Annotation(), this.getModelAnnotation(), null, "Annotation", null, 1, 1, TopNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(observationEClass, Observation.class, "Observation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getObservation_Foi(), this.getMDProperty(), null, "foi", null, 0, 1, Observation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getObservation_Procedure(), this.getMDProperty(), null, "procedure", null, 0, 1, Observation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getObservation_ObservedProperty(), this.getMCProperty(), null, "observedProperty", null, 0, 1, Observation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getObservation_Result(), this.getMDProperty(), null, "result", null, 0, 1, Observation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getObservation_Unit(), this.getMDProperty(), null, "unit", null, 0, 1, Observation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getObservation_AssignedSensorID(), ecorePackage.getEInt(), "assignedSensorID", null, 0, 1, Observation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(sensorEClass, Sensor.class, "Sensor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getSensor_Id(), this.getMDProperty(), null, "id", null, 1, 1, Sensor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSensor_Uri(), this.getMDProperty(), null, "uri", null, 1, 1, Sensor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSensor_Desc(), this.getMDProperty(), null, "desc", null, 0, 1, Sensor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSensor_Observations(), this.getObservation(), null, "observations", null, 0, -1, Sensor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(exportEClass, Export.class, "Export", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(observedPropertyEClass, ObservedProperty.class, "ObservedProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(dlSafeRuleEClass, DLSafeRule.class, "DLSafeRule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getDLSafeRule_Head(), this.getHead(), null, "head", null, 1, 1, DLSafeRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDLSafeRule_Body(), this.getBody(), null, "body", null, 1, 1, DLSafeRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(headEClass, Head.class, "Head", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getHead_Atoms(), this.getAtom(), null, "atoms", null, 0, -1, Head.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(bodyEClass, Body.class, "Body", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getBody_Atoms(), this.getAtom(), null, "atoms", null, 0, -1, Body.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(atomEClass, Atom.class, "Atom", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(objectPropertyAtomEClass, ObjectPropertyAtom.class, "ObjectPropertyAtom", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getObjectPropertyAtom_ObjectProperty(), this.getObjectProperty(), null, "objectProperty", null, 1, 1, ObjectPropertyAtom.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getObjectPropertyAtom_Variable(), this.getVariable(), null, "variable", null, 1, 2, ObjectPropertyAtom.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getObjectPropertyAtom_NamedIndividual(), this.getString(), "namedIndividual", null, 0, 1, ObjectPropertyAtom.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(classAtomEClass, ClassAtom.class, "ClassAtom", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getClassAtom_Class(), this.getOClass(), null, "class", null, 1, 1, ClassAtom.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getClassAtom_Variable(), this.getVariable(), null, "variable", null, 1, 1, ClassAtom.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(variableEClass, Variable.class, "Variable", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getVariable_Name(), this.getString(), "name", null, 0, 1, Variable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		// Initialize enums and add enum literals
+		initEEnum(expressionTypeEEnum, ExpressionType.class, "ExpressionType");
+		addEEnumLiteral(expressionTypeEEnum, ExpressionType.RESTRICTION_CONSTRAINT);
+		addEEnumLiteral(expressionTypeEEnum, ExpressionType.RULE_CONSTRAINT);
+		addEEnumLiteral(expressionTypeEEnum, ExpressionType.ALGEBRIC);
+
+		initEEnum(dataTypeEEnum, dataType.class, "dataType");
+		addEEnumLiteral(dataTypeEEnum, dataType.STRING);
+		addEEnumLiteral(dataTypeEEnum, dataType.INTEGER);
+		addEEnumLiteral(dataTypeEEnum, dataType.DATE);
+
+		initEEnum(constraintTypeEEnum, constraintType.class, "constraintType");
+		addEEnumLiteral(constraintTypeEEnum, constraintType.RESTRICTION);
+		addEEnumLiteral(constraintTypeEEnum, constraintType.RULE);
+
+		// Initialize data types
+		initEDataType(stringEDataType, String.class, "String", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
+		initEDataType(integerEDataType, Integer.class, "Integer", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
+		initEDataType(booleanEDataType, Boolean.class, "Boolean", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
+
+		// Create resource
+		createResource(eNS_URI);
+
+		// Create annotations
+		// http://www.eclipse.org/OCL/Import
+		createImportAnnotations();
+		// http://www.eclipse.org/emf/2002/Ecore
+		createEcoreAnnotations();
+		// http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot
+		createPivotAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/OCL/Import</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createImportAnnotations() {
+		String source = "http://www.eclipse.org/OCL/Import";	
+		addAnnotation
+		  (this, 
+		   source, 
+		   new String[] {
+			 "ecore", "http://www.eclipse.org/emf/2002/Ecore"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/Ecore</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createEcoreAnnotations() {
+		String source = "http://www.eclipse.org/emf/2002/Ecore";	
+		addAnnotation
+		  (this, 
+		   source, 
+		   new String[] {
+			 "invocationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+			 "settingDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+			 "validationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"
+		   });	
+		addAnnotation
+		  (mClassEClass, 
+		   source, 
+		   new String[] {
+			 "constraints", "coOccuranceConstraint count ProcedureCount"
+		   });	
+		addAnnotation
+		  (observationEClass, 
+		   source, 
+		   new String[] {
+			 "constraints", "coconstraint"
+		   });	
+		addAnnotation
+		  (sensorEClass, 
+		   source, 
+		   new String[] {
+			 "constraints", "mustIntId validateURI"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createPivotAnnotations() {
+		String source = "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot";	
+		addAnnotation
+		  (mClassEClass, 
+		   source, 
+		   new String[] {
+			 "coOccuranceConstraint", "\n\t\tself.name = \'Observation\' implies \n\t\tlet c = self.classProperty->select(i|i.name =\'ObservedProperty\'), v = c.value->at(1)  \n\t\tin self.dataproperty->select(d|d.name=\'Unit\').value->asSequence()->at(1) = \'m3/h\' and v=\'FlowDischarge\'",
+			 "count", "\n\t\tself.name = \'Observation\' implies\n\t\tself.dataproperty.name->count(\'Procedure\') = 1 and\n\t\tself.dataproperty.name->count(\'Result\') = 1 and\n\t\tself.classProperty.name->count(\'ObservedProperty\') = 1",
+			 "ProcedureCount", "\n\t\tlet mc = MClass.allInstances()->select(mc|mc.name.indexOf(\'Obs\') = 1),\n\t\t c = ClassAnnotation.allInstances()->select(e|e.annotatedClass.name.indexOf(\'Obs\') =1 ),\n\t\tpa= PropertyAnnotation.allInstances()->select(p|p.annotatedProperty.name = \'Procedure\' ) \t\t\n\t\tin mc.dataproperty.name->count(\'Procedure\') = 1 and pa.expression.value.indexOf(\'1\') <> -1"
+		   });	
+		addAnnotation
+		  (observationEClass, 
+		   source, 
+		   new String[] {
+			 "coconstraint", "\n\t\tlet c = ClassAnnotation.allInstances()->select(e|e.annotatedClass.name = self.name )->asSequence()->at(1) in \n\t\tif c.expression.value->at(1) = \'ObservedProperty = FlowDischarge means unit = m3/h\' then\n\t\tself.observedProperty.value =\'FlowDischarge\' and\n\t\tself.unit.value = \'m3/h\'\n\t\telse if c.expression.value->at(2) = \'ObservedProperty = Temperature means unit = C\' then\n\t\tself.observedProperty.value =\'Temperature\' and\n\t\tself.unit.value = \'C\'\n\t\telse \'no matched rule\'\n\t\tendif endif\n\t\t"
+		   });	
+		addAnnotation
+		  (sensorEClass, 
+		   source, 
+		   new String[] {
+			 "mustIntId", "\n\t\tself.id.value.toInteger().oclIsTypeOf(Integer)",
+			 "validateURI", "self.uri.value = \'urn:ogc:object:feature:sensor:\' + self.id.value "
+		   });
+	}
+
+} //WatERPPackageImpl

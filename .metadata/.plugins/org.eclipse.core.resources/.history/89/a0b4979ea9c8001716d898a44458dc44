@@ -1,0 +1,185 @@
+/**
+ */
+package WatERP;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Observation</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.Observation#getFoi <em>Foi</em>}</li>
+ *   <li>{@link WatERP.Observation#getProcedure <em>Procedure</em>}</li>
+ *   <li>{@link WatERP.Observation#getObservedProperty <em>Observed Property</em>}</li>
+ *   <li>{@link WatERP.Observation#getResult <em>Result</em>}</li>
+ *   <li>{@link WatERP.Observation#getUnit <em>Unit</em>}</li>
+ *   <li>{@link WatERP.Observation#getAssignedSensorID <em>Assigned Sensor ID</em>}</li>
+ * </ul>
+ *
+ * @see WatERP.WatERPPackage#getObservation()
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='coconstraintOP'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot coconstraintOP='\n\t\t--let c = ClassAnnotation.allInstances()->select(e|e.annotatedClass.name = self.name )->asSequence()->at(1) in \n\t\t--if (self.observedProperty.value =\'FlowDischarge\') then self.unit.value = \'m3/h\' else if self.observedProperty.value =\'Temperature\' then self.unit.value = \'C\'\telse \'no matched rule\' endif endif\n\t\tlet b: Boolean = self.observedProperty.value =\'Temperature\' , c : Boolean = self.observedProperty.value = \'FlowDischarge\' in if b then self.unit.value = \'C\' else if c then self.unit.value = \'m3/h\' else \'nomatching rule\' endif endif\n\t\t'"
+ * @generated
+ */
+public interface Observation extends MClass {
+	/**
+	 * Returns the value of the '<em><b>Foi</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Foi</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Foi</em>' containment reference.
+	 * @see #setFoi(MDProperty)
+	 * @see WatERP.WatERPPackage#getObservation_Foi()
+	 * @model containment="true"
+	 * @generated
+	 */
+	MDProperty getFoi();
+
+	/**
+	 * Sets the value of the '{@link WatERP.Observation#getFoi <em>Foi</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Foi</em>' containment reference.
+	 * @see #getFoi()
+	 * @generated
+	 */
+	void setFoi(MDProperty value);
+
+	/**
+	 * Returns the value of the '<em><b>Procedure</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Procedure</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Procedure</em>' containment reference.
+	 * @see #setProcedure(MDProperty)
+	 * @see WatERP.WatERPPackage#getObservation_Procedure()
+	 * @model containment="true"
+	 * @generated
+	 */
+	MDProperty getProcedure();
+
+	/**
+	 * Sets the value of the '{@link WatERP.Observation#getProcedure <em>Procedure</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Procedure</em>' containment reference.
+	 * @see #getProcedure()
+	 * @generated
+	 */
+	void setProcedure(MDProperty value);
+
+	/**
+	 * Returns the value of the '<em><b>Observed Property</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Observed Property</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Observed Property</em>' containment reference.
+	 * @see #setObservedProperty(MCProperty)
+	 * @see WatERP.WatERPPackage#getObservation_ObservedProperty()
+	 * @model containment="true"
+	 * @generated
+	 */
+	MCProperty getObservedProperty();
+
+	/**
+	 * Sets the value of the '{@link WatERP.Observation#getObservedProperty <em>Observed Property</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Observed Property</em>' containment reference.
+	 * @see #getObservedProperty()
+	 * @generated
+	 */
+	void setObservedProperty(MCProperty value);
+
+	/**
+	 * Returns the value of the '<em><b>Result</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Result</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Result</em>' containment reference.
+	 * @see #setResult(MDProperty)
+	 * @see WatERP.WatERPPackage#getObservation_Result()
+	 * @model containment="true"
+	 * @generated
+	 */
+	MDProperty getResult();
+
+	/**
+	 * Sets the value of the '{@link WatERP.Observation#getResult <em>Result</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Result</em>' containment reference.
+	 * @see #getResult()
+	 * @generated
+	 */
+	void setResult(MDProperty value);
+
+	/**
+	 * Returns the value of the '<em><b>Unit</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Unit</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Unit</em>' containment reference.
+	 * @see #setUnit(MDProperty)
+	 * @see WatERP.WatERPPackage#getObservation_Unit()
+	 * @model containment="true"
+	 * @generated
+	 */
+	MDProperty getUnit();
+
+	/**
+	 * Sets the value of the '{@link WatERP.Observation#getUnit <em>Unit</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Unit</em>' containment reference.
+	 * @see #getUnit()
+	 * @generated
+	 */
+	void setUnit(MDProperty value);
+
+	/**
+	 * Returns the value of the '<em><b>Assigned Sensor ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Assigned Sensor ID</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Assigned Sensor ID</em>' attribute.
+	 * @see #setAssignedSensorID(int)
+	 * @see WatERP.WatERPPackage#getObservation_AssignedSensorID()
+	 * @model
+	 * @generated
+	 */
+	int getAssignedSensorID();
+
+	/**
+	 * Sets the value of the '{@link WatERP.Observation#getAssignedSensorID <em>Assigned Sensor ID</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Assigned Sensor ID</em>' attribute.
+	 * @see #getAssignedSensorID()
+	 * @generated
+	 */
+	void setAssignedSensorID(int value);
+
+} // Observation

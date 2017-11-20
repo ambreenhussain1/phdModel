@@ -1,0 +1,622 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.AllValuesFromClassRestriction;
+import WatERP.DLSafeRule;
+import WatERP.DataProperty;
+import WatERP.OClass;
+import WatERP.ObjectProperty;
+import WatERP.SomeValuesFromClassRestriction;
+import WatERP.UnionClass;
+import WatERP.WatERPPackage;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>OClass</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.OClassImpl#getName <em>Name</em>}</li>
+ *   <li>{@link WatERP.impl.OClassImpl#getIsDeprecated <em>Is Deprecated</em>}</li>
+ *   <li>{@link WatERP.impl.OClassImpl#getSubClass <em>Sub Class</em>}</li>
+ *   <li>{@link WatERP.impl.OClassImpl#getSubClassOf <em>Sub Class Of</em>}</li>
+ *   <li>{@link WatERP.impl.OClassImpl#getEquivalentClass <em>Equivalent Class</em>}</li>
+ *   <li>{@link WatERP.impl.OClassImpl#getUnionClass <em>Union Class</em>}</li>
+ *   <li>{@link WatERP.impl.OClassImpl#getDisjointClass <em>Disjoint Class</em>}</li>
+ *   <li>{@link WatERP.impl.OClassImpl#getAllValuesFromRestriction <em>All Values From Restriction</em>}</li>
+ *   <li>{@link WatERP.impl.OClassImpl#getSomeValuesFromRestriction <em>Some Values From Restriction</em>}</li>
+ *   <li>{@link WatERP.impl.OClassImpl#getDataProperty <em>Data Property</em>}</li>
+ *   <li>{@link WatERP.impl.OClassImpl#getObjectProperty <em>Object Property</em>}</li>
+ *   <li>{@link WatERP.impl.OClassImpl#getRule <em>Rule</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class OClassImpl extends MinimalEObjectImpl.Container implements OClass {
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getIsDeprecated() <em>Is Deprecated</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIsDeprecated()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Boolean IS_DEPRECATED_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getIsDeprecated() <em>Is Deprecated</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIsDeprecated()
+	 * @generated
+	 * @ordered
+	 */
+	protected Boolean isDeprecated = IS_DEPRECATED_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getSubClass() <em>Sub Class</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSubClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<OClass> subClass;
+
+	/**
+	 * The cached value of the '{@link #getSubClassOf() <em>Sub Class Of</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSubClassOf()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<OClass> subClassOf;
+
+	/**
+	 * The cached value of the '{@link #getEquivalentClass() <em>Equivalent Class</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEquivalentClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<OClass> equivalentClass;
+
+	/**
+	 * The cached value of the '{@link #getUnionClass() <em>Union Class</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUnionClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<UnionClass> unionClass;
+
+	/**
+	 * The cached value of the '{@link #getDisjointClass() <em>Disjoint Class</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDisjointClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<OClass> disjointClass;
+
+	/**
+	 * The cached value of the '{@link #getAllValuesFromRestriction() <em>All Values From Restriction</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAllValuesFromRestriction()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<AllValuesFromClassRestriction> allValuesFromRestriction;
+
+	/**
+	 * The cached value of the '{@link #getSomeValuesFromRestriction() <em>Some Values From Restriction</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSomeValuesFromRestriction()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<SomeValuesFromClassRestriction> someValuesFromRestriction;
+
+	/**
+	 * The cached value of the '{@link #getDataProperty() <em>Data Property</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDataProperty()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<DataProperty> dataProperty;
+
+	/**
+	 * The cached value of the '{@link #getObjectProperty() <em>Object Property</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getObjectProperty()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<ObjectProperty> objectProperty;
+
+	/**
+	 * The cached value of the '{@link #getRule() <em>Rule</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRule()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<DLSafeRule> rule;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected OClassImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.OCLASS;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.OCLASS__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Boolean getIsDeprecated() {
+		return isDeprecated;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setIsDeprecated(Boolean newIsDeprecated) {
+		Boolean oldIsDeprecated = isDeprecated;
+		isDeprecated = newIsDeprecated;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.OCLASS__IS_DEPRECATED, oldIsDeprecated, isDeprecated));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<OClass> getSubClass() {
+		if (subClass == null) {
+			subClass = new EObjectWithInverseResolvingEList.ManyInverse<OClass>(OClass.class, this, WatERPPackage.OCLASS__SUB_CLASS, WatERPPackage.OCLASS__SUB_CLASS_OF);
+		}
+		return subClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<OClass> getSubClassOf() {
+		if (subClassOf == null) {
+			subClassOf = new EObjectWithInverseResolvingEList.ManyInverse<OClass>(OClass.class, this, WatERPPackage.OCLASS__SUB_CLASS_OF, WatERPPackage.OCLASS__SUB_CLASS);
+		}
+		return subClassOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<OClass> getEquivalentClass() {
+		if (equivalentClass == null) {
+			equivalentClass = new EObjectResolvingEList<OClass>(OClass.class, this, WatERPPackage.OCLASS__EQUIVALENT_CLASS);
+		}
+		return equivalentClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<UnionClass> getUnionClass() {
+		if (unionClass == null) {
+			unionClass = new EObjectResolvingEList<UnionClass>(UnionClass.class, this, WatERPPackage.OCLASS__UNION_CLASS);
+		}
+		return unionClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<OClass> getDisjointClass() {
+		if (disjointClass == null) {
+			disjointClass = new EObjectResolvingEList<OClass>(OClass.class, this, WatERPPackage.OCLASS__DISJOINT_CLASS);
+		}
+		return disjointClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<AllValuesFromClassRestriction> getAllValuesFromRestriction() {
+		if (allValuesFromRestriction == null) {
+			allValuesFromRestriction = new EObjectWithInverseResolvingEList<AllValuesFromClassRestriction>(AllValuesFromClassRestriction.class, this, WatERPPackage.OCLASS__ALL_VALUES_FROM_RESTRICTION, WatERPPackage.ALL_VALUES_FROM_CLASS_RESTRICTION__ALL_VALUES_FROM_CLASS);
+		}
+		return allValuesFromRestriction;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<SomeValuesFromClassRestriction> getSomeValuesFromRestriction() {
+		if (someValuesFromRestriction == null) {
+			someValuesFromRestriction = new EObjectWithInverseResolvingEList<SomeValuesFromClassRestriction>(SomeValuesFromClassRestriction.class, this, WatERPPackage.OCLASS__SOME_VALUES_FROM_RESTRICTION, WatERPPackage.SOME_VALUES_FROM_CLASS_RESTRICTION__SOME_VALUES_FROM_CLASS);
+		}
+		return someValuesFromRestriction;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<DataProperty> getDataProperty() {
+		if (dataProperty == null) {
+			dataProperty = new EObjectContainmentEList<DataProperty>(DataProperty.class, this, WatERPPackage.OCLASS__DATA_PROPERTY);
+		}
+		return dataProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ObjectProperty> getObjectProperty() {
+		if (objectProperty == null) {
+			objectProperty = new EObjectContainmentEList<ObjectProperty>(ObjectProperty.class, this, WatERPPackage.OCLASS__OBJECT_PROPERTY);
+		}
+		return objectProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<DLSafeRule> getRule() {
+		if (rule == null) {
+			rule = new EObjectContainmentEList<DLSafeRule>(DLSafeRule.class, this, WatERPPackage.OCLASS__RULE);
+		}
+		return rule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case WatERPPackage.OCLASS__SUB_CLASS:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getSubClass()).basicAdd(otherEnd, msgs);
+			case WatERPPackage.OCLASS__SUB_CLASS_OF:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getSubClassOf()).basicAdd(otherEnd, msgs);
+			case WatERPPackage.OCLASS__ALL_VALUES_FROM_RESTRICTION:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getAllValuesFromRestriction()).basicAdd(otherEnd, msgs);
+			case WatERPPackage.OCLASS__SOME_VALUES_FROM_RESTRICTION:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getSomeValuesFromRestriction()).basicAdd(otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case WatERPPackage.OCLASS__SUB_CLASS:
+				return ((InternalEList<?>)getSubClass()).basicRemove(otherEnd, msgs);
+			case WatERPPackage.OCLASS__SUB_CLASS_OF:
+				return ((InternalEList<?>)getSubClassOf()).basicRemove(otherEnd, msgs);
+			case WatERPPackage.OCLASS__ALL_VALUES_FROM_RESTRICTION:
+				return ((InternalEList<?>)getAllValuesFromRestriction()).basicRemove(otherEnd, msgs);
+			case WatERPPackage.OCLASS__SOME_VALUES_FROM_RESTRICTION:
+				return ((InternalEList<?>)getSomeValuesFromRestriction()).basicRemove(otherEnd, msgs);
+			case WatERPPackage.OCLASS__DATA_PROPERTY:
+				return ((InternalEList<?>)getDataProperty()).basicRemove(otherEnd, msgs);
+			case WatERPPackage.OCLASS__OBJECT_PROPERTY:
+				return ((InternalEList<?>)getObjectProperty()).basicRemove(otherEnd, msgs);
+			case WatERPPackage.OCLASS__RULE:
+				return ((InternalEList<?>)getRule()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.OCLASS__NAME:
+				return getName();
+			case WatERPPackage.OCLASS__IS_DEPRECATED:
+				return getIsDeprecated();
+			case WatERPPackage.OCLASS__SUB_CLASS:
+				return getSubClass();
+			case WatERPPackage.OCLASS__SUB_CLASS_OF:
+				return getSubClassOf();
+			case WatERPPackage.OCLASS__EQUIVALENT_CLASS:
+				return getEquivalentClass();
+			case WatERPPackage.OCLASS__UNION_CLASS:
+				return getUnionClass();
+			case WatERPPackage.OCLASS__DISJOINT_CLASS:
+				return getDisjointClass();
+			case WatERPPackage.OCLASS__ALL_VALUES_FROM_RESTRICTION:
+				return getAllValuesFromRestriction();
+			case WatERPPackage.OCLASS__SOME_VALUES_FROM_RESTRICTION:
+				return getSomeValuesFromRestriction();
+			case WatERPPackage.OCLASS__DATA_PROPERTY:
+				return getDataProperty();
+			case WatERPPackage.OCLASS__OBJECT_PROPERTY:
+				return getObjectProperty();
+			case WatERPPackage.OCLASS__RULE:
+				return getRule();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.OCLASS__NAME:
+				setName((String)newValue);
+				return;
+			case WatERPPackage.OCLASS__IS_DEPRECATED:
+				setIsDeprecated((Boolean)newValue);
+				return;
+			case WatERPPackage.OCLASS__SUB_CLASS:
+				getSubClass().clear();
+				getSubClass().addAll((Collection<? extends OClass>)newValue);
+				return;
+			case WatERPPackage.OCLASS__SUB_CLASS_OF:
+				getSubClassOf().clear();
+				getSubClassOf().addAll((Collection<? extends OClass>)newValue);
+				return;
+			case WatERPPackage.OCLASS__EQUIVALENT_CLASS:
+				getEquivalentClass().clear();
+				getEquivalentClass().addAll((Collection<? extends OClass>)newValue);
+				return;
+			case WatERPPackage.OCLASS__UNION_CLASS:
+				getUnionClass().clear();
+				getUnionClass().addAll((Collection<? extends UnionClass>)newValue);
+				return;
+			case WatERPPackage.OCLASS__DISJOINT_CLASS:
+				getDisjointClass().clear();
+				getDisjointClass().addAll((Collection<? extends OClass>)newValue);
+				return;
+			case WatERPPackage.OCLASS__ALL_VALUES_FROM_RESTRICTION:
+				getAllValuesFromRestriction().clear();
+				getAllValuesFromRestriction().addAll((Collection<? extends AllValuesFromClassRestriction>)newValue);
+				return;
+			case WatERPPackage.OCLASS__SOME_VALUES_FROM_RESTRICTION:
+				getSomeValuesFromRestriction().clear();
+				getSomeValuesFromRestriction().addAll((Collection<? extends SomeValuesFromClassRestriction>)newValue);
+				return;
+			case WatERPPackage.OCLASS__DATA_PROPERTY:
+				getDataProperty().clear();
+				getDataProperty().addAll((Collection<? extends DataProperty>)newValue);
+				return;
+			case WatERPPackage.OCLASS__OBJECT_PROPERTY:
+				getObjectProperty().clear();
+				getObjectProperty().addAll((Collection<? extends ObjectProperty>)newValue);
+				return;
+			case WatERPPackage.OCLASS__RULE:
+				getRule().clear();
+				getRule().addAll((Collection<? extends DLSafeRule>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.OCLASS__NAME:
+				setName(NAME_EDEFAULT);
+				return;
+			case WatERPPackage.OCLASS__IS_DEPRECATED:
+				setIsDeprecated(IS_DEPRECATED_EDEFAULT);
+				return;
+			case WatERPPackage.OCLASS__SUB_CLASS:
+				getSubClass().clear();
+				return;
+			case WatERPPackage.OCLASS__SUB_CLASS_OF:
+				getSubClassOf().clear();
+				return;
+			case WatERPPackage.OCLASS__EQUIVALENT_CLASS:
+				getEquivalentClass().clear();
+				return;
+			case WatERPPackage.OCLASS__UNION_CLASS:
+				getUnionClass().clear();
+				return;
+			case WatERPPackage.OCLASS__DISJOINT_CLASS:
+				getDisjointClass().clear();
+				return;
+			case WatERPPackage.OCLASS__ALL_VALUES_FROM_RESTRICTION:
+				getAllValuesFromRestriction().clear();
+				return;
+			case WatERPPackage.OCLASS__SOME_VALUES_FROM_RESTRICTION:
+				getSomeValuesFromRestriction().clear();
+				return;
+			case WatERPPackage.OCLASS__DATA_PROPERTY:
+				getDataProperty().clear();
+				return;
+			case WatERPPackage.OCLASS__OBJECT_PROPERTY:
+				getObjectProperty().clear();
+				return;
+			case WatERPPackage.OCLASS__RULE:
+				getRule().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.OCLASS__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case WatERPPackage.OCLASS__IS_DEPRECATED:
+				return IS_DEPRECATED_EDEFAULT == null ? isDeprecated != null : !IS_DEPRECATED_EDEFAULT.equals(isDeprecated);
+			case WatERPPackage.OCLASS__SUB_CLASS:
+				return subClass != null && !subClass.isEmpty();
+			case WatERPPackage.OCLASS__SUB_CLASS_OF:
+				return subClassOf != null && !subClassOf.isEmpty();
+			case WatERPPackage.OCLASS__EQUIVALENT_CLASS:
+				return equivalentClass != null && !equivalentClass.isEmpty();
+			case WatERPPackage.OCLASS__UNION_CLASS:
+				return unionClass != null && !unionClass.isEmpty();
+			case WatERPPackage.OCLASS__DISJOINT_CLASS:
+				return disjointClass != null && !disjointClass.isEmpty();
+			case WatERPPackage.OCLASS__ALL_VALUES_FROM_RESTRICTION:
+				return allValuesFromRestriction != null && !allValuesFromRestriction.isEmpty();
+			case WatERPPackage.OCLASS__SOME_VALUES_FROM_RESTRICTION:
+				return someValuesFromRestriction != null && !someValuesFromRestriction.isEmpty();
+			case WatERPPackage.OCLASS__DATA_PROPERTY:
+				return dataProperty != null && !dataProperty.isEmpty();
+			case WatERPPackage.OCLASS__OBJECT_PROPERTY:
+				return objectProperty != null && !objectProperty.isEmpty();
+			case WatERPPackage.OCLASS__RULE:
+				return rule != null && !rule.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (name: ");
+		result.append(name);
+		result.append(", isDeprecated: ");
+		result.append(isDeprecated);
+		result.append(')');
+		return result.toString();
+	}
+
+} //OClassImpl

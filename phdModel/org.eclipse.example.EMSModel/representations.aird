@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xmi:id="_BC2ygIHvEeeYIqq9NZy_ew" version="11.1.0.201608251200">
+  <semanticResources>platform:/resource/org.eclipse.emf.ecore/model/Ecore.genmodel</semanticResources>
+  <semanticResources>model/water.ecore</semanticResources>
+  <semanticResources>platform:/resource/org.eclipse.emf.ecore/model/Ecore.ecore</semanticResources>
+  <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
+  <semanticResources>model/diplomas.ecore</semanticResources>
+  <semanticResources>http://www.eclipse.org/ocl/2015/Library.oclas</semanticResources>
+  <semanticResources>http://www.eclipse.org/emf/2002/Ecore.oclas</semanticResources>
+  <semanticResources>http://www.eclipse.org/ocl/2015/Orphanage.oclas</semanticResources>
+  <semanticResources>model/diplomas.genmodel</semanticResources>
+</viewpoint:DAnalysis>

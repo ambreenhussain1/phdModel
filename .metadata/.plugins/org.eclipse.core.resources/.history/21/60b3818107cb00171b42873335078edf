@@ -1,0 +1,65 @@
+package my.generator.project
+
+import com.google.inject.Inject
+import org.eclipse.emf.ecore.resource.Resource
+import org.eclipse.xtext.generator.IFileSystemAccess
+import org.eclipse.xtext.generator.IGenerator
+import org.eclipse.xtext.naming.IQualifiedNameProvider
+import org.eclipse.emf.ecore.EObject
+import WatERP.Model
+import WatERP.Ontology
+import org.eclipse.emf.ecore.EClass
+import org.eclipse.emf.ecore.EAttribute
+
+class EMSGenerator implements IGenerator {
+	@Inject extension IQualifiedNameProvider
+	override void doGenerate(Resource resource, IFileSystemAccess fsa) {
+        for (EObject o : resource.contents) {
+           o.compile(fsa)
+        }
+    }
+ 
+    def dispatch void compile(Model m, IFileSystemAccess fsa) {
+        for (e : m.MClass) {
+            e.compile(fsa)
+        }
+    }
+    def dispatch void compile(Ontology o, IFileSystemAccess fsa) {
+        for (e : o.OClass) {
+            e.compile(fsa)
+        }
+    }
+ 
+    def compile(EClass e, IFileSystemAccess fsa) {
+        fsa.generateFile(e.name+".java", '''
+        package «e.packageName» ;
+        
+        public class «e.name» {
+        	
+        	«FOR attr:e.EAttributes»
+        	«attr.compile»
+        	«ENDFOR»
+        	
+        }
+        ''')
+    }
+    def compile(EAttribute attr){
+    	
+    }
+ 
+   def dispatch void compile(EObject m, IFileSystemAccess fsa) {
+   	
+   }
+   
+   def packageName(EClass e) {
+		var name = e.eContainer.toString;
+		return name.substring(0, name.indexOf('@'))
+		}
+ 
+ }
+ 
+   
+    
+ 
+   
+	

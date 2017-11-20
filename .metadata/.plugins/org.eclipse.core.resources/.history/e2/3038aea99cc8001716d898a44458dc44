@@ -1,0 +1,113 @@
+/**
+ */
+package WatERP;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Class Annotation</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.ClassAnnotation#getAnnotatingClass <em>Annotating Class</em>}</li>
+ *   <li>{@link WatERP.ClassAnnotation#getAnnotatedClass <em>Annotated Class</em>}</li>
+ *   <li>{@link WatERP.ClassAnnotation#getPropertyAnnotations <em>Property Annotations</em>}</li>
+ *   <li>{@link WatERP.ClassAnnotation#getExpression <em>Expression</em>}</li>
+ * </ul>
+ *
+ * @see WatERP.WatERPPackage#getClassAnnotation()
+ * @model
+ * @generated
+ */
+public interface ClassAnnotation extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Annotating Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Annotating Class</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Annotating Class</em>' reference.
+	 * @see #setAnnotatingClass(OClass)
+	 * @see WatERP.WatERPPackage#getClassAnnotation_AnnotatingClass()
+	 * @model required="true"
+	 * @generated
+	 */
+	OClass getAnnotatingClass();
+
+	/**
+	 * Sets the value of the '{@link WatERP.ClassAnnotation#getAnnotatingClass <em>Annotating Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Annotating Class</em>' reference.
+	 * @see #getAnnotatingClass()
+	 * @generated
+	 */
+	void setAnnotatingClass(OClass value);
+
+	/**
+	 * Returns the value of the '<em><b>Annotated Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Annotated Class</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Annotated Class</em>' reference.
+	 * @see #setAnnotatedClass(MClass)
+	 * @see WatERP.WatERPPackage#getClassAnnotation_AnnotatedClass()
+	 * @model required="true"
+	 * @generated
+	 */
+	MClass getAnnotatedClass();
+
+	/**
+	 * Sets the value of the '{@link WatERP.ClassAnnotation#getAnnotatedClass <em>Annotated Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Annotated Class</em>' reference.
+	 * @see #getAnnotatedClass()
+	 * @generated
+	 */
+	void setAnnotatedClass(MClass value);
+
+	/**
+	 * Returns the value of the '<em><b>Property Annotations</b></em>' containment reference list.
+	 * The list contents are of type {@link WatERP.PropertyAnnotation}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Property Annotations</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Property Annotations</em>' containment reference list.
+	 * @see WatERP.WatERPPackage#getClassAnnotation_PropertyAnnotations()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<PropertyAnnotation> getPropertyAnnotations();
+
+	/**
+	 * Returns the value of the '<em><b>Expression</b></em>' containment reference list.
+	 * The list contents are of type {@link WatERP.Expression}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Expression</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Expression</em>' containment reference list.
+	 * @see WatERP.WatERPPackage#getClassAnnotation_Expression()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Expression> getExpression();
+
+} // ClassAnnotation

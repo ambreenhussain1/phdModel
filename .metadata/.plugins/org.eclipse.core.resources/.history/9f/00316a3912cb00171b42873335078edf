@@ -1,0 +1,31 @@
+package my.generator.project;
+import org.eclipse.ocl.ecore.delegate.OCLDelegateDomain;
+import org.eclipse.ocl.ecore.delegate.OCLInvocationDelegateFactory;
+import org.eclipse.ocl.ecore.delegate.OCLSettingDelegateFactory;
+import org.eclipse.ocl.ecore.delegate.OCLValidationDelegateFactory;
+import org.eclipse.emf.ecore.EOperation;
+import org.eclipse.emf.ecore.EStructuralFeature;
+import org.eclipse.emf.ecore.EValidator;
+import org.eclipse.xtext.ISetup;
+
+import com.google.inject.Guice;
+import com.google.inject.Injector;
+public class EMSGeneratorSetup implements ISetup{
+	 @Override
+	    public Injector createInjectorAndDoEMFRegistration() {
+	        return Guice.createInjector(new EMSGeneratorModule());
+	    }
+	 
+		public void register(Injector injector)
+		{
+			
+
+			String oclDelegateURI = OCLDelegateDomain.OCL_DELEGATE_URI;
+			EOperation.Internal.InvocationDelegate.Factory.Registry.INSTANCE.put(oclDelegateURI,
+				new OCLInvocationDelegateFactory.Global());
+			EStructuralFeature.Internal.SettingDelegate.Factory.Registry.INSTANCE.put(oclDelegateURI,
+				new OCLSettingDelegateFactory.Global());
+			EValidator.ValidationDelegate.Registry.INSTANCE.put(oclDelegateURI,
+				new OCLValidationDelegateFactory.Global());
+		}
+}

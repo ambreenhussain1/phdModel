@@ -1,0 +1,195 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.OProperty;
+import WatERP.Restriction;
+import WatERP.WatERPPackage;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import org.eclipse.emf.ecore.util.EcoreUtil;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Restriction</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.RestrictionImpl#getOnProperty <em>On Property</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class RestrictionImpl extends OntologyConstraintImpl implements Restriction {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected RestrictionImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.RESTRICTION;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OProperty getOnProperty() {
+		if (eContainerFeatureID() != WatERPPackage.RESTRICTION__ON_PROPERTY) return null;
+		return (OProperty)eInternalContainer();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetOnProperty(OProperty newOnProperty, NotificationChain msgs) {
+		msgs = eBasicSetContainer((InternalEObject)newOnProperty, WatERPPackage.RESTRICTION__ON_PROPERTY, msgs);
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setOnProperty(OProperty newOnProperty) {
+		if (newOnProperty != eInternalContainer() || (eContainerFeatureID() != WatERPPackage.RESTRICTION__ON_PROPERTY && newOnProperty != null)) {
+			if (EcoreUtil.isAncestor(this, newOnProperty))
+				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
+			NotificationChain msgs = null;
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			if (newOnProperty != null)
+				msgs = ((InternalEObject)newOnProperty).eInverseAdd(this, WatERPPackage.OPROPERTY__PROPERTY_RESTRICTION, OProperty.class, msgs);
+			msgs = basicSetOnProperty(newOnProperty, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.RESTRICTION__ON_PROPERTY, newOnProperty, newOnProperty));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case WatERPPackage.RESTRICTION__ON_PROPERTY:
+				if (eInternalContainer() != null)
+					msgs = eBasicRemoveFromContainer(msgs);
+				return basicSetOnProperty((OProperty)otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case WatERPPackage.RESTRICTION__ON_PROPERTY:
+				return basicSetOnProperty(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
+		switch (eContainerFeatureID()) {
+			case WatERPPackage.RESTRICTION__ON_PROPERTY:
+				return eInternalContainer().eInverseRemove(this, WatERPPackage.OPROPERTY__PROPERTY_RESTRICTION, OProperty.class, msgs);
+		}
+		return super.eBasicRemoveFromContainerFeature(msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.RESTRICTION__ON_PROPERTY:
+				return getOnProperty();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.RESTRICTION__ON_PROPERTY:
+				setOnProperty((OProperty)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.RESTRICTION__ON_PROPERTY:
+				setOnProperty((OProperty)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.RESTRICTION__ON_PROPERTY:
+				return getOnProperty() != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //RestrictionImpl

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ems -->
+      <package
+            uri="http://org/eclipse/example/EMSModel"
+            class="EMSModel.EMSModelPackage"
+            genModel="model/ems.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated water -->
+      <package
+            uri="http://org/eclipse/example/WatERP"
+            class="WatERP.WatERPPackage"
+            genModel="model/water.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated exam -->
+      <package
+            uri="http://www.example.com/SimplePO"
+            class="po.PoPackage"
+            genModel="model/exam.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated diplomas -->
+      <package
+            uri="http://org/eclipse/example/Diplomas"
+            class="DiplomaModel.DiplomaModelPackage"
+            genModel="model/diplomas.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated test -->
+      <package
+            uri="http://www.xxx.com"
+            class="root.RootPackage"
+            genModel="model/test.genmodel"/>
+   </extension>
+
+</plugin>

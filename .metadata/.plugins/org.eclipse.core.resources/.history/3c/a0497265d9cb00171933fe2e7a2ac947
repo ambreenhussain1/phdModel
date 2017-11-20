@@ -1,0 +1,162 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.MinimumCardinalityRestriction;
+import WatERP.WatERPPackage;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Minimum Cardinality Restriction</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.MinimumCardinalityRestrictionImpl#getMinCardinality <em>Min Cardinality</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class MinimumCardinalityRestrictionImpl extends RestrictionImpl implements MinimumCardinalityRestriction {
+	/**
+	 * The default value of the '{@link #getMinCardinality() <em>Min Cardinality</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMinCardinality()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Integer MIN_CARDINALITY_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getMinCardinality() <em>Min Cardinality</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMinCardinality()
+	 * @generated
+	 * @ordered
+	 */
+	protected Integer minCardinality = MIN_CARDINALITY_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MinimumCardinalityRestrictionImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.MINIMUM_CARDINALITY_RESTRICTION;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Integer getMinCardinality() {
+		return minCardinality;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setMinCardinality(Integer newMinCardinality) {
+		Integer oldMinCardinality = minCardinality;
+		minCardinality = newMinCardinality;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.MINIMUM_CARDINALITY_RESTRICTION__MIN_CARDINALITY, oldMinCardinality, minCardinality));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.MINIMUM_CARDINALITY_RESTRICTION__MIN_CARDINALITY:
+				return getMinCardinality();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.MINIMUM_CARDINALITY_RESTRICTION__MIN_CARDINALITY:
+				setMinCardinality((Integer)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.MINIMUM_CARDINALITY_RESTRICTION__MIN_CARDINALITY:
+				setMinCardinality(MIN_CARDINALITY_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.MINIMUM_CARDINALITY_RESTRICTION__MIN_CARDINALITY:
+				return MIN_CARDINALITY_EDEFAULT == null ? minCardinality != null : !MIN_CARDINALITY_EDEFAULT.equals(minCardinality);
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (minCardinality: ");
+		result.append(minCardinality);
+		result.append(')');
+		return result.toString();
+	}
+
+} //MinimumCardinalityRestrictionImpl

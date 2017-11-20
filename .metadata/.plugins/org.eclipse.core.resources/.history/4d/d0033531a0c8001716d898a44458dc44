@@ -1,0 +1,132 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.OClass;
+import WatERP.UnionClass;
+import WatERP.WatERPPackage;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Union Class</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.UnionClassImpl#getUnionOf <em>Union Of</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class UnionClassImpl extends OClassImpl implements UnionClass {
+	/**
+	 * The cached value of the '{@link #getUnionOf() <em>Union Of</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUnionOf()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<OClass> unionOf;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected UnionClassImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.UNION_CLASS;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<OClass> getUnionOf() {
+		if (unionOf == null) {
+			unionOf = new EObjectResolvingEList<OClass>(OClass.class, this, WatERPPackage.UNION_CLASS__UNION_OF);
+		}
+		return unionOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.UNION_CLASS__UNION_OF:
+				return getUnionOf();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.UNION_CLASS__UNION_OF:
+				getUnionOf().clear();
+				getUnionOf().addAll((Collection<? extends OClass>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.UNION_CLASS__UNION_OF:
+				getUnionOf().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.UNION_CLASS__UNION_OF:
+				return unionOf != null && !unionOf.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //UnionClassImpl

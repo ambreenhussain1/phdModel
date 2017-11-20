@@ -1,0 +1,700 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.*;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
+
+import org.eclipse.emf.ecore.impl.EFactoryImpl;
+
+import org.eclipse.emf.ecore.plugin.EcorePlugin;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model <b>Factory</b>.
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class WatERPFactoryImpl extends EFactoryImpl implements WatERPFactory {
+	/**
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static WatERPFactory init() {
+		try {
+			WatERPFactory theWatERPFactory = (WatERPFactory)EPackage.Registry.INSTANCE.getEFactory(WatERPPackage.eNS_URI);
+			if (theWatERPFactory != null) {
+				return theWatERPFactory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new WatERPFactoryImpl();
+	}
+
+	/**
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public WatERPFactoryImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
+			case WatERPPackage.MODEL_ANNOTATION: return createModelAnnotation();
+			case WatERPPackage.CLASS_ANNOTATION: return createClassAnnotation();
+			case WatERPPackage.ONTOLOGY: return createOntology();
+			case WatERPPackage.MODEL: return createModel();
+			case WatERPPackage.PROPERTY_ANNOTATION: return createPropertyAnnotation();
+			case WatERPPackage.EXPRESSION: return createExpression();
+			case WatERPPackage.PROPERTY: return createProperty();
+			case WatERPPackage.MCLASS: return createMClass();
+			case WatERPPackage.MPROPERTY: return createMProperty();
+			case WatERPPackage.MC_PROPERTY: return createMCProperty();
+			case WatERPPackage.MD_PROPERTY: return createMDProperty();
+			case WatERPPackage.OCLASS: return createOClass();
+			case WatERPPackage.OPROPERTY: return createOProperty();
+			case WatERPPackage.ONTOLOGY_CONSTRAINT: return createOntologyConstraint();
+			case WatERPPackage.EQUIVALENCE: return createEquivalence();
+			case WatERPPackage.UNION_CLASS: return createUnionClass();
+			case WatERPPackage.OBJECT_PROPERTY: return createObjectProperty();
+			case WatERPPackage.RESTRICTION: return createRestriction();
+			case WatERPPackage.HAS_DATA_VALUE_RESTRICTION: return createHasDataValueRestriction();
+			case WatERPPackage.ALL_VALUES_FROM_RESTRICTION: return createAllValuesFromRestriction();
+			case WatERPPackage.ALL_VALUES_FROM_DATA_RESTRICTION: return createAllValuesFromDataRestriction();
+			case WatERPPackage.ALL_VALUES_FROM_CLASS_RESTRICTION: return createAllValuesFromClassRestriction();
+			case WatERPPackage.DATA_PROPERTY: return createDataProperty();
+			case WatERPPackage.SOME_VALUES_FROM_RESTRICTION: return createSomeValuesFromRestriction();
+			case WatERPPackage.SOME_VALUES_FROM_DATA_RESTRICTION: return createSomeValuesFromDataRestriction();
+			case WatERPPackage.SOME_VALUES_FROM_CLASS_RESTRICTION: return createSomeValuesFromClassRestriction();
+			case WatERPPackage.CARDINALITY_RESTRICTION: return createCardinalityRestriction();
+			case WatERPPackage.MAXIMUM_CARDINALITY_RESTRICTION: return createMaximumCardinalityRestriction();
+			case WatERPPackage.MINIMUM_CARDINALITY_RESTRICTION: return createMinimumCardinalityRestriction();
+			case WatERPPackage.TOP_NODE: return createTopNode();
+			case WatERPPackage.OBSERVATION: return createObservation();
+			case WatERPPackage.SENSOR: return createSensor();
+			case WatERPPackage.EXPORT: return createExport();
+			case WatERPPackage.OBSERVED_PROPERTY: return createObservedProperty();
+			case WatERPPackage.DL_SAFE_RULE: return createDLSafeRule();
+			case WatERPPackage.HEAD: return createHead();
+			case WatERPPackage.BODY: return createBody();
+			case WatERPPackage.ATOM: return createAtom();
+			case WatERPPackage.OBJECT_PROPERTY_ATOM: return createObjectPropertyAtom();
+			case WatERPPackage.CLASS_ATOM: return createClassAtom();
+			case WatERPPackage.VARIABLE: return createVariable();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object createFromString(EDataType eDataType, String initialValue) {
+		switch (eDataType.getClassifierID()) {
+			case WatERPPackage.EXPRESSION_TYPE:
+				return createExpressionTypeFromString(eDataType, initialValue);
+			case WatERPPackage.DATA_TYPE:
+				return createdataTypeFromString(eDataType, initialValue);
+			case WatERPPackage.CONSTRAINT_TYPE:
+				return createconstraintTypeFromString(eDataType, initialValue);
+			case WatERPPackage.STRING:
+				return createStringFromString(eDataType, initialValue);
+			case WatERPPackage.INTEGER:
+				return createIntegerFromString(eDataType, initialValue);
+			case WatERPPackage.BOOLEAN:
+				return createBooleanFromString(eDataType, initialValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String convertToString(EDataType eDataType, Object instanceValue) {
+		switch (eDataType.getClassifierID()) {
+			case WatERPPackage.EXPRESSION_TYPE:
+				return convertExpressionTypeToString(eDataType, instanceValue);
+			case WatERPPackage.DATA_TYPE:
+				return convertdataTypeToString(eDataType, instanceValue);
+			case WatERPPackage.CONSTRAINT_TYPE:
+				return convertconstraintTypeToString(eDataType, instanceValue);
+			case WatERPPackage.STRING:
+				return convertStringToString(eDataType, instanceValue);
+			case WatERPPackage.INTEGER:
+				return convertIntegerToString(eDataType, instanceValue);
+			case WatERPPackage.BOOLEAN:
+				return convertBooleanToString(eDataType, instanceValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ModelAnnotation createModelAnnotation() {
+		ModelAnnotationImpl modelAnnotation = new ModelAnnotationImpl();
+		return modelAnnotation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ClassAnnotation createClassAnnotation() {
+		ClassAnnotationImpl classAnnotation = new ClassAnnotationImpl();
+		return classAnnotation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Ontology createOntology() {
+		OntologyImpl ontology = new OntologyImpl();
+		return ontology;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Model createModel() {
+		ModelImpl model = new ModelImpl();
+		return model;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PropertyAnnotation createPropertyAnnotation() {
+		PropertyAnnotationImpl propertyAnnotation = new PropertyAnnotationImpl();
+		return propertyAnnotation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Expression createExpression() {
+		ExpressionImpl expression = new ExpressionImpl();
+		return expression;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Property createProperty() {
+		PropertyImpl property = new PropertyImpl();
+		return property;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MClass createMClass() {
+		MClassImpl mClass = new MClassImpl();
+		return mClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MProperty createMProperty() {
+		MPropertyImpl mProperty = new MPropertyImpl();
+		return mProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MCProperty createMCProperty() {
+		MCPropertyImpl mcProperty = new MCPropertyImpl();
+		return mcProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MDProperty createMDProperty() {
+		MDPropertyImpl mdProperty = new MDPropertyImpl();
+		return mdProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OClass createOClass() {
+		OClassImpl oClass = new OClassImpl();
+		return oClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OProperty createOProperty() {
+		OPropertyImpl oProperty = new OPropertyImpl();
+		return oProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OntologyConstraint createOntologyConstraint() {
+		OntologyConstraintImpl ontologyConstraint = new OntologyConstraintImpl();
+		return ontologyConstraint;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Equivalence createEquivalence() {
+		EquivalenceImpl equivalence = new EquivalenceImpl();
+		return equivalence;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public UnionClass createUnionClass() {
+		UnionClassImpl unionClass = new UnionClassImpl();
+		return unionClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ObjectProperty createObjectProperty() {
+		ObjectPropertyImpl objectProperty = new ObjectPropertyImpl();
+		return objectProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Restriction createRestriction() {
+		RestrictionImpl restriction = new RestrictionImpl();
+		return restriction;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HasDataValueRestriction createHasDataValueRestriction() {
+		HasDataValueRestrictionImpl hasDataValueRestriction = new HasDataValueRestrictionImpl();
+		return hasDataValueRestriction;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AllValuesFromRestriction createAllValuesFromRestriction() {
+		AllValuesFromRestrictionImpl allValuesFromRestriction = new AllValuesFromRestrictionImpl();
+		return allValuesFromRestriction;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AllValuesFromDataRestriction createAllValuesFromDataRestriction() {
+		AllValuesFromDataRestrictionImpl allValuesFromDataRestriction = new AllValuesFromDataRestrictionImpl();
+		return allValuesFromDataRestriction;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AllValuesFromClassRestriction createAllValuesFromClassRestriction() {
+		AllValuesFromClassRestrictionImpl allValuesFromClassRestriction = new AllValuesFromClassRestrictionImpl();
+		return allValuesFromClassRestriction;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DataProperty createDataProperty() {
+		DataPropertyImpl dataProperty = new DataPropertyImpl();
+		return dataProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SomeValuesFromRestriction createSomeValuesFromRestriction() {
+		SomeValuesFromRestrictionImpl someValuesFromRestriction = new SomeValuesFromRestrictionImpl();
+		return someValuesFromRestriction;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SomeValuesFromDataRestriction createSomeValuesFromDataRestriction() {
+		SomeValuesFromDataRestrictionImpl someValuesFromDataRestriction = new SomeValuesFromDataRestrictionImpl();
+		return someValuesFromDataRestriction;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SomeValuesFromClassRestriction createSomeValuesFromClassRestriction() {
+		SomeValuesFromClassRestrictionImpl someValuesFromClassRestriction = new SomeValuesFromClassRestrictionImpl();
+		return someValuesFromClassRestriction;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CardinalityRestriction createCardinalityRestriction() {
+		CardinalityRestrictionImpl cardinalityRestriction = new CardinalityRestrictionImpl();
+		return cardinalityRestriction;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MaximumCardinalityRestriction createMaximumCardinalityRestriction() {
+		MaximumCardinalityRestrictionImpl maximumCardinalityRestriction = new MaximumCardinalityRestrictionImpl();
+		return maximumCardinalityRestriction;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MinimumCardinalityRestriction createMinimumCardinalityRestriction() {
+		MinimumCardinalityRestrictionImpl minimumCardinalityRestriction = new MinimumCardinalityRestrictionImpl();
+		return minimumCardinalityRestriction;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TopNode createTopNode() {
+		TopNodeImpl topNode = new TopNodeImpl();
+		return topNode;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Observation createObservation() {
+		ObservationImpl observation = new ObservationImpl();
+		return observation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Sensor createSensor() {
+		SensorImpl sensor = new SensorImpl();
+		return sensor;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Export createExport() {
+		ExportImpl export = new ExportImpl();
+		return export;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ObservedProperty createObservedProperty() {
+		ObservedPropertyImpl observedProperty = new ObservedPropertyImpl();
+		return observedProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DLSafeRule createDLSafeRule() {
+		DLSafeRuleImpl dlSafeRule = new DLSafeRuleImpl();
+		return dlSafeRule;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Head createHead() {
+		HeadImpl head = new HeadImpl();
+		return head;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Body createBody() {
+		BodyImpl body = new BodyImpl();
+		return body;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Atom createAtom() {
+		AtomImpl atom = new AtomImpl();
+		return atom;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ObjectPropertyAtom createObjectPropertyAtom() {
+		ObjectPropertyAtomImpl objectPropertyAtom = new ObjectPropertyAtomImpl();
+		return objectPropertyAtom;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ClassAtom createClassAtom() {
+		ClassAtomImpl classAtom = new ClassAtomImpl();
+		return classAtom;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Variable createVariable() {
+		VariableImpl variable = new VariableImpl();
+		return variable;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ExpressionType createExpressionTypeFromString(EDataType eDataType, String initialValue) {
+		ExpressionType result = ExpressionType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertExpressionTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public dataType createdataTypeFromString(EDataType eDataType, String initialValue) {
+		dataType result = dataType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertdataTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public constraintType createconstraintTypeFromString(EDataType eDataType, String initialValue) {
+		constraintType result = constraintType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertconstraintTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String createStringFromString(EDataType eDataType, String initialValue) {
+		return (String)super.createFromString(eDataType, initialValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertStringToString(EDataType eDataType, Object instanceValue) {
+		return super.convertToString(eDataType, instanceValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Integer createIntegerFromString(EDataType eDataType, String initialValue) {
+		return (Integer)super.createFromString(eDataType, initialValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertIntegerToString(EDataType eDataType, Object instanceValue) {
+		return super.convertToString(eDataType, instanceValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Boolean createBooleanFromString(EDataType eDataType, String initialValue) {
+		return (Boolean)super.createFromString(eDataType, initialValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertBooleanToString(EDataType eDataType, Object instanceValue) {
+		return super.convertToString(eDataType, instanceValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public WatERPPackage getWatERPPackage() {
+		return (WatERPPackage)getEPackage();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @deprecated
+	 * @generated
+	 */
+	@Deprecated
+	public static WatERPPackage getPackage() {
+		return WatERPPackage.eINSTANCE;
+	}
+
+} //WatERPFactoryImpl

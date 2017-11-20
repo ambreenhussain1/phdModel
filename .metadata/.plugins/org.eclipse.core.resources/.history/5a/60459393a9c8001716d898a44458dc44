@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="WatERP" nsURI="http://org/eclipse/example/WatERP" nsPrefix="org.eclipse.example.WatERP">
+  <eAnnotations source="http://www.eclipse.org/OCL/Import">
+    <details key="ecore" value="http://www.eclipse.org/emf/2002/Ecore"/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="ModelAnnotation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="annotations" upperBound="-1"
+        eType="#//ClassAnnotation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="annotatedModel" lowerBound="1"
+        eType="#//Model"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="annotatingModel" lowerBound="1"
+        eType="#//Ontology"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassAnnotation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="annotatingClass" lowerBound="1"
+        eType="#//OClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="annotatedClass" lowerBound="1"
+        eType="#//MClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="propertyAnnotations" upperBound="-1"
+        eType="#//PropertyAnnotation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="expression" upperBound="-1"
+        eType="#//Expression" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ontology">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="OClass" upperBound="-1"
+        eType="#//OClass" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Model">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="MClass" upperBound="-1"
+        eType="#//MClass" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PropertyAnnotation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="annotatedProperty" lowerBound="1"
+        eType="#//MProperty"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="annotatingProperty" lowerBound="1"
+        eType="#//OProperty"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="expression" lowerBound="1"
+        eType="#//Expression" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Expression">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//ExpressionType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ExpressionType">
+    <eLiterals name="restrictionConstraint"/>
+    <eLiterals name="ruleConstraint" value="1"/>
+    <eLiterals name="algebric" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Property">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MClass">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="coOccuranceConstraint count ProcedureCount"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="coOccuranceConstraint" value="&#xA;&#x9;&#x9;self.name = 'Observation' implies &#xA;&#x9;&#x9;let c = self.classProperty->select(i|i.name ='ObservedProperty'), v = c.value->at(1)  &#xA;&#x9;&#x9;in self.dataproperty->select(d|d.name='Unit').value->asSequence()->at(1) = 'm3/h' and v='FlowDischarge'"/>
+      <details key="count" value="&#xA;&#x9;&#x9;self.name = 'Observation' implies&#xA;&#x9;&#x9;self.dataproperty.name->count('Procedure') = 1 and&#xA;&#x9;&#x9;self.dataproperty.name->count('Result') = 1 and&#xA;&#x9;&#x9;self.classProperty.name->count('ObservedProperty') = 1"/>
+      <details key="ProcedureCount" value="&#xA;&#x9;&#x9;let mc = MClass.allInstances()->select(mc|mc.name.indexOf('Obs') = 1),&#xA;&#x9;&#x9; c = ClassAnnotation.allInstances()->select(e|e.annotatedClass.name.indexOf('Obs') =1 ),&#xA;&#x9;&#x9;pa= PropertyAnnotation.allInstances()->select(p|p.annotatedProperty.name = 'Procedure' ) &#x9;&#x9;&#xA;&#x9;&#x9;in mc.dataproperty.name->count('Procedure') = 1 and pa.expression.value.indexOf('1') &lt;> -1"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dataproperty" upperBound="-1"
+        eType="#//MDProperty" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="classProperty" upperBound="-1"
+        eType="#//MCProperty" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MProperty" eSuperTypes="#//Property">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MCProperty" eSuperTypes="#//MProperty">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="classType" lowerBound="1"
+        eType="#//MClass"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MDProperty" eSuperTypes="#//MProperty">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//dataType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OClass">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isDeprecated" eType="#//Boolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subClass" upperBound="-1"
+        eType="#//OClass" eOpposite="#//OClass/subClassOf"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subClassOf" upperBound="-1"
+        eType="#//OClass" eOpposite="#//OClass/subClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="equivalentClass" upperBound="-1"
+        eType="#//OClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="unionClass" upperBound="-1"
+        eType="#//UnionClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="disjointClass" upperBound="-1"
+        eType="#//OClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="allValuesFromRestriction"
+        upperBound="-1" eType="#//AllValuesFromClassRestriction" eOpposite="#//AllValuesFromClassRestriction/allValuesFromClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="someValuesFromRestriction"
+        upperBound="-1" eType="#//SomeValuesFromClassRestriction" eOpposite="#//SomeValuesFromClassRestriction/someValuesFromClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dataProperty" upperBound="-1"
+        eType="#//DataProperty" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="objectProperty" upperBound="-1"
+        eType="#//ObjectProperty" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rule" upperBound="-1" eType="#//DLSafeRule"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OProperty" eSuperTypes="#//Property">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isDeprecated" eType="#//Boolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isFunctional" eType="#//Boolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subProperty" upperBound="-1"
+        eType="#//OProperty" eOpposite="#//OProperty/subPropertyOf"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subPropertyOf" upperBound="-1"
+        eType="#//OProperty" eOpposite="#//OProperty/subProperty"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="domain" upperBound="-1"
+        eType="#//OClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="equivalentProperty" upperBound="-1"
+        eType="#//OProperty"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="propertyRestriction" upperBound="-1"
+        eType="#//Restriction" containment="true" eOpposite="#//Restriction/onProperty"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="String" instanceClassName="java.lang.String"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="Integer" instanceClassName="java.lang.Integer"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="Boolean" instanceClassName="java.lang.Boolean"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="dataType">
+    <eLiterals name="String"/>
+    <eLiterals name="Integer" value="1"/>
+    <eLiterals name="Date" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OntologyConstraint"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="constraintType">
+    <eLiterals name="restriction"/>
+    <eLiterals name="rule" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Equivalence" eSuperTypes="#//OntologyConstraint">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="right" lowerBound="1" eType="#//OClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="left" lowerBound="1" eType="#//OClass"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UnionClass" eSuperTypes="#//OClass">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="unionOf" lowerBound="2"
+        upperBound="-1" eType="#//OClass"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ObjectProperty" eSuperTypes="#//OProperty">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="IsInverseFunctional" eType="#//Boolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isTransitive" eType="#//Boolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="IsSymmetric" eType="#//Boolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="range" upperBound="-1"
+        eType="#//OClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inverseOf" eType="#//ObjectProperty"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Restriction" eSuperTypes="#//OntologyConstraint">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="onProperty" lowerBound="1"
+        eType="#//OProperty" eOpposite="#//OProperty/propertyRestriction"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="HasDataValueRestriction" eSuperTypes="#//Restriction">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasDataValueLiteral" eType="#//dataType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AllValuesFromRestriction" eSuperTypes="#//Restriction"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AllValuesFromDataRestriction" eSuperTypes="#//AllValuesFromRestriction">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="allValuesFromData" eType="#//dataType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AllValuesFromClassRestriction" eSuperTypes="#//AllValuesFromRestriction">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="allValuesFromClass" lowerBound="1"
+        eType="#//OClass" eOpposite="#//OClass/allValuesFromRestriction"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DataProperty" eSuperTypes="#//OProperty">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="range" eType="#//dataType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SomeValuesFromRestriction" eSuperTypes="#//Restriction"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SomeValuesFromDataRestriction" eSuperTypes="#//SomeValuesFromRestriction">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="someValuesFromData" eType="#//dataType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SomeValuesFromClassRestriction" eSuperTypes="#//SomeValuesFromRestriction">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="someValuesFromClass" lowerBound="1"
+        eType="#//OClass" eOpposite="#//OClass/someValuesFromRestriction"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CardinalityRestriction" eSuperTypes="#//Restriction">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cardinality" eType="#//Integer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MaximumCardinalityRestriction" eSuperTypes="#//Restriction">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxCardinality" eType="#//Integer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MinimumCardinalityRestriction" eSuperTypes="#//Restriction">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="minCardinality" eType="#//Integer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TopNode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Model" lowerBound="1" eType="#//Model"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Ontology" lowerBound="1"
+        eType="#//Ontology" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Annotation" lowerBound="1"
+        eType="#//ModelAnnotation" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Observation" eSuperTypes="#//MClass">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="coconstraintOP"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="coconstraintOP" value="&#xA;&#x9;&#x9;--let c = ClassAnnotation.allInstances()->select(e|e.annotatedClass.name = self.name )->asSequence()->at(1) in &#xA;&#x9;&#x9;--if (self.observedProperty.value ='FlowDischarge') then self.unit.value = 'm3/h' else if self.observedProperty.value ='Temperature' then self.unit.value = 'C'&#x9;else 'no matched rule' endif endif&#xA;&#x9;&#x9;--let b: Boolean = self.observedProperty.value ='Temperature' , c : Boolean = self.observedProperty.value = 'FlowDischarge' in if b then self.unit.value = 'C' else if c then self.unit.value = 'm3/h' else 'nomatching rule' endif endif&#xA;&#x9;&#x9;let c = ClassAnnotation.allInstances()->select(e|e.annotatedClass.name = self.name )->asSequence()->at(1), v = c.expression.value->at(2) , op= v.substring(20,30) in op= self.observedProperty.value and self.unit.value = 'C'&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="foi" eType="#//MDProperty"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="procedure" eType="#//MDProperty"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="observedProperty" eType="#//MCProperty"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="result" eType="#//MDProperty"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="unit" eType="#//MDProperty"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="assignedSensorID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Sensor" eSuperTypes="#//MClass">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="mustIntId validateURI"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="mustIntId" value="&#xA;&#x9;&#x9;self.id.value.toInteger().oclIsTypeOf(Integer)"/>
+      <details key="validateURI" value="self.uri.value = 'urn:ogc:object:feature:sensor:' + self.id.value "/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="id" lowerBound="1" eType="#//MDProperty"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="uri" lowerBound="1" eType="#//MDProperty"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="desc" eType="#//MDProperty"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="observations" upperBound="-1"
+        eType="#//Observation" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Export" eSuperTypes="#//MClass"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ObservedProperty" eSuperTypes="#//MClass"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DLSafeRule" eSuperTypes="#//OntologyConstraint">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="head" lowerBound="1" eType="#//Head"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="body" lowerBound="1" eType="#//Body"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Head">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="atoms" upperBound="-1"
+        eType="#//Atom" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Body">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="atoms" upperBound="-1"
+        eType="#//Atom" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Atom"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ObjectPropertyAtom" eSuperTypes="#//Atom">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="objectProperty" lowerBound="1"
+        eType="#//ObjectProperty"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variable" lowerBound="1"
+        upperBound="2" eType="#//Variable"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="namedIndividual" eType="#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassAtom" eSuperTypes="#//Atom">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="class" lowerBound="1" eType="#//OClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variable" lowerBound="1"
+        eType="#//Variable" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Variable">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//String"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,209 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.OClass;
+import WatERP.SomeValuesFromClassRestriction;
+import WatERP.WatERPPackage;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Some Values From Class Restriction</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.SomeValuesFromClassRestrictionImpl#getSomeValuesFromClass <em>Some Values From Class</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class SomeValuesFromClassRestrictionImpl extends SomeValuesFromRestrictionImpl implements SomeValuesFromClassRestriction {
+	/**
+	 * The cached value of the '{@link #getSomeValuesFromClass() <em>Some Values From Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSomeValuesFromClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected OClass someValuesFromClass;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected SomeValuesFromClassRestrictionImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.SOME_VALUES_FROM_CLASS_RESTRICTION;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OClass getSomeValuesFromClass() {
+		if (someValuesFromClass != null && someValuesFromClass.eIsProxy()) {
+			InternalEObject oldSomeValuesFromClass = (InternalEObject)someValuesFromClass;
+			someValuesFromClass = (OClass)eResolveProxy(oldSomeValuesFromClass);
+			if (someValuesFromClass != oldSomeValuesFromClass) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, WatERPPackage.SOME_VALUES_FROM_CLASS_RESTRICTION__SOME_VALUES_FROM_CLASS, oldSomeValuesFromClass, someValuesFromClass));
+			}
+		}
+		return someValuesFromClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OClass basicGetSomeValuesFromClass() {
+		return someValuesFromClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetSomeValuesFromClass(OClass newSomeValuesFromClass, NotificationChain msgs) {
+		OClass oldSomeValuesFromClass = someValuesFromClass;
+		someValuesFromClass = newSomeValuesFromClass;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, WatERPPackage.SOME_VALUES_FROM_CLASS_RESTRICTION__SOME_VALUES_FROM_CLASS, oldSomeValuesFromClass, newSomeValuesFromClass);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setSomeValuesFromClass(OClass newSomeValuesFromClass) {
+		if (newSomeValuesFromClass != someValuesFromClass) {
+			NotificationChain msgs = null;
+			if (someValuesFromClass != null)
+				msgs = ((InternalEObject)someValuesFromClass).eInverseRemove(this, WatERPPackage.OCLASS__SOME_VALUES_FROM_RESTRICTION, OClass.class, msgs);
+			if (newSomeValuesFromClass != null)
+				msgs = ((InternalEObject)newSomeValuesFromClass).eInverseAdd(this, WatERPPackage.OCLASS__SOME_VALUES_FROM_RESTRICTION, OClass.class, msgs);
+			msgs = basicSetSomeValuesFromClass(newSomeValuesFromClass, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.SOME_VALUES_FROM_CLASS_RESTRICTION__SOME_VALUES_FROM_CLASS, newSomeValuesFromClass, newSomeValuesFromClass));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case WatERPPackage.SOME_VALUES_FROM_CLASS_RESTRICTION__SOME_VALUES_FROM_CLASS:
+				if (someValuesFromClass != null)
+					msgs = ((InternalEObject)someValuesFromClass).eInverseRemove(this, WatERPPackage.OCLASS__SOME_VALUES_FROM_RESTRICTION, OClass.class, msgs);
+				return basicSetSomeValuesFromClass((OClass)otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case WatERPPackage.SOME_VALUES_FROM_CLASS_RESTRICTION__SOME_VALUES_FROM_CLASS:
+				return basicSetSomeValuesFromClass(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.SOME_VALUES_FROM_CLASS_RESTRICTION__SOME_VALUES_FROM_CLASS:
+				if (resolve) return getSomeValuesFromClass();
+				return basicGetSomeValuesFromClass();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.SOME_VALUES_FROM_CLASS_RESTRICTION__SOME_VALUES_FROM_CLASS:
+				setSomeValuesFromClass((OClass)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.SOME_VALUES_FROM_CLASS_RESTRICTION__SOME_VALUES_FROM_CLASS:
+				setSomeValuesFromClass((OClass)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.SOME_VALUES_FROM_CLASS_RESTRICTION__SOME_VALUES_FROM_CLASS:
+				return someValuesFromClass != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //SomeValuesFromClassRestrictionImpl

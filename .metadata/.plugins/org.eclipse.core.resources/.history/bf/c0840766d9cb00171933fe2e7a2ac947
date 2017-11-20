@@ -1,0 +1,51 @@
+/**
+ */
+package WatERP;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Restriction</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.Restriction#getOnProperty <em>On Property</em>}</li>
+ * </ul>
+ *
+ * @see WatERP.WatERPPackage#getRestriction()
+ * @model
+ * @generated
+ */
+public interface Restriction extends OntologyConstraint {
+	/**
+	 * Returns the value of the '<em><b>On Property</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link WatERP.OProperty#getPropertyRestriction <em>Property Restriction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>On Property</em>' container reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>On Property</em>' container reference.
+	 * @see #setOnProperty(OProperty)
+	 * @see WatERP.WatERPPackage#getRestriction_OnProperty()
+	 * @see WatERP.OProperty#getPropertyRestriction
+	 * @model opposite="propertyRestriction" required="true" transient="false"
+	 * @generated
+	 */
+	OProperty getOnProperty();
+
+	/**
+	 * Sets the value of the '{@link WatERP.Restriction#getOnProperty <em>On Property</em>}' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>On Property</em>' container reference.
+	 * @see #getOnProperty()
+	 * @generated
+	 */
+	void setOnProperty(OProperty value);
+
+} // Restriction

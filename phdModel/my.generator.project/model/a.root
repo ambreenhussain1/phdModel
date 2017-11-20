@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.xxx.model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.xxx.model="http://www.xxx.com">
+  <tests att1="4" att2="3" name="MathsTest"/>
+</com.xxx.model:Model>

@@ -1,0 +1,53 @@
+package my.generator.project
+
+import com.google.inject.Inject
+import org.eclipse.emf.ecore.resource.Resource
+import org.eclipse.xtext.generator.IFileSystemAccess
+import org.eclipse.xtext.generator.IGenerator
+import org.eclipse.xtext.naming.IQualifiedNameProvider
+import org.eclipse.emf.ecore.EObject
+import root.RootPackage
+import root.Test
+import org.eclipse.emf.ecore.EClass
+import org.eclipse.emf.ecore.EAttribute
+
+class EMSGenerator implements IGenerator {
+	@Inject extension IQualifiedNameProvider
+	override void doGenerate(Resource resource, IFileSystemAccess fsa) {
+        for (EObject o : resource.contents) {
+           o.compile(fsa)
+        }
+    }
+ 
+   
+   
+ 
+    def compile(Test e, IFileSystemAccess fsa) {
+        fsa.generateFile(e.att1.toString+".java", '''
+        package «e.att1.toString» ;
+        
+        public class «e.att1.toString» {
+        	
+        	
+        	
+        }
+        ''')
+    }
+   
+ 
+   def dispatch void compile(EObject m, IFileSystemAccess fsa) {
+   	
+   }
+   
+   def packageName(EClass e) {
+		var name = e.eContainer.toString;
+		return name.substring(0, name.indexOf('@'))
+		}
+ 
+ }
+ 
+   
+    
+ 
+   
+	

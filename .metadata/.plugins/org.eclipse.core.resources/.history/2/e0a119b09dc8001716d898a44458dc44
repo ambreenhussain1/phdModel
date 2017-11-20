@@ -1,0 +1,18 @@
+/**
+ */
+package WatERP;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Ontology Constraint</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ *
+ * @see WatERP.WatERPPackage#getOntologyConstraint()
+ * @model
+ * @generated
+ */
+public interface OntologyConstraint extends EObject {
+} // OntologyConstraint

@@ -1,0 +1,36 @@
+module my.generator.project.EMSGenerator
+import org.eclipse.emf.mwe.utils.*
+ 
+var targetDir = "src-gen"
+var modelPath = "model"
+ 
+Workflow {
+ 
+    bean = StandaloneSetup {
+        registerGeneratedEPackage = "WatERP.WatERPPackage"
+      
+       	
+    }
+ 
+    component = DirectoryCleaner {
+        directory = targetDir
+    }
+ 
+    component =my.generator.project.EMSGeneratorSupport {}
+ 
+    component = org.eclipse.xtext.mwe.Reader {
+        path = modelPath
+        register = my.generator.project.EMSGeneratorSetup {}
+        loadResource = {
+            slot = "model"
+        }
+    }
+ 
+    component = org.eclipse.xtext.generator.GeneratorComponent {
+        register = my.generator.project.EMSGeneratorSetup {}
+        slot = 'model'
+        outlet = {
+            path = targetDir
+        }
+    }
+}

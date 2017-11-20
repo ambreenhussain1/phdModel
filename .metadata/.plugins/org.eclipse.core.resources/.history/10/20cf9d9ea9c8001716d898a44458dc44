@@ -1,0 +1,42 @@
+/**
+ */
+package WatERP;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Head</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.Head#getAtoms <em>Atoms</em>}</li>
+ * </ul>
+ *
+ * @see WatERP.WatERPPackage#getHead()
+ * @model
+ * @generated
+ */
+public interface Head extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Atoms</b></em>' containment reference list.
+	 * The list contents are of type {@link WatERP.Atom}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Atoms</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Atoms</em>' containment reference list.
+	 * @see WatERP.WatERPPackage#getHead_Atoms()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Atom> getAtoms();
+
+} // Head

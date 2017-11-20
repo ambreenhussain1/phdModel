@@ -1,0 +1,5068 @@
+/**
+ */
+package WatERP;
+
+import org.eclipse.emf.ecore.EAttribute;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
+import org.eclipse.emf.ecore.EEnum;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
+
+/**
+ * <!-- begin-user-doc -->
+ * The <b>Package</b> for the model.
+ * It contains accessors for the meta objects to represent
+ * <ul>
+ *   <li>each class,</li>
+ *   <li>each feature of each class,</li>
+ *   <li>each operation of each class,</li>
+ *   <li>each enum,</li>
+ *   <li>and each data type</li>
+ * </ul>
+ * <!-- end-user-doc -->
+ * @see WatERP.WatERPFactory
+ * @model kind="package"
+ *        annotation="http://www.eclipse.org/OCL/Import ecore='http://www.eclipse.org/emf/2002/Ecore'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore invocationDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL' settingDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL' validationDelegates='http://www.eclipse.org/emf/2002/Ecore/OCL'"
+ * @generated
+ */
+public interface WatERPPackage extends EPackage {
+	/**
+	 * The package name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNAME = "WatERP";
+
+	/**
+	 * The package namespace URI.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_URI = "http://org/eclipse/example/WatERP";
+
+	/**
+	 * The package namespace name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_PREFIX = "org.eclipse.example.WatERP";
+
+	/**
+	 * The singleton instance of the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	WatERPPackage eINSTANCE = WatERP.impl.WatERPPackageImpl.init();
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.ModelAnnotationImpl <em>Model Annotation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.ModelAnnotationImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getModelAnnotation()
+	 * @generated
+	 */
+	int MODEL_ANNOTATION = 0;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_ANNOTATION__ANNOTATIONS = 0;
+
+	/**
+	 * The feature id for the '<em><b>Annotated Model</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_ANNOTATION__ANNOTATED_MODEL = 1;
+
+	/**
+	 * The feature id for the '<em><b>Annotating Model</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_ANNOTATION__ANNOTATING_MODEL = 2;
+
+	/**
+	 * The number of structural features of the '<em>Model Annotation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_ANNOTATION_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Model Annotation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_ANNOTATION_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.ClassAnnotationImpl <em>Class Annotation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.ClassAnnotationImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getClassAnnotation()
+	 * @generated
+	 */
+	int CLASS_ANNOTATION = 1;
+
+	/**
+	 * The feature id for the '<em><b>Annotating Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS_ANNOTATION__ANNOTATING_CLASS = 0;
+
+	/**
+	 * The feature id for the '<em><b>Annotated Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS_ANNOTATION__ANNOTATED_CLASS = 1;
+
+	/**
+	 * The feature id for the '<em><b>Property Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS_ANNOTATION__PROPERTY_ANNOTATIONS = 2;
+
+	/**
+	 * The feature id for the '<em><b>Expression</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS_ANNOTATION__EXPRESSION = 3;
+
+	/**
+	 * The number of structural features of the '<em>Class Annotation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS_ANNOTATION_FEATURE_COUNT = 4;
+
+	/**
+	 * The number of operations of the '<em>Class Annotation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS_ANNOTATION_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.OntologyImpl <em>Ontology</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.OntologyImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getOntology()
+	 * @generated
+	 */
+	int ONTOLOGY = 2;
+
+	/**
+	 * The feature id for the '<em><b>OClass</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ONTOLOGY__OCLASS = 0;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ONTOLOGY__NAME = 1;
+
+	/**
+	 * The number of structural features of the '<em>Ontology</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ONTOLOGY_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Ontology</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ONTOLOGY_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.ModelImpl <em>Model</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.ModelImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getModel()
+	 * @generated
+	 */
+	int MODEL = 3;
+
+	/**
+	 * The feature id for the '<em><b>MClass</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL__MCLASS = 0;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL__NAME = 1;
+
+	/**
+	 * The number of structural features of the '<em>Model</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Model</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.PropertyAnnotationImpl <em>Property Annotation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.PropertyAnnotationImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getPropertyAnnotation()
+	 * @generated
+	 */
+	int PROPERTY_ANNOTATION = 4;
+
+	/**
+	 * The feature id for the '<em><b>Annotated Property</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROPERTY_ANNOTATION__ANNOTATED_PROPERTY = 0;
+
+	/**
+	 * The feature id for the '<em><b>Annotating Property</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROPERTY_ANNOTATION__ANNOTATING_PROPERTY = 1;
+
+	/**
+	 * The feature id for the '<em><b>Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROPERTY_ANNOTATION__EXPRESSION = 2;
+
+	/**
+	 * The number of structural features of the '<em>Property Annotation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROPERTY_ANNOTATION_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Property Annotation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROPERTY_ANNOTATION_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.ExpressionImpl <em>Expression</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.ExpressionImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getExpression()
+	 * @generated
+	 */
+	int EXPRESSION = 5;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXPRESSION__TYPE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXPRESSION__VALUE = 1;
+
+	/**
+	 * The number of structural features of the '<em>Expression</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXPRESSION_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Expression</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXPRESSION_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.PropertyImpl <em>Property</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.PropertyImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getProperty()
+	 * @generated
+	 */
+	int PROPERTY = 6;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROPERTY__NAME = 0;
+
+	/**
+	 * The number of structural features of the '<em>Property</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROPERTY_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Property</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROPERTY_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.MClassImpl <em>MClass</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.MClassImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getMClass()
+	 * @generated
+	 */
+	int MCLASS = 7;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MCLASS__NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Dataproperty</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MCLASS__DATAPROPERTY = 1;
+
+	/**
+	 * The feature id for the '<em><b>Class Property</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MCLASS__CLASS_PROPERTY = 2;
+
+	/**
+	 * The number of structural features of the '<em>MClass</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MCLASS_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>MClass</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MCLASS_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.MPropertyImpl <em>MProperty</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.MPropertyImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getMProperty()
+	 * @generated
+	 */
+	int MPROPERTY = 8;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MPROPERTY__NAME = PROPERTY__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MPROPERTY__VALUE = PROPERTY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>MProperty</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MPROPERTY_FEATURE_COUNT = PROPERTY_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>MProperty</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MPROPERTY_OPERATION_COUNT = PROPERTY_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.MCPropertyImpl <em>MC Property</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.MCPropertyImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getMCProperty()
+	 * @generated
+	 */
+	int MC_PROPERTY = 9;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MC_PROPERTY__NAME = MPROPERTY__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MC_PROPERTY__VALUE = MPROPERTY__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Class Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MC_PROPERTY__CLASS_TYPE = MPROPERTY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>MC Property</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MC_PROPERTY_FEATURE_COUNT = MPROPERTY_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>MC Property</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MC_PROPERTY_OPERATION_COUNT = MPROPERTY_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.MDPropertyImpl <em>MD Property</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.MDPropertyImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getMDProperty()
+	 * @generated
+	 */
+	int MD_PROPERTY = 10;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MD_PROPERTY__NAME = MPROPERTY__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MD_PROPERTY__VALUE = MPROPERTY__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MD_PROPERTY__TYPE = MPROPERTY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>MD Property</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MD_PROPERTY_FEATURE_COUNT = MPROPERTY_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>MD Property</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MD_PROPERTY_OPERATION_COUNT = MPROPERTY_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.OClassImpl <em>OClass</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.OClassImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getOClass()
+	 * @generated
+	 */
+	int OCLASS = 11;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCLASS__NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Is Deprecated</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCLASS__IS_DEPRECATED = 1;
+
+	/**
+	 * The feature id for the '<em><b>Sub Class</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCLASS__SUB_CLASS = 2;
+
+	/**
+	 * The feature id for the '<em><b>Sub Class Of</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCLASS__SUB_CLASS_OF = 3;
+
+	/**
+	 * The feature id for the '<em><b>Equivalent Class</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCLASS__EQUIVALENT_CLASS = 4;
+
+	/**
+	 * The feature id for the '<em><b>Union Class</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCLASS__UNION_CLASS = 5;
+
+	/**
+	 * The feature id for the '<em><b>Disjoint Class</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCLASS__DISJOINT_CLASS = 6;
+
+	/**
+	 * The feature id for the '<em><b>All Values From Restriction</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCLASS__ALL_VALUES_FROM_RESTRICTION = 7;
+
+	/**
+	 * The feature id for the '<em><b>Some Values From Restriction</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCLASS__SOME_VALUES_FROM_RESTRICTION = 8;
+
+	/**
+	 * The feature id for the '<em><b>Data Property</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCLASS__DATA_PROPERTY = 9;
+
+	/**
+	 * The feature id for the '<em><b>Object Property</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCLASS__OBJECT_PROPERTY = 10;
+
+	/**
+	 * The feature id for the '<em><b>Rule</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCLASS__RULE = 11;
+
+	/**
+	 * The number of structural features of the '<em>OClass</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCLASS_FEATURE_COUNT = 12;
+
+	/**
+	 * The number of operations of the '<em>OClass</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCLASS_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.OPropertyImpl <em>OProperty</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.OPropertyImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getOProperty()
+	 * @generated
+	 */
+	int OPROPERTY = 12;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPROPERTY__NAME = PROPERTY__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Is Deprecated</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPROPERTY__IS_DEPRECATED = PROPERTY_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Is Functional</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPROPERTY__IS_FUNCTIONAL = PROPERTY_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Sub Property</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPROPERTY__SUB_PROPERTY = PROPERTY_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Sub Property Of</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPROPERTY__SUB_PROPERTY_OF = PROPERTY_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Domain</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPROPERTY__DOMAIN = PROPERTY_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Equivalent Property</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPROPERTY__EQUIVALENT_PROPERTY = PROPERTY_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Property Restriction</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPROPERTY__PROPERTY_RESTRICTION = PROPERTY_FEATURE_COUNT + 6;
+
+	/**
+	 * The number of structural features of the '<em>OProperty</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPROPERTY_FEATURE_COUNT = PROPERTY_FEATURE_COUNT + 7;
+
+	/**
+	 * The number of operations of the '<em>OProperty</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPROPERTY_OPERATION_COUNT = PROPERTY_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.OntologyConstraintImpl <em>Ontology Constraint</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.OntologyConstraintImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getOntologyConstraint()
+	 * @generated
+	 */
+	int ONTOLOGY_CONSTRAINT = 13;
+
+	/**
+	 * The number of structural features of the '<em>Ontology Constraint</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ONTOLOGY_CONSTRAINT_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Ontology Constraint</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ONTOLOGY_CONSTRAINT_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.EquivalenceImpl <em>Equivalence</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.EquivalenceImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getEquivalence()
+	 * @generated
+	 */
+	int EQUIVALENCE = 14;
+
+	/**
+	 * The feature id for the '<em><b>Right</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EQUIVALENCE__RIGHT = ONTOLOGY_CONSTRAINT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Left</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EQUIVALENCE__LEFT = ONTOLOGY_CONSTRAINT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Equivalence</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EQUIVALENCE_FEATURE_COUNT = ONTOLOGY_CONSTRAINT_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>Equivalence</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EQUIVALENCE_OPERATION_COUNT = ONTOLOGY_CONSTRAINT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.UnionClassImpl <em>Union Class</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.UnionClassImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getUnionClass()
+	 * @generated
+	 */
+	int UNION_CLASS = 15;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION_CLASS__NAME = OCLASS__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Is Deprecated</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION_CLASS__IS_DEPRECATED = OCLASS__IS_DEPRECATED;
+
+	/**
+	 * The feature id for the '<em><b>Sub Class</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION_CLASS__SUB_CLASS = OCLASS__SUB_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Sub Class Of</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION_CLASS__SUB_CLASS_OF = OCLASS__SUB_CLASS_OF;
+
+	/**
+	 * The feature id for the '<em><b>Equivalent Class</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION_CLASS__EQUIVALENT_CLASS = OCLASS__EQUIVALENT_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Union Class</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION_CLASS__UNION_CLASS = OCLASS__UNION_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Disjoint Class</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION_CLASS__DISJOINT_CLASS = OCLASS__DISJOINT_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>All Values From Restriction</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION_CLASS__ALL_VALUES_FROM_RESTRICTION = OCLASS__ALL_VALUES_FROM_RESTRICTION;
+
+	/**
+	 * The feature id for the '<em><b>Some Values From Restriction</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION_CLASS__SOME_VALUES_FROM_RESTRICTION = OCLASS__SOME_VALUES_FROM_RESTRICTION;
+
+	/**
+	 * The feature id for the '<em><b>Data Property</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION_CLASS__DATA_PROPERTY = OCLASS__DATA_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Object Property</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION_CLASS__OBJECT_PROPERTY = OCLASS__OBJECT_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Rule</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION_CLASS__RULE = OCLASS__RULE;
+
+	/**
+	 * The feature id for the '<em><b>Union Of</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION_CLASS__UNION_OF = OCLASS_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Union Class</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION_CLASS_FEATURE_COUNT = OCLASS_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Union Class</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION_CLASS_OPERATION_COUNT = OCLASS_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.ObjectPropertyImpl <em>Object Property</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.ObjectPropertyImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getObjectProperty()
+	 * @generated
+	 */
+	int OBJECT_PROPERTY = 16;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY__NAME = OPROPERTY__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Is Deprecated</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY__IS_DEPRECATED = OPROPERTY__IS_DEPRECATED;
+
+	/**
+	 * The feature id for the '<em><b>Is Functional</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY__IS_FUNCTIONAL = OPROPERTY__IS_FUNCTIONAL;
+
+	/**
+	 * The feature id for the '<em><b>Sub Property</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY__SUB_PROPERTY = OPROPERTY__SUB_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Sub Property Of</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY__SUB_PROPERTY_OF = OPROPERTY__SUB_PROPERTY_OF;
+
+	/**
+	 * The feature id for the '<em><b>Domain</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY__DOMAIN = OPROPERTY__DOMAIN;
+
+	/**
+	 * The feature id for the '<em><b>Equivalent Property</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY__EQUIVALENT_PROPERTY = OPROPERTY__EQUIVALENT_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Property Restriction</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY__PROPERTY_RESTRICTION = OPROPERTY__PROPERTY_RESTRICTION;
+
+	/**
+	 * The feature id for the '<em><b>Is Inverse Functional</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY__IS_INVERSE_FUNCTIONAL = OPROPERTY_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Is Transitive</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY__IS_TRANSITIVE = OPROPERTY_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Is Symmetric</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY__IS_SYMMETRIC = OPROPERTY_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Range</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY__RANGE = OPROPERTY_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Inverse Of</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY__INVERSE_OF = OPROPERTY_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Object Property</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY_FEATURE_COUNT = OPROPERTY_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>Object Property</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY_OPERATION_COUNT = OPROPERTY_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.RestrictionImpl <em>Restriction</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.RestrictionImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getRestriction()
+	 * @generated
+	 */
+	int RESTRICTION = 17;
+
+	/**
+	 * The feature id for the '<em><b>On Property</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESTRICTION__ON_PROPERTY = ONTOLOGY_CONSTRAINT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESTRICTION_FEATURE_COUNT = ONTOLOGY_CONSTRAINT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESTRICTION_OPERATION_COUNT = ONTOLOGY_CONSTRAINT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.HasDataValueRestrictionImpl <em>Has Data Value Restriction</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.HasDataValueRestrictionImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getHasDataValueRestriction()
+	 * @generated
+	 */
+	int HAS_DATA_VALUE_RESTRICTION = 18;
+
+	/**
+	 * The feature id for the '<em><b>On Property</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HAS_DATA_VALUE_RESTRICTION__ON_PROPERTY = RESTRICTION__ON_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Has Data Value Literal</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HAS_DATA_VALUE_RESTRICTION__HAS_DATA_VALUE_LITERAL = RESTRICTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Has Data Value Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HAS_DATA_VALUE_RESTRICTION_FEATURE_COUNT = RESTRICTION_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Has Data Value Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HAS_DATA_VALUE_RESTRICTION_OPERATION_COUNT = RESTRICTION_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.AllValuesFromRestrictionImpl <em>All Values From Restriction</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.AllValuesFromRestrictionImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getAllValuesFromRestriction()
+	 * @generated
+	 */
+	int ALL_VALUES_FROM_RESTRICTION = 19;
+
+	/**
+	 * The feature id for the '<em><b>On Property</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALL_VALUES_FROM_RESTRICTION__ON_PROPERTY = RESTRICTION__ON_PROPERTY;
+
+	/**
+	 * The number of structural features of the '<em>All Values From Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALL_VALUES_FROM_RESTRICTION_FEATURE_COUNT = RESTRICTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>All Values From Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALL_VALUES_FROM_RESTRICTION_OPERATION_COUNT = RESTRICTION_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.AllValuesFromDataRestrictionImpl <em>All Values From Data Restriction</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.AllValuesFromDataRestrictionImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getAllValuesFromDataRestriction()
+	 * @generated
+	 */
+	int ALL_VALUES_FROM_DATA_RESTRICTION = 20;
+
+	/**
+	 * The feature id for the '<em><b>On Property</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALL_VALUES_FROM_DATA_RESTRICTION__ON_PROPERTY = ALL_VALUES_FROM_RESTRICTION__ON_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>All Values From Data</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALL_VALUES_FROM_DATA_RESTRICTION__ALL_VALUES_FROM_DATA = ALL_VALUES_FROM_RESTRICTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>All Values From Data Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALL_VALUES_FROM_DATA_RESTRICTION_FEATURE_COUNT = ALL_VALUES_FROM_RESTRICTION_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>All Values From Data Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALL_VALUES_FROM_DATA_RESTRICTION_OPERATION_COUNT = ALL_VALUES_FROM_RESTRICTION_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.AllValuesFromClassRestrictionImpl <em>All Values From Class Restriction</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.AllValuesFromClassRestrictionImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getAllValuesFromClassRestriction()
+	 * @generated
+	 */
+	int ALL_VALUES_FROM_CLASS_RESTRICTION = 21;
+
+	/**
+	 * The feature id for the '<em><b>On Property</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALL_VALUES_FROM_CLASS_RESTRICTION__ON_PROPERTY = ALL_VALUES_FROM_RESTRICTION__ON_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>All Values From Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALL_VALUES_FROM_CLASS_RESTRICTION__ALL_VALUES_FROM_CLASS = ALL_VALUES_FROM_RESTRICTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>All Values From Class Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALL_VALUES_FROM_CLASS_RESTRICTION_FEATURE_COUNT = ALL_VALUES_FROM_RESTRICTION_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>All Values From Class Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ALL_VALUES_FROM_CLASS_RESTRICTION_OPERATION_COUNT = ALL_VALUES_FROM_RESTRICTION_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.DataPropertyImpl <em>Data Property</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.DataPropertyImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getDataProperty()
+	 * @generated
+	 */
+	int DATA_PROPERTY = 22;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_PROPERTY__NAME = OPROPERTY__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Is Deprecated</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_PROPERTY__IS_DEPRECATED = OPROPERTY__IS_DEPRECATED;
+
+	/**
+	 * The feature id for the '<em><b>Is Functional</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_PROPERTY__IS_FUNCTIONAL = OPROPERTY__IS_FUNCTIONAL;
+
+	/**
+	 * The feature id for the '<em><b>Sub Property</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_PROPERTY__SUB_PROPERTY = OPROPERTY__SUB_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Sub Property Of</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_PROPERTY__SUB_PROPERTY_OF = OPROPERTY__SUB_PROPERTY_OF;
+
+	/**
+	 * The feature id for the '<em><b>Domain</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_PROPERTY__DOMAIN = OPROPERTY__DOMAIN;
+
+	/**
+	 * The feature id for the '<em><b>Equivalent Property</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_PROPERTY__EQUIVALENT_PROPERTY = OPROPERTY__EQUIVALENT_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Property Restriction</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_PROPERTY__PROPERTY_RESTRICTION = OPROPERTY__PROPERTY_RESTRICTION;
+
+	/**
+	 * The feature id for the '<em><b>Range</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_PROPERTY__RANGE = OPROPERTY_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Data Property</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_PROPERTY_FEATURE_COUNT = OPROPERTY_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Data Property</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DATA_PROPERTY_OPERATION_COUNT = OPROPERTY_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.SomeValuesFromRestrictionImpl <em>Some Values From Restriction</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.SomeValuesFromRestrictionImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getSomeValuesFromRestriction()
+	 * @generated
+	 */
+	int SOME_VALUES_FROM_RESTRICTION = 23;
+
+	/**
+	 * The feature id for the '<em><b>On Property</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOME_VALUES_FROM_RESTRICTION__ON_PROPERTY = RESTRICTION__ON_PROPERTY;
+
+	/**
+	 * The number of structural features of the '<em>Some Values From Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOME_VALUES_FROM_RESTRICTION_FEATURE_COUNT = RESTRICTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Some Values From Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOME_VALUES_FROM_RESTRICTION_OPERATION_COUNT = RESTRICTION_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.SomeValuesFromDataRestrictionImpl <em>Some Values From Data Restriction</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.SomeValuesFromDataRestrictionImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getSomeValuesFromDataRestriction()
+	 * @generated
+	 */
+	int SOME_VALUES_FROM_DATA_RESTRICTION = 24;
+
+	/**
+	 * The feature id for the '<em><b>On Property</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOME_VALUES_FROM_DATA_RESTRICTION__ON_PROPERTY = SOME_VALUES_FROM_RESTRICTION__ON_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Some Values From Data</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOME_VALUES_FROM_DATA_RESTRICTION__SOME_VALUES_FROM_DATA = SOME_VALUES_FROM_RESTRICTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Some Values From Data Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOME_VALUES_FROM_DATA_RESTRICTION_FEATURE_COUNT = SOME_VALUES_FROM_RESTRICTION_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Some Values From Data Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOME_VALUES_FROM_DATA_RESTRICTION_OPERATION_COUNT = SOME_VALUES_FROM_RESTRICTION_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.SomeValuesFromClassRestrictionImpl <em>Some Values From Class Restriction</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.SomeValuesFromClassRestrictionImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getSomeValuesFromClassRestriction()
+	 * @generated
+	 */
+	int SOME_VALUES_FROM_CLASS_RESTRICTION = 25;
+
+	/**
+	 * The feature id for the '<em><b>On Property</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOME_VALUES_FROM_CLASS_RESTRICTION__ON_PROPERTY = SOME_VALUES_FROM_RESTRICTION__ON_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Some Values From Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOME_VALUES_FROM_CLASS_RESTRICTION__SOME_VALUES_FROM_CLASS = SOME_VALUES_FROM_RESTRICTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Some Values From Class Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOME_VALUES_FROM_CLASS_RESTRICTION_FEATURE_COUNT = SOME_VALUES_FROM_RESTRICTION_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Some Values From Class Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOME_VALUES_FROM_CLASS_RESTRICTION_OPERATION_COUNT = SOME_VALUES_FROM_RESTRICTION_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.CardinalityRestrictionImpl <em>Cardinality Restriction</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.CardinalityRestrictionImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getCardinalityRestriction()
+	 * @generated
+	 */
+	int CARDINALITY_RESTRICTION = 26;
+
+	/**
+	 * The feature id for the '<em><b>On Property</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CARDINALITY_RESTRICTION__ON_PROPERTY = RESTRICTION__ON_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Cardinality</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CARDINALITY_RESTRICTION__CARDINALITY = RESTRICTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Cardinality Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CARDINALITY_RESTRICTION_FEATURE_COUNT = RESTRICTION_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Cardinality Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CARDINALITY_RESTRICTION_OPERATION_COUNT = RESTRICTION_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.MaximumCardinalityRestrictionImpl <em>Maximum Cardinality Restriction</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.MaximumCardinalityRestrictionImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getMaximumCardinalityRestriction()
+	 * @generated
+	 */
+	int MAXIMUM_CARDINALITY_RESTRICTION = 27;
+
+	/**
+	 * The feature id for the '<em><b>On Property</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAXIMUM_CARDINALITY_RESTRICTION__ON_PROPERTY = RESTRICTION__ON_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Max Cardinality</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAXIMUM_CARDINALITY_RESTRICTION__MAX_CARDINALITY = RESTRICTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Maximum Cardinality Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAXIMUM_CARDINALITY_RESTRICTION_FEATURE_COUNT = RESTRICTION_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Maximum Cardinality Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAXIMUM_CARDINALITY_RESTRICTION_OPERATION_COUNT = RESTRICTION_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.MinimumCardinalityRestrictionImpl <em>Minimum Cardinality Restriction</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.MinimumCardinalityRestrictionImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getMinimumCardinalityRestriction()
+	 * @generated
+	 */
+	int MINIMUM_CARDINALITY_RESTRICTION = 28;
+
+	/**
+	 * The feature id for the '<em><b>On Property</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MINIMUM_CARDINALITY_RESTRICTION__ON_PROPERTY = RESTRICTION__ON_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Min Cardinality</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MINIMUM_CARDINALITY_RESTRICTION__MIN_CARDINALITY = RESTRICTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Minimum Cardinality Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MINIMUM_CARDINALITY_RESTRICTION_FEATURE_COUNT = RESTRICTION_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Minimum Cardinality Restriction</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MINIMUM_CARDINALITY_RESTRICTION_OPERATION_COUNT = RESTRICTION_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.TopNodeImpl <em>Top Node</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.TopNodeImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getTopNode()
+	 * @generated
+	 */
+	int TOP_NODE = 29;
+
+	/**
+	 * The feature id for the '<em><b>Model</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOP_NODE__MODEL = 0;
+
+	/**
+	 * The feature id for the '<em><b>Ontology</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOP_NODE__ONTOLOGY = 1;
+
+	/**
+	 * The feature id for the '<em><b>Annotation</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOP_NODE__ANNOTATION = 2;
+
+	/**
+	 * The number of structural features of the '<em>Top Node</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOP_NODE_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Top Node</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOP_NODE_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.ObservationImpl <em>Observation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.ObservationImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getObservation()
+	 * @generated
+	 */
+	int OBSERVATION = 30;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBSERVATION__NAME = MCLASS__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Dataproperty</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBSERVATION__DATAPROPERTY = MCLASS__DATAPROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Class Property</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBSERVATION__CLASS_PROPERTY = MCLASS__CLASS_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Foi</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBSERVATION__FOI = MCLASS_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Procedure</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBSERVATION__PROCEDURE = MCLASS_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Observed Property</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBSERVATION__OBSERVED_PROPERTY = MCLASS_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Result</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBSERVATION__RESULT = MCLASS_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Unit</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBSERVATION__UNIT = MCLASS_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Assigned Sensor ID</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBSERVATION__ASSIGNED_SENSOR_ID = MCLASS_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of structural features of the '<em>Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBSERVATION_FEATURE_COUNT = MCLASS_FEATURE_COUNT + 6;
+
+	/**
+	 * The number of operations of the '<em>Observation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBSERVATION_OPERATION_COUNT = MCLASS_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.SensorImpl <em>Sensor</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.SensorImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getSensor()
+	 * @generated
+	 */
+	int SENSOR = 31;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SENSOR__NAME = MCLASS__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Dataproperty</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SENSOR__DATAPROPERTY = MCLASS__DATAPROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Class Property</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SENSOR__CLASS_PROPERTY = MCLASS__CLASS_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SENSOR__ID = MCLASS_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Uri</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SENSOR__URI = MCLASS_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Desc</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SENSOR__DESC = MCLASS_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Observations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SENSOR__OBSERVATIONS = MCLASS_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of structural features of the '<em>Sensor</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SENSOR_FEATURE_COUNT = MCLASS_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of operations of the '<em>Sensor</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SENSOR_OPERATION_COUNT = MCLASS_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.ExportImpl <em>Export</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.ExportImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getExport()
+	 * @generated
+	 */
+	int EXPORT = 32;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXPORT__NAME = MCLASS__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Dataproperty</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXPORT__DATAPROPERTY = MCLASS__DATAPROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Class Property</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXPORT__CLASS_PROPERTY = MCLASS__CLASS_PROPERTY;
+
+	/**
+	 * The number of structural features of the '<em>Export</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXPORT_FEATURE_COUNT = MCLASS_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Export</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXPORT_OPERATION_COUNT = MCLASS_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.ObservedPropertyImpl <em>Observed Property</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.ObservedPropertyImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getObservedProperty()
+	 * @generated
+	 */
+	int OBSERVED_PROPERTY = 33;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBSERVED_PROPERTY__NAME = MCLASS__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Dataproperty</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBSERVED_PROPERTY__DATAPROPERTY = MCLASS__DATAPROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Class Property</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBSERVED_PROPERTY__CLASS_PROPERTY = MCLASS__CLASS_PROPERTY;
+
+	/**
+	 * The number of structural features of the '<em>Observed Property</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBSERVED_PROPERTY_FEATURE_COUNT = MCLASS_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Observed Property</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBSERVED_PROPERTY_OPERATION_COUNT = MCLASS_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.DLSafeRuleImpl <em>DL Safe Rule</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.DLSafeRuleImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getDLSafeRule()
+	 * @generated
+	 */
+	int DL_SAFE_RULE = 34;
+
+	/**
+	 * The feature id for the '<em><b>Head</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DL_SAFE_RULE__HEAD = ONTOLOGY_CONSTRAINT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Body</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DL_SAFE_RULE__BODY = ONTOLOGY_CONSTRAINT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>DL Safe Rule</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DL_SAFE_RULE_FEATURE_COUNT = ONTOLOGY_CONSTRAINT_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>DL Safe Rule</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DL_SAFE_RULE_OPERATION_COUNT = ONTOLOGY_CONSTRAINT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.HeadImpl <em>Head</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.HeadImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getHead()
+	 * @generated
+	 */
+	int HEAD = 35;
+
+	/**
+	 * The feature id for the '<em><b>Atoms</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HEAD__ATOMS = 0;
+
+	/**
+	 * The number of structural features of the '<em>Head</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HEAD_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Head</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HEAD_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.BodyImpl <em>Body</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.BodyImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getBody()
+	 * @generated
+	 */
+	int BODY = 36;
+
+	/**
+	 * The feature id for the '<em><b>Atoms</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BODY__ATOMS = 0;
+
+	/**
+	 * The number of structural features of the '<em>Body</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BODY_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Body</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BODY_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.AtomImpl <em>Atom</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.AtomImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getAtom()
+	 * @generated
+	 */
+	int ATOM = 37;
+
+	/**
+	 * The number of structural features of the '<em>Atom</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATOM_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Atom</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATOM_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.ObjectPropertyAtomImpl <em>Object Property Atom</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.ObjectPropertyAtomImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getObjectPropertyAtom()
+	 * @generated
+	 */
+	int OBJECT_PROPERTY_ATOM = 38;
+
+	/**
+	 * The feature id for the '<em><b>Object Property</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY_ATOM__OBJECT_PROPERTY = ATOM_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Variable</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY_ATOM__VARIABLE = ATOM_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Named Individual</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY_ATOM__NAMED_INDIVIDUAL = ATOM_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Object Property Atom</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY_ATOM_FEATURE_COUNT = ATOM_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of operations of the '<em>Object Property Atom</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OBJECT_PROPERTY_ATOM_OPERATION_COUNT = ATOM_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.ClassAtomImpl <em>Class Atom</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.ClassAtomImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getClassAtom()
+	 * @generated
+	 */
+	int CLASS_ATOM = 39;
+
+	/**
+	 * The feature id for the '<em><b>Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS_ATOM__CLASS = ATOM_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Variable</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS_ATOM__VARIABLE = ATOM_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Class Atom</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS_ATOM_FEATURE_COUNT = ATOM_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>Class Atom</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS_ATOM_OPERATION_COUNT = ATOM_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.impl.VariableImpl <em>Variable</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.impl.VariableImpl
+	 * @see WatERP.impl.WatERPPackageImpl#getVariable()
+	 * @generated
+	 */
+	int VARIABLE = 40;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VARIABLE__NAME = 0;
+
+	/**
+	 * The number of structural features of the '<em>Variable</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VARIABLE_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Variable</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VARIABLE_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link WatERP.ExpressionType <em>Expression Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.ExpressionType
+	 * @see WatERP.impl.WatERPPackageImpl#getExpressionType()
+	 * @generated
+	 */
+	int EXPRESSION_TYPE = 41;
+
+	/**
+	 * The meta object id for the '{@link WatERP.dataType <em>data Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.dataType
+	 * @see WatERP.impl.WatERPPackageImpl#getdataType()
+	 * @generated
+	 */
+	int DATA_TYPE = 42;
+
+	/**
+	 * The meta object id for the '{@link WatERP.constraintType <em>constraint Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see WatERP.constraintType
+	 * @see WatERP.impl.WatERPPackageImpl#getconstraintType()
+	 * @generated
+	 */
+	int CONSTRAINT_TYPE = 43;
+
+	/**
+	 * The meta object id for the '<em>String</em>' data type.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see java.lang.String
+	 * @see WatERP.impl.WatERPPackageImpl#getString()
+	 * @generated
+	 */
+	int STRING = 44;
+
+	/**
+	 * The meta object id for the '<em>Integer</em>' data type.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see java.lang.Integer
+	 * @see WatERP.impl.WatERPPackageImpl#getInteger()
+	 * @generated
+	 */
+	int INTEGER = 45;
+
+	/**
+	 * The meta object id for the '<em>Boolean</em>' data type.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see java.lang.Boolean
+	 * @see WatERP.impl.WatERPPackageImpl#getBoolean()
+	 * @generated
+	 */
+	int BOOLEAN = 46;
+
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.ModelAnnotation <em>Model Annotation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Model Annotation</em>'.
+	 * @see WatERP.ModelAnnotation
+	 * @generated
+	 */
+	EClass getModelAnnotation();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link WatERP.ModelAnnotation#getAnnotations <em>Annotations</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Annotations</em>'.
+	 * @see WatERP.ModelAnnotation#getAnnotations()
+	 * @see #getModelAnnotation()
+	 * @generated
+	 */
+	EReference getModelAnnotation_Annotations();
+
+	/**
+	 * Returns the meta object for the reference '{@link WatERP.ModelAnnotation#getAnnotatedModel <em>Annotated Model</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Annotated Model</em>'.
+	 * @see WatERP.ModelAnnotation#getAnnotatedModel()
+	 * @see #getModelAnnotation()
+	 * @generated
+	 */
+	EReference getModelAnnotation_AnnotatedModel();
+
+	/**
+	 * Returns the meta object for the reference '{@link WatERP.ModelAnnotation#getAnnotatingModel <em>Annotating Model</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Annotating Model</em>'.
+	 * @see WatERP.ModelAnnotation#getAnnotatingModel()
+	 * @see #getModelAnnotation()
+	 * @generated
+	 */
+	EReference getModelAnnotation_AnnotatingModel();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.ClassAnnotation <em>Class Annotation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Class Annotation</em>'.
+	 * @see WatERP.ClassAnnotation
+	 * @generated
+	 */
+	EClass getClassAnnotation();
+
+	/**
+	 * Returns the meta object for the reference '{@link WatERP.ClassAnnotation#getAnnotatingClass <em>Annotating Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Annotating Class</em>'.
+	 * @see WatERP.ClassAnnotation#getAnnotatingClass()
+	 * @see #getClassAnnotation()
+	 * @generated
+	 */
+	EReference getClassAnnotation_AnnotatingClass();
+
+	/**
+	 * Returns the meta object for the reference '{@link WatERP.ClassAnnotation#getAnnotatedClass <em>Annotated Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Annotated Class</em>'.
+	 * @see WatERP.ClassAnnotation#getAnnotatedClass()
+	 * @see #getClassAnnotation()
+	 * @generated
+	 */
+	EReference getClassAnnotation_AnnotatedClass();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link WatERP.ClassAnnotation#getPropertyAnnotations <em>Property Annotations</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Property Annotations</em>'.
+	 * @see WatERP.ClassAnnotation#getPropertyAnnotations()
+	 * @see #getClassAnnotation()
+	 * @generated
+	 */
+	EReference getClassAnnotation_PropertyAnnotations();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link WatERP.ClassAnnotation#getExpression <em>Expression</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Expression</em>'.
+	 * @see WatERP.ClassAnnotation#getExpression()
+	 * @see #getClassAnnotation()
+	 * @generated
+	 */
+	EReference getClassAnnotation_Expression();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.Ontology <em>Ontology</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Ontology</em>'.
+	 * @see WatERP.Ontology
+	 * @generated
+	 */
+	EClass getOntology();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link WatERP.Ontology#getOClass <em>OClass</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>OClass</em>'.
+	 * @see WatERP.Ontology#getOClass()
+	 * @see #getOntology()
+	 * @generated
+	 */
+	EReference getOntology_OClass();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.Ontology#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see WatERP.Ontology#getName()
+	 * @see #getOntology()
+	 * @generated
+	 */
+	EAttribute getOntology_Name();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.Model <em>Model</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Model</em>'.
+	 * @see WatERP.Model
+	 * @generated
+	 */
+	EClass getModel();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link WatERP.Model#getMClass <em>MClass</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>MClass</em>'.
+	 * @see WatERP.Model#getMClass()
+	 * @see #getModel()
+	 * @generated
+	 */
+	EReference getModel_MClass();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.Model#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see WatERP.Model#getName()
+	 * @see #getModel()
+	 * @generated
+	 */
+	EAttribute getModel_Name();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.PropertyAnnotation <em>Property Annotation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Property Annotation</em>'.
+	 * @see WatERP.PropertyAnnotation
+	 * @generated
+	 */
+	EClass getPropertyAnnotation();
+
+	/**
+	 * Returns the meta object for the reference '{@link WatERP.PropertyAnnotation#getAnnotatedProperty <em>Annotated Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Annotated Property</em>'.
+	 * @see WatERP.PropertyAnnotation#getAnnotatedProperty()
+	 * @see #getPropertyAnnotation()
+	 * @generated
+	 */
+	EReference getPropertyAnnotation_AnnotatedProperty();
+
+	/**
+	 * Returns the meta object for the reference '{@link WatERP.PropertyAnnotation#getAnnotatingProperty <em>Annotating Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Annotating Property</em>'.
+	 * @see WatERP.PropertyAnnotation#getAnnotatingProperty()
+	 * @see #getPropertyAnnotation()
+	 * @generated
+	 */
+	EReference getPropertyAnnotation_AnnotatingProperty();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link WatERP.PropertyAnnotation#getExpression <em>Expression</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Expression</em>'.
+	 * @see WatERP.PropertyAnnotation#getExpression()
+	 * @see #getPropertyAnnotation()
+	 * @generated
+	 */
+	EReference getPropertyAnnotation_Expression();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.Expression <em>Expression</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Expression</em>'.
+	 * @see WatERP.Expression
+	 * @generated
+	 */
+	EClass getExpression();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.Expression#getType <em>Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Type</em>'.
+	 * @see WatERP.Expression#getType()
+	 * @see #getExpression()
+	 * @generated
+	 */
+	EAttribute getExpression_Type();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.Expression#getValue <em>Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see WatERP.Expression#getValue()
+	 * @see #getExpression()
+	 * @generated
+	 */
+	EAttribute getExpression_Value();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.Property <em>Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Property</em>'.
+	 * @see WatERP.Property
+	 * @generated
+	 */
+	EClass getProperty();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.Property#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see WatERP.Property#getName()
+	 * @see #getProperty()
+	 * @generated
+	 */
+	EAttribute getProperty_Name();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.MClass <em>MClass</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>MClass</em>'.
+	 * @see WatERP.MClass
+	 * @generated
+	 */
+	EClass getMClass();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.MClass#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see WatERP.MClass#getName()
+	 * @see #getMClass()
+	 * @generated
+	 */
+	EAttribute getMClass_Name();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link WatERP.MClass#getDataproperty <em>Dataproperty</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Dataproperty</em>'.
+	 * @see WatERP.MClass#getDataproperty()
+	 * @see #getMClass()
+	 * @generated
+	 */
+	EReference getMClass_Dataproperty();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link WatERP.MClass#getClassProperty <em>Class Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Class Property</em>'.
+	 * @see WatERP.MClass#getClassProperty()
+	 * @see #getMClass()
+	 * @generated
+	 */
+	EReference getMClass_ClassProperty();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.MProperty <em>MProperty</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>MProperty</em>'.
+	 * @see WatERP.MProperty
+	 * @generated
+	 */
+	EClass getMProperty();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.MProperty#getValue <em>Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see WatERP.MProperty#getValue()
+	 * @see #getMProperty()
+	 * @generated
+	 */
+	EAttribute getMProperty_Value();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.MCProperty <em>MC Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>MC Property</em>'.
+	 * @see WatERP.MCProperty
+	 * @generated
+	 */
+	EClass getMCProperty();
+
+	/**
+	 * Returns the meta object for the reference '{@link WatERP.MCProperty#getClassType <em>Class Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Class Type</em>'.
+	 * @see WatERP.MCProperty#getClassType()
+	 * @see #getMCProperty()
+	 * @generated
+	 */
+	EReference getMCProperty_ClassType();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.MDProperty <em>MD Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>MD Property</em>'.
+	 * @see WatERP.MDProperty
+	 * @generated
+	 */
+	EClass getMDProperty();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.MDProperty#getType <em>Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Type</em>'.
+	 * @see WatERP.MDProperty#getType()
+	 * @see #getMDProperty()
+	 * @generated
+	 */
+	EAttribute getMDProperty_Type();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.OClass <em>OClass</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>OClass</em>'.
+	 * @see WatERP.OClass
+	 * @generated
+	 */
+	EClass getOClass();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.OClass#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see WatERP.OClass#getName()
+	 * @see #getOClass()
+	 * @generated
+	 */
+	EAttribute getOClass_Name();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.OClass#getIsDeprecated <em>Is Deprecated</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Is Deprecated</em>'.
+	 * @see WatERP.OClass#getIsDeprecated()
+	 * @see #getOClass()
+	 * @generated
+	 */
+	EAttribute getOClass_IsDeprecated();
+
+	/**
+	 * Returns the meta object for the reference list '{@link WatERP.OClass#getSubClass <em>Sub Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Sub Class</em>'.
+	 * @see WatERP.OClass#getSubClass()
+	 * @see #getOClass()
+	 * @generated
+	 */
+	EReference getOClass_SubClass();
+
+	/**
+	 * Returns the meta object for the reference list '{@link WatERP.OClass#getSubClassOf <em>Sub Class Of</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Sub Class Of</em>'.
+	 * @see WatERP.OClass#getSubClassOf()
+	 * @see #getOClass()
+	 * @generated
+	 */
+	EReference getOClass_SubClassOf();
+
+	/**
+	 * Returns the meta object for the reference list '{@link WatERP.OClass#getEquivalentClass <em>Equivalent Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Equivalent Class</em>'.
+	 * @see WatERP.OClass#getEquivalentClass()
+	 * @see #getOClass()
+	 * @generated
+	 */
+	EReference getOClass_EquivalentClass();
+
+	/**
+	 * Returns the meta object for the reference list '{@link WatERP.OClass#getUnionClass <em>Union Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Union Class</em>'.
+	 * @see WatERP.OClass#getUnionClass()
+	 * @see #getOClass()
+	 * @generated
+	 */
+	EReference getOClass_UnionClass();
+
+	/**
+	 * Returns the meta object for the reference list '{@link WatERP.OClass#getDisjointClass <em>Disjoint Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Disjoint Class</em>'.
+	 * @see WatERP.OClass#getDisjointClass()
+	 * @see #getOClass()
+	 * @generated
+	 */
+	EReference getOClass_DisjointClass();
+
+	/**
+	 * Returns the meta object for the reference list '{@link WatERP.OClass#getAllValuesFromRestriction <em>All Values From Restriction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>All Values From Restriction</em>'.
+	 * @see WatERP.OClass#getAllValuesFromRestriction()
+	 * @see #getOClass()
+	 * @generated
+	 */
+	EReference getOClass_AllValuesFromRestriction();
+
+	/**
+	 * Returns the meta object for the reference list '{@link WatERP.OClass#getSomeValuesFromRestriction <em>Some Values From Restriction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Some Values From Restriction</em>'.
+	 * @see WatERP.OClass#getSomeValuesFromRestriction()
+	 * @see #getOClass()
+	 * @generated
+	 */
+	EReference getOClass_SomeValuesFromRestriction();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link WatERP.OClass#getDataProperty <em>Data Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Data Property</em>'.
+	 * @see WatERP.OClass#getDataProperty()
+	 * @see #getOClass()
+	 * @generated
+	 */
+	EReference getOClass_DataProperty();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link WatERP.OClass#getObjectProperty <em>Object Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Object Property</em>'.
+	 * @see WatERP.OClass#getObjectProperty()
+	 * @see #getOClass()
+	 * @generated
+	 */
+	EReference getOClass_ObjectProperty();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link WatERP.OClass#getRule <em>Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Rule</em>'.
+	 * @see WatERP.OClass#getRule()
+	 * @see #getOClass()
+	 * @generated
+	 */
+	EReference getOClass_Rule();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.OProperty <em>OProperty</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>OProperty</em>'.
+	 * @see WatERP.OProperty
+	 * @generated
+	 */
+	EClass getOProperty();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.OProperty#getIsDeprecated <em>Is Deprecated</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Is Deprecated</em>'.
+	 * @see WatERP.OProperty#getIsDeprecated()
+	 * @see #getOProperty()
+	 * @generated
+	 */
+	EAttribute getOProperty_IsDeprecated();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.OProperty#getIsFunctional <em>Is Functional</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Is Functional</em>'.
+	 * @see WatERP.OProperty#getIsFunctional()
+	 * @see #getOProperty()
+	 * @generated
+	 */
+	EAttribute getOProperty_IsFunctional();
+
+	/**
+	 * Returns the meta object for the reference list '{@link WatERP.OProperty#getSubProperty <em>Sub Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Sub Property</em>'.
+	 * @see WatERP.OProperty#getSubProperty()
+	 * @see #getOProperty()
+	 * @generated
+	 */
+	EReference getOProperty_SubProperty();
+
+	/**
+	 * Returns the meta object for the reference list '{@link WatERP.OProperty#getSubPropertyOf <em>Sub Property Of</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Sub Property Of</em>'.
+	 * @see WatERP.OProperty#getSubPropertyOf()
+	 * @see #getOProperty()
+	 * @generated
+	 */
+	EReference getOProperty_SubPropertyOf();
+
+	/**
+	 * Returns the meta object for the reference list '{@link WatERP.OProperty#getDomain <em>Domain</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Domain</em>'.
+	 * @see WatERP.OProperty#getDomain()
+	 * @see #getOProperty()
+	 * @generated
+	 */
+	EReference getOProperty_Domain();
+
+	/**
+	 * Returns the meta object for the reference list '{@link WatERP.OProperty#getEquivalentProperty <em>Equivalent Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Equivalent Property</em>'.
+	 * @see WatERP.OProperty#getEquivalentProperty()
+	 * @see #getOProperty()
+	 * @generated
+	 */
+	EReference getOProperty_EquivalentProperty();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link WatERP.OProperty#getPropertyRestriction <em>Property Restriction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Property Restriction</em>'.
+	 * @see WatERP.OProperty#getPropertyRestriction()
+	 * @see #getOProperty()
+	 * @generated
+	 */
+	EReference getOProperty_PropertyRestriction();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.OntologyConstraint <em>Ontology Constraint</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Ontology Constraint</em>'.
+	 * @see WatERP.OntologyConstraint
+	 * @generated
+	 */
+	EClass getOntologyConstraint();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.Equivalence <em>Equivalence</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Equivalence</em>'.
+	 * @see WatERP.Equivalence
+	 * @generated
+	 */
+	EClass getEquivalence();
+
+	/**
+	 * Returns the meta object for the reference '{@link WatERP.Equivalence#getRight <em>Right</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Right</em>'.
+	 * @see WatERP.Equivalence#getRight()
+	 * @see #getEquivalence()
+	 * @generated
+	 */
+	EReference getEquivalence_Right();
+
+	/**
+	 * Returns the meta object for the reference '{@link WatERP.Equivalence#getLeft <em>Left</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Left</em>'.
+	 * @see WatERP.Equivalence#getLeft()
+	 * @see #getEquivalence()
+	 * @generated
+	 */
+	EReference getEquivalence_Left();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.UnionClass <em>Union Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Union Class</em>'.
+	 * @see WatERP.UnionClass
+	 * @generated
+	 */
+	EClass getUnionClass();
+
+	/**
+	 * Returns the meta object for the reference list '{@link WatERP.UnionClass#getUnionOf <em>Union Of</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Union Of</em>'.
+	 * @see WatERP.UnionClass#getUnionOf()
+	 * @see #getUnionClass()
+	 * @generated
+	 */
+	EReference getUnionClass_UnionOf();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.ObjectProperty <em>Object Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Object Property</em>'.
+	 * @see WatERP.ObjectProperty
+	 * @generated
+	 */
+	EClass getObjectProperty();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.ObjectProperty#getIsInverseFunctional <em>Is Inverse Functional</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Is Inverse Functional</em>'.
+	 * @see WatERP.ObjectProperty#getIsInverseFunctional()
+	 * @see #getObjectProperty()
+	 * @generated
+	 */
+	EAttribute getObjectProperty_IsInverseFunctional();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.ObjectProperty#getIsTransitive <em>Is Transitive</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Is Transitive</em>'.
+	 * @see WatERP.ObjectProperty#getIsTransitive()
+	 * @see #getObjectProperty()
+	 * @generated
+	 */
+	EAttribute getObjectProperty_IsTransitive();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.ObjectProperty#getIsSymmetric <em>Is Symmetric</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Is Symmetric</em>'.
+	 * @see WatERP.ObjectProperty#getIsSymmetric()
+	 * @see #getObjectProperty()
+	 * @generated
+	 */
+	EAttribute getObjectProperty_IsSymmetric();
+
+	/**
+	 * Returns the meta object for the reference list '{@link WatERP.ObjectProperty#getRange <em>Range</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Range</em>'.
+	 * @see WatERP.ObjectProperty#getRange()
+	 * @see #getObjectProperty()
+	 * @generated
+	 */
+	EReference getObjectProperty_Range();
+
+	/**
+	 * Returns the meta object for the reference '{@link WatERP.ObjectProperty#getInverseOf <em>Inverse Of</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Inverse Of</em>'.
+	 * @see WatERP.ObjectProperty#getInverseOf()
+	 * @see #getObjectProperty()
+	 * @generated
+	 */
+	EReference getObjectProperty_InverseOf();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.Restriction <em>Restriction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Restriction</em>'.
+	 * @see WatERP.Restriction
+	 * @generated
+	 */
+	EClass getRestriction();
+
+	/**
+	 * Returns the meta object for the container reference '{@link WatERP.Restriction#getOnProperty <em>On Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>On Property</em>'.
+	 * @see WatERP.Restriction#getOnProperty()
+	 * @see #getRestriction()
+	 * @generated
+	 */
+	EReference getRestriction_OnProperty();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.HasDataValueRestriction <em>Has Data Value Restriction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Has Data Value Restriction</em>'.
+	 * @see WatERP.HasDataValueRestriction
+	 * @generated
+	 */
+	EClass getHasDataValueRestriction();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.HasDataValueRestriction#getHasDataValueLiteral <em>Has Data Value Literal</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Has Data Value Literal</em>'.
+	 * @see WatERP.HasDataValueRestriction#getHasDataValueLiteral()
+	 * @see #getHasDataValueRestriction()
+	 * @generated
+	 */
+	EAttribute getHasDataValueRestriction_HasDataValueLiteral();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.AllValuesFromRestriction <em>All Values From Restriction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>All Values From Restriction</em>'.
+	 * @see WatERP.AllValuesFromRestriction
+	 * @generated
+	 */
+	EClass getAllValuesFromRestriction();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.AllValuesFromDataRestriction <em>All Values From Data Restriction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>All Values From Data Restriction</em>'.
+	 * @see WatERP.AllValuesFromDataRestriction
+	 * @generated
+	 */
+	EClass getAllValuesFromDataRestriction();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.AllValuesFromDataRestriction#getAllValuesFromData <em>All Values From Data</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>All Values From Data</em>'.
+	 * @see WatERP.AllValuesFromDataRestriction#getAllValuesFromData()
+	 * @see #getAllValuesFromDataRestriction()
+	 * @generated
+	 */
+	EAttribute getAllValuesFromDataRestriction_AllValuesFromData();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.AllValuesFromClassRestriction <em>All Values From Class Restriction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>All Values From Class Restriction</em>'.
+	 * @see WatERP.AllValuesFromClassRestriction
+	 * @generated
+	 */
+	EClass getAllValuesFromClassRestriction();
+
+	/**
+	 * Returns the meta object for the reference '{@link WatERP.AllValuesFromClassRestriction#getAllValuesFromClass <em>All Values From Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>All Values From Class</em>'.
+	 * @see WatERP.AllValuesFromClassRestriction#getAllValuesFromClass()
+	 * @see #getAllValuesFromClassRestriction()
+	 * @generated
+	 */
+	EReference getAllValuesFromClassRestriction_AllValuesFromClass();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.DataProperty <em>Data Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Data Property</em>'.
+	 * @see WatERP.DataProperty
+	 * @generated
+	 */
+	EClass getDataProperty();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.DataProperty#getRange <em>Range</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Range</em>'.
+	 * @see WatERP.DataProperty#getRange()
+	 * @see #getDataProperty()
+	 * @generated
+	 */
+	EAttribute getDataProperty_Range();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.SomeValuesFromRestriction <em>Some Values From Restriction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Some Values From Restriction</em>'.
+	 * @see WatERP.SomeValuesFromRestriction
+	 * @generated
+	 */
+	EClass getSomeValuesFromRestriction();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.SomeValuesFromDataRestriction <em>Some Values From Data Restriction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Some Values From Data Restriction</em>'.
+	 * @see WatERP.SomeValuesFromDataRestriction
+	 * @generated
+	 */
+	EClass getSomeValuesFromDataRestriction();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.SomeValuesFromDataRestriction#getSomeValuesFromData <em>Some Values From Data</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Some Values From Data</em>'.
+	 * @see WatERP.SomeValuesFromDataRestriction#getSomeValuesFromData()
+	 * @see #getSomeValuesFromDataRestriction()
+	 * @generated
+	 */
+	EAttribute getSomeValuesFromDataRestriction_SomeValuesFromData();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.SomeValuesFromClassRestriction <em>Some Values From Class Restriction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Some Values From Class Restriction</em>'.
+	 * @see WatERP.SomeValuesFromClassRestriction
+	 * @generated
+	 */
+	EClass getSomeValuesFromClassRestriction();
+
+	/**
+	 * Returns the meta object for the reference '{@link WatERP.SomeValuesFromClassRestriction#getSomeValuesFromClass <em>Some Values From Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Some Values From Class</em>'.
+	 * @see WatERP.SomeValuesFromClassRestriction#getSomeValuesFromClass()
+	 * @see #getSomeValuesFromClassRestriction()
+	 * @generated
+	 */
+	EReference getSomeValuesFromClassRestriction_SomeValuesFromClass();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.CardinalityRestriction <em>Cardinality Restriction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Cardinality Restriction</em>'.
+	 * @see WatERP.CardinalityRestriction
+	 * @generated
+	 */
+	EClass getCardinalityRestriction();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.CardinalityRestriction#getCardinality <em>Cardinality</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cardinality</em>'.
+	 * @see WatERP.CardinalityRestriction#getCardinality()
+	 * @see #getCardinalityRestriction()
+	 * @generated
+	 */
+	EAttribute getCardinalityRestriction_Cardinality();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.MaximumCardinalityRestriction <em>Maximum Cardinality Restriction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Maximum Cardinality Restriction</em>'.
+	 * @see WatERP.MaximumCardinalityRestriction
+	 * @generated
+	 */
+	EClass getMaximumCardinalityRestriction();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.MaximumCardinalityRestriction#getMaxCardinality <em>Max Cardinality</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Max Cardinality</em>'.
+	 * @see WatERP.MaximumCardinalityRestriction#getMaxCardinality()
+	 * @see #getMaximumCardinalityRestriction()
+	 * @generated
+	 */
+	EAttribute getMaximumCardinalityRestriction_MaxCardinality();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.MinimumCardinalityRestriction <em>Minimum Cardinality Restriction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Minimum Cardinality Restriction</em>'.
+	 * @see WatERP.MinimumCardinalityRestriction
+	 * @generated
+	 */
+	EClass getMinimumCardinalityRestriction();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.MinimumCardinalityRestriction#getMinCardinality <em>Min Cardinality</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Min Cardinality</em>'.
+	 * @see WatERP.MinimumCardinalityRestriction#getMinCardinality()
+	 * @see #getMinimumCardinalityRestriction()
+	 * @generated
+	 */
+	EAttribute getMinimumCardinalityRestriction_MinCardinality();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.TopNode <em>Top Node</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Top Node</em>'.
+	 * @see WatERP.TopNode
+	 * @generated
+	 */
+	EClass getTopNode();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link WatERP.TopNode#getModel <em>Model</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Model</em>'.
+	 * @see WatERP.TopNode#getModel()
+	 * @see #getTopNode()
+	 * @generated
+	 */
+	EReference getTopNode_Model();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link WatERP.TopNode#getOntology <em>Ontology</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Ontology</em>'.
+	 * @see WatERP.TopNode#getOntology()
+	 * @see #getTopNode()
+	 * @generated
+	 */
+	EReference getTopNode_Ontology();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link WatERP.TopNode#getAnnotation <em>Annotation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Annotation</em>'.
+	 * @see WatERP.TopNode#getAnnotation()
+	 * @see #getTopNode()
+	 * @generated
+	 */
+	EReference getTopNode_Annotation();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.Observation <em>Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Observation</em>'.
+	 * @see WatERP.Observation
+	 * @generated
+	 */
+	EClass getObservation();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link WatERP.Observation#getFoi <em>Foi</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Foi</em>'.
+	 * @see WatERP.Observation#getFoi()
+	 * @see #getObservation()
+	 * @generated
+	 */
+	EReference getObservation_Foi();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link WatERP.Observation#getProcedure <em>Procedure</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Procedure</em>'.
+	 * @see WatERP.Observation#getProcedure()
+	 * @see #getObservation()
+	 * @generated
+	 */
+	EReference getObservation_Procedure();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link WatERP.Observation#getObservedProperty <em>Observed Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Observed Property</em>'.
+	 * @see WatERP.Observation#getObservedProperty()
+	 * @see #getObservation()
+	 * @generated
+	 */
+	EReference getObservation_ObservedProperty();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link WatERP.Observation#getResult <em>Result</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Result</em>'.
+	 * @see WatERP.Observation#getResult()
+	 * @see #getObservation()
+	 * @generated
+	 */
+	EReference getObservation_Result();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link WatERP.Observation#getUnit <em>Unit</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Unit</em>'.
+	 * @see WatERP.Observation#getUnit()
+	 * @see #getObservation()
+	 * @generated
+	 */
+	EReference getObservation_Unit();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.Observation#getAssignedSensorID <em>Assigned Sensor ID</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Assigned Sensor ID</em>'.
+	 * @see WatERP.Observation#getAssignedSensorID()
+	 * @see #getObservation()
+	 * @generated
+	 */
+	EAttribute getObservation_AssignedSensorID();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.Sensor <em>Sensor</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Sensor</em>'.
+	 * @see WatERP.Sensor
+	 * @generated
+	 */
+	EClass getSensor();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link WatERP.Sensor#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Id</em>'.
+	 * @see WatERP.Sensor#getId()
+	 * @see #getSensor()
+	 * @generated
+	 */
+	EReference getSensor_Id();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link WatERP.Sensor#getUri <em>Uri</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Uri</em>'.
+	 * @see WatERP.Sensor#getUri()
+	 * @see #getSensor()
+	 * @generated
+	 */
+	EReference getSensor_Uri();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link WatERP.Sensor#getDesc <em>Desc</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Desc</em>'.
+	 * @see WatERP.Sensor#getDesc()
+	 * @see #getSensor()
+	 * @generated
+	 */
+	EReference getSensor_Desc();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link WatERP.Sensor#getObservations <em>Observations</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Observations</em>'.
+	 * @see WatERP.Sensor#getObservations()
+	 * @see #getSensor()
+	 * @generated
+	 */
+	EReference getSensor_Observations();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.Export <em>Export</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Export</em>'.
+	 * @see WatERP.Export
+	 * @generated
+	 */
+	EClass getExport();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.ObservedProperty <em>Observed Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Observed Property</em>'.
+	 * @see WatERP.ObservedProperty
+	 * @generated
+	 */
+	EClass getObservedProperty();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.DLSafeRule <em>DL Safe Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>DL Safe Rule</em>'.
+	 * @see WatERP.DLSafeRule
+	 * @generated
+	 */
+	EClass getDLSafeRule();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link WatERP.DLSafeRule#getHead <em>Head</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Head</em>'.
+	 * @see WatERP.DLSafeRule#getHead()
+	 * @see #getDLSafeRule()
+	 * @generated
+	 */
+	EReference getDLSafeRule_Head();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link WatERP.DLSafeRule#getBody <em>Body</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Body</em>'.
+	 * @see WatERP.DLSafeRule#getBody()
+	 * @see #getDLSafeRule()
+	 * @generated
+	 */
+	EReference getDLSafeRule_Body();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.Head <em>Head</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Head</em>'.
+	 * @see WatERP.Head
+	 * @generated
+	 */
+	EClass getHead();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link WatERP.Head#getAtoms <em>Atoms</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Atoms</em>'.
+	 * @see WatERP.Head#getAtoms()
+	 * @see #getHead()
+	 * @generated
+	 */
+	EReference getHead_Atoms();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.Body <em>Body</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Body</em>'.
+	 * @see WatERP.Body
+	 * @generated
+	 */
+	EClass getBody();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link WatERP.Body#getAtoms <em>Atoms</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Atoms</em>'.
+	 * @see WatERP.Body#getAtoms()
+	 * @see #getBody()
+	 * @generated
+	 */
+	EReference getBody_Atoms();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.Atom <em>Atom</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Atom</em>'.
+	 * @see WatERP.Atom
+	 * @generated
+	 */
+	EClass getAtom();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.ObjectPropertyAtom <em>Object Property Atom</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Object Property Atom</em>'.
+	 * @see WatERP.ObjectPropertyAtom
+	 * @generated
+	 */
+	EClass getObjectPropertyAtom();
+
+	/**
+	 * Returns the meta object for the reference '{@link WatERP.ObjectPropertyAtom#getObjectProperty <em>Object Property</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Object Property</em>'.
+	 * @see WatERP.ObjectPropertyAtom#getObjectProperty()
+	 * @see #getObjectPropertyAtom()
+	 * @generated
+	 */
+	EReference getObjectPropertyAtom_ObjectProperty();
+
+	/**
+	 * Returns the meta object for the reference list '{@link WatERP.ObjectPropertyAtom#getVariable <em>Variable</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Variable</em>'.
+	 * @see WatERP.ObjectPropertyAtom#getVariable()
+	 * @see #getObjectPropertyAtom()
+	 * @generated
+	 */
+	EReference getObjectPropertyAtom_Variable();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.ObjectPropertyAtom#getNamedIndividual <em>Named Individual</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Named Individual</em>'.
+	 * @see WatERP.ObjectPropertyAtom#getNamedIndividual()
+	 * @see #getObjectPropertyAtom()
+	 * @generated
+	 */
+	EAttribute getObjectPropertyAtom_NamedIndividual();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.ClassAtom <em>Class Atom</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Class Atom</em>'.
+	 * @see WatERP.ClassAtom
+	 * @generated
+	 */
+	EClass getClassAtom();
+
+	/**
+	 * Returns the meta object for the reference '{@link WatERP.ClassAtom#getClass_ <em>Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Class</em>'.
+	 * @see WatERP.ClassAtom#getClass_()
+	 * @see #getClassAtom()
+	 * @generated
+	 */
+	EReference getClassAtom_Class();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link WatERP.ClassAtom#getVariable <em>Variable</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Variable</em>'.
+	 * @see WatERP.ClassAtom#getVariable()
+	 * @see #getClassAtom()
+	 * @generated
+	 */
+	EReference getClassAtom_Variable();
+
+	/**
+	 * Returns the meta object for class '{@link WatERP.Variable <em>Variable</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Variable</em>'.
+	 * @see WatERP.Variable
+	 * @generated
+	 */
+	EClass getVariable();
+
+	/**
+	 * Returns the meta object for the attribute '{@link WatERP.Variable#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see WatERP.Variable#getName()
+	 * @see #getVariable()
+	 * @generated
+	 */
+	EAttribute getVariable_Name();
+
+	/**
+	 * Returns the meta object for enum '{@link WatERP.ExpressionType <em>Expression Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Expression Type</em>'.
+	 * @see WatERP.ExpressionType
+	 * @generated
+	 */
+	EEnum getExpressionType();
+
+	/**
+	 * Returns the meta object for enum '{@link WatERP.dataType <em>data Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>data Type</em>'.
+	 * @see WatERP.dataType
+	 * @generated
+	 */
+	EEnum getdataType();
+
+	/**
+	 * Returns the meta object for enum '{@link WatERP.constraintType <em>constraint Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>constraint Type</em>'.
+	 * @see WatERP.constraintType
+	 * @generated
+	 */
+	EEnum getconstraintType();
+
+	/**
+	 * Returns the meta object for data type '{@link java.lang.String <em>String</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for data type '<em>String</em>'.
+	 * @see java.lang.String
+	 * @model instanceClass="java.lang.String"
+	 * @generated
+	 */
+	EDataType getString();
+
+	/**
+	 * Returns the meta object for data type '{@link java.lang.Integer <em>Integer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for data type '<em>Integer</em>'.
+	 * @see java.lang.Integer
+	 * @model instanceClass="java.lang.Integer"
+	 * @generated
+	 */
+	EDataType getInteger();
+
+	/**
+	 * Returns the meta object for data type '{@link java.lang.Boolean <em>Boolean</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for data type '<em>Boolean</em>'.
+	 * @see java.lang.Boolean
+	 * @model instanceClass="java.lang.Boolean"
+	 * @generated
+	 */
+	EDataType getBoolean();
+
+	/**
+	 * Returns the factory that creates the instances of the model.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the factory that creates the instances of the model.
+	 * @generated
+	 */
+	WatERPFactory getWatERPFactory();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * Defines literals for the meta objects that represent
+	 * <ul>
+	 *   <li>each class,</li>
+	 *   <li>each feature of each class,</li>
+	 *   <li>each operation of each class,</li>
+	 *   <li>each enum,</li>
+	 *   <li>and each data type</li>
+	 * </ul>
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	interface Literals {
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.ModelAnnotationImpl <em>Model Annotation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.ModelAnnotationImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getModelAnnotation()
+		 * @generated
+		 */
+		EClass MODEL_ANNOTATION = eINSTANCE.getModelAnnotation();
+
+		/**
+		 * The meta object literal for the '<em><b>Annotations</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MODEL_ANNOTATION__ANNOTATIONS = eINSTANCE.getModelAnnotation_Annotations();
+
+		/**
+		 * The meta object literal for the '<em><b>Annotated Model</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MODEL_ANNOTATION__ANNOTATED_MODEL = eINSTANCE.getModelAnnotation_AnnotatedModel();
+
+		/**
+		 * The meta object literal for the '<em><b>Annotating Model</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MODEL_ANNOTATION__ANNOTATING_MODEL = eINSTANCE.getModelAnnotation_AnnotatingModel();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.ClassAnnotationImpl <em>Class Annotation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.ClassAnnotationImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getClassAnnotation()
+		 * @generated
+		 */
+		EClass CLASS_ANNOTATION = eINSTANCE.getClassAnnotation();
+
+		/**
+		 * The meta object literal for the '<em><b>Annotating Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CLASS_ANNOTATION__ANNOTATING_CLASS = eINSTANCE.getClassAnnotation_AnnotatingClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Annotated Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CLASS_ANNOTATION__ANNOTATED_CLASS = eINSTANCE.getClassAnnotation_AnnotatedClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Property Annotations</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CLASS_ANNOTATION__PROPERTY_ANNOTATIONS = eINSTANCE.getClassAnnotation_PropertyAnnotations();
+
+		/**
+		 * The meta object literal for the '<em><b>Expression</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CLASS_ANNOTATION__EXPRESSION = eINSTANCE.getClassAnnotation_Expression();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.OntologyImpl <em>Ontology</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.OntologyImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getOntology()
+		 * @generated
+		 */
+		EClass ONTOLOGY = eINSTANCE.getOntology();
+
+		/**
+		 * The meta object literal for the '<em><b>OClass</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ONTOLOGY__OCLASS = eINSTANCE.getOntology_OClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ONTOLOGY__NAME = eINSTANCE.getOntology_Name();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.ModelImpl <em>Model</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.ModelImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getModel()
+		 * @generated
+		 */
+		EClass MODEL = eINSTANCE.getModel();
+
+		/**
+		 * The meta object literal for the '<em><b>MClass</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MODEL__MCLASS = eINSTANCE.getModel_MClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODEL__NAME = eINSTANCE.getModel_Name();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.PropertyAnnotationImpl <em>Property Annotation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.PropertyAnnotationImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getPropertyAnnotation()
+		 * @generated
+		 */
+		EClass PROPERTY_ANNOTATION = eINSTANCE.getPropertyAnnotation();
+
+		/**
+		 * The meta object literal for the '<em><b>Annotated Property</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PROPERTY_ANNOTATION__ANNOTATED_PROPERTY = eINSTANCE.getPropertyAnnotation_AnnotatedProperty();
+
+		/**
+		 * The meta object literal for the '<em><b>Annotating Property</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PROPERTY_ANNOTATION__ANNOTATING_PROPERTY = eINSTANCE.getPropertyAnnotation_AnnotatingProperty();
+
+		/**
+		 * The meta object literal for the '<em><b>Expression</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PROPERTY_ANNOTATION__EXPRESSION = eINSTANCE.getPropertyAnnotation_Expression();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.ExpressionImpl <em>Expression</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.ExpressionImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getExpression()
+		 * @generated
+		 */
+		EClass EXPRESSION = eINSTANCE.getExpression();
+
+		/**
+		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EXPRESSION__TYPE = eINSTANCE.getExpression_Type();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EXPRESSION__VALUE = eINSTANCE.getExpression_Value();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.PropertyImpl <em>Property</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.PropertyImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getProperty()
+		 * @generated
+		 */
+		EClass PROPERTY = eINSTANCE.getProperty();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PROPERTY__NAME = eINSTANCE.getProperty_Name();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.MClassImpl <em>MClass</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.MClassImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getMClass()
+		 * @generated
+		 */
+		EClass MCLASS = eINSTANCE.getMClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MCLASS__NAME = eINSTANCE.getMClass_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Dataproperty</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MCLASS__DATAPROPERTY = eINSTANCE.getMClass_Dataproperty();
+
+		/**
+		 * The meta object literal for the '<em><b>Class Property</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MCLASS__CLASS_PROPERTY = eINSTANCE.getMClass_ClassProperty();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.MPropertyImpl <em>MProperty</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.MPropertyImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getMProperty()
+		 * @generated
+		 */
+		EClass MPROPERTY = eINSTANCE.getMProperty();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MPROPERTY__VALUE = eINSTANCE.getMProperty_Value();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.MCPropertyImpl <em>MC Property</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.MCPropertyImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getMCProperty()
+		 * @generated
+		 */
+		EClass MC_PROPERTY = eINSTANCE.getMCProperty();
+
+		/**
+		 * The meta object literal for the '<em><b>Class Type</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MC_PROPERTY__CLASS_TYPE = eINSTANCE.getMCProperty_ClassType();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.MDPropertyImpl <em>MD Property</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.MDPropertyImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getMDProperty()
+		 * @generated
+		 */
+		EClass MD_PROPERTY = eINSTANCE.getMDProperty();
+
+		/**
+		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MD_PROPERTY__TYPE = eINSTANCE.getMDProperty_Type();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.OClassImpl <em>OClass</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.OClassImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getOClass()
+		 * @generated
+		 */
+		EClass OCLASS = eINSTANCE.getOClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OCLASS__NAME = eINSTANCE.getOClass_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Deprecated</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OCLASS__IS_DEPRECATED = eINSTANCE.getOClass_IsDeprecated();
+
+		/**
+		 * The meta object literal for the '<em><b>Sub Class</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OCLASS__SUB_CLASS = eINSTANCE.getOClass_SubClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Sub Class Of</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OCLASS__SUB_CLASS_OF = eINSTANCE.getOClass_SubClassOf();
+
+		/**
+		 * The meta object literal for the '<em><b>Equivalent Class</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OCLASS__EQUIVALENT_CLASS = eINSTANCE.getOClass_EquivalentClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Union Class</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OCLASS__UNION_CLASS = eINSTANCE.getOClass_UnionClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Disjoint Class</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OCLASS__DISJOINT_CLASS = eINSTANCE.getOClass_DisjointClass();
+
+		/**
+		 * The meta object literal for the '<em><b>All Values From Restriction</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OCLASS__ALL_VALUES_FROM_RESTRICTION = eINSTANCE.getOClass_AllValuesFromRestriction();
+
+		/**
+		 * The meta object literal for the '<em><b>Some Values From Restriction</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OCLASS__SOME_VALUES_FROM_RESTRICTION = eINSTANCE.getOClass_SomeValuesFromRestriction();
+
+		/**
+		 * The meta object literal for the '<em><b>Data Property</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OCLASS__DATA_PROPERTY = eINSTANCE.getOClass_DataProperty();
+
+		/**
+		 * The meta object literal for the '<em><b>Object Property</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OCLASS__OBJECT_PROPERTY = eINSTANCE.getOClass_ObjectProperty();
+
+		/**
+		 * The meta object literal for the '<em><b>Rule</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OCLASS__RULE = eINSTANCE.getOClass_Rule();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.OPropertyImpl <em>OProperty</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.OPropertyImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getOProperty()
+		 * @generated
+		 */
+		EClass OPROPERTY = eINSTANCE.getOProperty();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Deprecated</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OPROPERTY__IS_DEPRECATED = eINSTANCE.getOProperty_IsDeprecated();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Functional</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OPROPERTY__IS_FUNCTIONAL = eINSTANCE.getOProperty_IsFunctional();
+
+		/**
+		 * The meta object literal for the '<em><b>Sub Property</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OPROPERTY__SUB_PROPERTY = eINSTANCE.getOProperty_SubProperty();
+
+		/**
+		 * The meta object literal for the '<em><b>Sub Property Of</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OPROPERTY__SUB_PROPERTY_OF = eINSTANCE.getOProperty_SubPropertyOf();
+
+		/**
+		 * The meta object literal for the '<em><b>Domain</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OPROPERTY__DOMAIN = eINSTANCE.getOProperty_Domain();
+
+		/**
+		 * The meta object literal for the '<em><b>Equivalent Property</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OPROPERTY__EQUIVALENT_PROPERTY = eINSTANCE.getOProperty_EquivalentProperty();
+
+		/**
+		 * The meta object literal for the '<em><b>Property Restriction</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OPROPERTY__PROPERTY_RESTRICTION = eINSTANCE.getOProperty_PropertyRestriction();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.OntologyConstraintImpl <em>Ontology Constraint</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.OntologyConstraintImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getOntologyConstraint()
+		 * @generated
+		 */
+		EClass ONTOLOGY_CONSTRAINT = eINSTANCE.getOntologyConstraint();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.EquivalenceImpl <em>Equivalence</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.EquivalenceImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getEquivalence()
+		 * @generated
+		 */
+		EClass EQUIVALENCE = eINSTANCE.getEquivalence();
+
+		/**
+		 * The meta object literal for the '<em><b>Right</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EQUIVALENCE__RIGHT = eINSTANCE.getEquivalence_Right();
+
+		/**
+		 * The meta object literal for the '<em><b>Left</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EQUIVALENCE__LEFT = eINSTANCE.getEquivalence_Left();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.UnionClassImpl <em>Union Class</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.UnionClassImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getUnionClass()
+		 * @generated
+		 */
+		EClass UNION_CLASS = eINSTANCE.getUnionClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Union Of</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference UNION_CLASS__UNION_OF = eINSTANCE.getUnionClass_UnionOf();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.ObjectPropertyImpl <em>Object Property</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.ObjectPropertyImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getObjectProperty()
+		 * @generated
+		 */
+		EClass OBJECT_PROPERTY = eINSTANCE.getObjectProperty();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Inverse Functional</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_PROPERTY__IS_INVERSE_FUNCTIONAL = eINSTANCE.getObjectProperty_IsInverseFunctional();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Transitive</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_PROPERTY__IS_TRANSITIVE = eINSTANCE.getObjectProperty_IsTransitive();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Symmetric</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_PROPERTY__IS_SYMMETRIC = eINSTANCE.getObjectProperty_IsSymmetric();
+
+		/**
+		 * The meta object literal for the '<em><b>Range</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OBJECT_PROPERTY__RANGE = eINSTANCE.getObjectProperty_Range();
+
+		/**
+		 * The meta object literal for the '<em><b>Inverse Of</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OBJECT_PROPERTY__INVERSE_OF = eINSTANCE.getObjectProperty_InverseOf();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.RestrictionImpl <em>Restriction</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.RestrictionImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getRestriction()
+		 * @generated
+		 */
+		EClass RESTRICTION = eINSTANCE.getRestriction();
+
+		/**
+		 * The meta object literal for the '<em><b>On Property</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference RESTRICTION__ON_PROPERTY = eINSTANCE.getRestriction_OnProperty();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.HasDataValueRestrictionImpl <em>Has Data Value Restriction</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.HasDataValueRestrictionImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getHasDataValueRestriction()
+		 * @generated
+		 */
+		EClass HAS_DATA_VALUE_RESTRICTION = eINSTANCE.getHasDataValueRestriction();
+
+		/**
+		 * The meta object literal for the '<em><b>Has Data Value Literal</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute HAS_DATA_VALUE_RESTRICTION__HAS_DATA_VALUE_LITERAL = eINSTANCE.getHasDataValueRestriction_HasDataValueLiteral();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.AllValuesFromRestrictionImpl <em>All Values From Restriction</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.AllValuesFromRestrictionImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getAllValuesFromRestriction()
+		 * @generated
+		 */
+		EClass ALL_VALUES_FROM_RESTRICTION = eINSTANCE.getAllValuesFromRestriction();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.AllValuesFromDataRestrictionImpl <em>All Values From Data Restriction</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.AllValuesFromDataRestrictionImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getAllValuesFromDataRestriction()
+		 * @generated
+		 */
+		EClass ALL_VALUES_FROM_DATA_RESTRICTION = eINSTANCE.getAllValuesFromDataRestriction();
+
+		/**
+		 * The meta object literal for the '<em><b>All Values From Data</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ALL_VALUES_FROM_DATA_RESTRICTION__ALL_VALUES_FROM_DATA = eINSTANCE.getAllValuesFromDataRestriction_AllValuesFromData();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.AllValuesFromClassRestrictionImpl <em>All Values From Class Restriction</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.AllValuesFromClassRestrictionImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getAllValuesFromClassRestriction()
+		 * @generated
+		 */
+		EClass ALL_VALUES_FROM_CLASS_RESTRICTION = eINSTANCE.getAllValuesFromClassRestriction();
+
+		/**
+		 * The meta object literal for the '<em><b>All Values From Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ALL_VALUES_FROM_CLASS_RESTRICTION__ALL_VALUES_FROM_CLASS = eINSTANCE.getAllValuesFromClassRestriction_AllValuesFromClass();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.DataPropertyImpl <em>Data Property</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.DataPropertyImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getDataProperty()
+		 * @generated
+		 */
+		EClass DATA_PROPERTY = eINSTANCE.getDataProperty();
+
+		/**
+		 * The meta object literal for the '<em><b>Range</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DATA_PROPERTY__RANGE = eINSTANCE.getDataProperty_Range();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.SomeValuesFromRestrictionImpl <em>Some Values From Restriction</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.SomeValuesFromRestrictionImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getSomeValuesFromRestriction()
+		 * @generated
+		 */
+		EClass SOME_VALUES_FROM_RESTRICTION = eINSTANCE.getSomeValuesFromRestriction();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.SomeValuesFromDataRestrictionImpl <em>Some Values From Data Restriction</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.SomeValuesFromDataRestrictionImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getSomeValuesFromDataRestriction()
+		 * @generated
+		 */
+		EClass SOME_VALUES_FROM_DATA_RESTRICTION = eINSTANCE.getSomeValuesFromDataRestriction();
+
+		/**
+		 * The meta object literal for the '<em><b>Some Values From Data</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SOME_VALUES_FROM_DATA_RESTRICTION__SOME_VALUES_FROM_DATA = eINSTANCE.getSomeValuesFromDataRestriction_SomeValuesFromData();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.SomeValuesFromClassRestrictionImpl <em>Some Values From Class Restriction</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.SomeValuesFromClassRestrictionImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getSomeValuesFromClassRestriction()
+		 * @generated
+		 */
+		EClass SOME_VALUES_FROM_CLASS_RESTRICTION = eINSTANCE.getSomeValuesFromClassRestriction();
+
+		/**
+		 * The meta object literal for the '<em><b>Some Values From Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SOME_VALUES_FROM_CLASS_RESTRICTION__SOME_VALUES_FROM_CLASS = eINSTANCE.getSomeValuesFromClassRestriction_SomeValuesFromClass();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.CardinalityRestrictionImpl <em>Cardinality Restriction</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.CardinalityRestrictionImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getCardinalityRestriction()
+		 * @generated
+		 */
+		EClass CARDINALITY_RESTRICTION = eINSTANCE.getCardinalityRestriction();
+
+		/**
+		 * The meta object literal for the '<em><b>Cardinality</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CARDINALITY_RESTRICTION__CARDINALITY = eINSTANCE.getCardinalityRestriction_Cardinality();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.MaximumCardinalityRestrictionImpl <em>Maximum Cardinality Restriction</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.MaximumCardinalityRestrictionImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getMaximumCardinalityRestriction()
+		 * @generated
+		 */
+		EClass MAXIMUM_CARDINALITY_RESTRICTION = eINSTANCE.getMaximumCardinalityRestriction();
+
+		/**
+		 * The meta object literal for the '<em><b>Max Cardinality</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MAXIMUM_CARDINALITY_RESTRICTION__MAX_CARDINALITY = eINSTANCE.getMaximumCardinalityRestriction_MaxCardinality();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.MinimumCardinalityRestrictionImpl <em>Minimum Cardinality Restriction</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.MinimumCardinalityRestrictionImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getMinimumCardinalityRestriction()
+		 * @generated
+		 */
+		EClass MINIMUM_CARDINALITY_RESTRICTION = eINSTANCE.getMinimumCardinalityRestriction();
+
+		/**
+		 * The meta object literal for the '<em><b>Min Cardinality</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MINIMUM_CARDINALITY_RESTRICTION__MIN_CARDINALITY = eINSTANCE.getMinimumCardinalityRestriction_MinCardinality();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.TopNodeImpl <em>Top Node</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.TopNodeImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getTopNode()
+		 * @generated
+		 */
+		EClass TOP_NODE = eINSTANCE.getTopNode();
+
+		/**
+		 * The meta object literal for the '<em><b>Model</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TOP_NODE__MODEL = eINSTANCE.getTopNode_Model();
+
+		/**
+		 * The meta object literal for the '<em><b>Ontology</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TOP_NODE__ONTOLOGY = eINSTANCE.getTopNode_Ontology();
+
+		/**
+		 * The meta object literal for the '<em><b>Annotation</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TOP_NODE__ANNOTATION = eINSTANCE.getTopNode_Annotation();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.ObservationImpl <em>Observation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.ObservationImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getObservation()
+		 * @generated
+		 */
+		EClass OBSERVATION = eINSTANCE.getObservation();
+
+		/**
+		 * The meta object literal for the '<em><b>Foi</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OBSERVATION__FOI = eINSTANCE.getObservation_Foi();
+
+		/**
+		 * The meta object literal for the '<em><b>Procedure</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OBSERVATION__PROCEDURE = eINSTANCE.getObservation_Procedure();
+
+		/**
+		 * The meta object literal for the '<em><b>Observed Property</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OBSERVATION__OBSERVED_PROPERTY = eINSTANCE.getObservation_ObservedProperty();
+
+		/**
+		 * The meta object literal for the '<em><b>Result</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OBSERVATION__RESULT = eINSTANCE.getObservation_Result();
+
+		/**
+		 * The meta object literal for the '<em><b>Unit</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OBSERVATION__UNIT = eINSTANCE.getObservation_Unit();
+
+		/**
+		 * The meta object literal for the '<em><b>Assigned Sensor ID</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBSERVATION__ASSIGNED_SENSOR_ID = eINSTANCE.getObservation_AssignedSensorID();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.SensorImpl <em>Sensor</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.SensorImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getSensor()
+		 * @generated
+		 */
+		EClass SENSOR = eINSTANCE.getSensor();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SENSOR__ID = eINSTANCE.getSensor_Id();
+
+		/**
+		 * The meta object literal for the '<em><b>Uri</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SENSOR__URI = eINSTANCE.getSensor_Uri();
+
+		/**
+		 * The meta object literal for the '<em><b>Desc</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SENSOR__DESC = eINSTANCE.getSensor_Desc();
+
+		/**
+		 * The meta object literal for the '<em><b>Observations</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SENSOR__OBSERVATIONS = eINSTANCE.getSensor_Observations();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.ExportImpl <em>Export</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.ExportImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getExport()
+		 * @generated
+		 */
+		EClass EXPORT = eINSTANCE.getExport();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.ObservedPropertyImpl <em>Observed Property</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.ObservedPropertyImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getObservedProperty()
+		 * @generated
+		 */
+		EClass OBSERVED_PROPERTY = eINSTANCE.getObservedProperty();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.DLSafeRuleImpl <em>DL Safe Rule</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.DLSafeRuleImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getDLSafeRule()
+		 * @generated
+		 */
+		EClass DL_SAFE_RULE = eINSTANCE.getDLSafeRule();
+
+		/**
+		 * The meta object literal for the '<em><b>Head</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DL_SAFE_RULE__HEAD = eINSTANCE.getDLSafeRule_Head();
+
+		/**
+		 * The meta object literal for the '<em><b>Body</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DL_SAFE_RULE__BODY = eINSTANCE.getDLSafeRule_Body();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.HeadImpl <em>Head</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.HeadImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getHead()
+		 * @generated
+		 */
+		EClass HEAD = eINSTANCE.getHead();
+
+		/**
+		 * The meta object literal for the '<em><b>Atoms</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference HEAD__ATOMS = eINSTANCE.getHead_Atoms();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.BodyImpl <em>Body</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.BodyImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getBody()
+		 * @generated
+		 */
+		EClass BODY = eINSTANCE.getBody();
+
+		/**
+		 * The meta object literal for the '<em><b>Atoms</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BODY__ATOMS = eINSTANCE.getBody_Atoms();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.AtomImpl <em>Atom</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.AtomImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getAtom()
+		 * @generated
+		 */
+		EClass ATOM = eINSTANCE.getAtom();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.ObjectPropertyAtomImpl <em>Object Property Atom</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.ObjectPropertyAtomImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getObjectPropertyAtom()
+		 * @generated
+		 */
+		EClass OBJECT_PROPERTY_ATOM = eINSTANCE.getObjectPropertyAtom();
+
+		/**
+		 * The meta object literal for the '<em><b>Object Property</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OBJECT_PROPERTY_ATOM__OBJECT_PROPERTY = eINSTANCE.getObjectPropertyAtom_ObjectProperty();
+
+		/**
+		 * The meta object literal for the '<em><b>Variable</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OBJECT_PROPERTY_ATOM__VARIABLE = eINSTANCE.getObjectPropertyAtom_Variable();
+
+		/**
+		 * The meta object literal for the '<em><b>Named Individual</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OBJECT_PROPERTY_ATOM__NAMED_INDIVIDUAL = eINSTANCE.getObjectPropertyAtom_NamedIndividual();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.ClassAtomImpl <em>Class Atom</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.ClassAtomImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getClassAtom()
+		 * @generated
+		 */
+		EClass CLASS_ATOM = eINSTANCE.getClassAtom();
+
+		/**
+		 * The meta object literal for the '<em><b>Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CLASS_ATOM__CLASS = eINSTANCE.getClassAtom_Class();
+
+		/**
+		 * The meta object literal for the '<em><b>Variable</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CLASS_ATOM__VARIABLE = eINSTANCE.getClassAtom_Variable();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.impl.VariableImpl <em>Variable</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.impl.VariableImpl
+		 * @see WatERP.impl.WatERPPackageImpl#getVariable()
+		 * @generated
+		 */
+		EClass VARIABLE = eINSTANCE.getVariable();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute VARIABLE__NAME = eINSTANCE.getVariable_Name();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.ExpressionType <em>Expression Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.ExpressionType
+		 * @see WatERP.impl.WatERPPackageImpl#getExpressionType()
+		 * @generated
+		 */
+		EEnum EXPRESSION_TYPE = eINSTANCE.getExpressionType();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.dataType <em>data Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.dataType
+		 * @see WatERP.impl.WatERPPackageImpl#getdataType()
+		 * @generated
+		 */
+		EEnum DATA_TYPE = eINSTANCE.getdataType();
+
+		/**
+		 * The meta object literal for the '{@link WatERP.constraintType <em>constraint Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see WatERP.constraintType
+		 * @see WatERP.impl.WatERPPackageImpl#getconstraintType()
+		 * @generated
+		 */
+		EEnum CONSTRAINT_TYPE = eINSTANCE.getconstraintType();
+
+		/**
+		 * The meta object literal for the '<em>String</em>' data type.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see java.lang.String
+		 * @see WatERP.impl.WatERPPackageImpl#getString()
+		 * @generated
+		 */
+		EDataType STRING = eINSTANCE.getString();
+
+		/**
+		 * The meta object literal for the '<em>Integer</em>' data type.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see java.lang.Integer
+		 * @see WatERP.impl.WatERPPackageImpl#getInteger()
+		 * @generated
+		 */
+		EDataType INTEGER = eINSTANCE.getInteger();
+
+		/**
+		 * The meta object literal for the '<em>Boolean</em>' data type.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see java.lang.Boolean
+		 * @see WatERP.impl.WatERPPackageImpl#getBoolean()
+		 * @generated
+		 */
+		EDataType BOOLEAN = eINSTANCE.getBoolean();
+
+	}
+
+} //WatERPPackage

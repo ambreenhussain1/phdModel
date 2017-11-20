@@ -1,0 +1,163 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.AllValuesFromDataRestriction;
+import WatERP.WatERPPackage;
+import WatERP.dataType;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>All Values From Data Restriction</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.AllValuesFromDataRestrictionImpl#getAllValuesFromData <em>All Values From Data</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class AllValuesFromDataRestrictionImpl extends AllValuesFromRestrictionImpl implements AllValuesFromDataRestriction {
+	/**
+	 * The default value of the '{@link #getAllValuesFromData() <em>All Values From Data</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAllValuesFromData()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final dataType ALL_VALUES_FROM_DATA_EDEFAULT = dataType.STRING;
+
+	/**
+	 * The cached value of the '{@link #getAllValuesFromData() <em>All Values From Data</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAllValuesFromData()
+	 * @generated
+	 * @ordered
+	 */
+	protected dataType allValuesFromData = ALL_VALUES_FROM_DATA_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AllValuesFromDataRestrictionImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.ALL_VALUES_FROM_DATA_RESTRICTION;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public dataType getAllValuesFromData() {
+		return allValuesFromData;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAllValuesFromData(dataType newAllValuesFromData) {
+		dataType oldAllValuesFromData = allValuesFromData;
+		allValuesFromData = newAllValuesFromData == null ? ALL_VALUES_FROM_DATA_EDEFAULT : newAllValuesFromData;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.ALL_VALUES_FROM_DATA_RESTRICTION__ALL_VALUES_FROM_DATA, oldAllValuesFromData, allValuesFromData));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.ALL_VALUES_FROM_DATA_RESTRICTION__ALL_VALUES_FROM_DATA:
+				return getAllValuesFromData();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.ALL_VALUES_FROM_DATA_RESTRICTION__ALL_VALUES_FROM_DATA:
+				setAllValuesFromData((dataType)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.ALL_VALUES_FROM_DATA_RESTRICTION__ALL_VALUES_FROM_DATA:
+				setAllValuesFromData(ALL_VALUES_FROM_DATA_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.ALL_VALUES_FROM_DATA_RESTRICTION__ALL_VALUES_FROM_DATA:
+				return allValuesFromData != ALL_VALUES_FROM_DATA_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (allValuesFromData: ");
+		result.append(allValuesFromData);
+		result.append(')');
+		return result.toString();
+	}
+
+} //AllValuesFromDataRestrictionImpl

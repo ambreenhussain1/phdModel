@@ -1,0 +1,49 @@
+/**
+ */
+package WatERP;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Cardinality Restriction</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.CardinalityRestriction#getCardinality <em>Cardinality</em>}</li>
+ * </ul>
+ *
+ * @see WatERP.WatERPPackage#getCardinalityRestriction()
+ * @model
+ * @generated
+ */
+public interface CardinalityRestriction extends Restriction {
+	/**
+	 * Returns the value of the '<em><b>Cardinality</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Cardinality</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Cardinality</em>' attribute.
+	 * @see #setCardinality(Integer)
+	 * @see WatERP.WatERPPackage#getCardinalityRestriction_Cardinality()
+	 * @model dataType="WatERP.Integer"
+	 * @generated
+	 */
+	Integer getCardinality();
+
+	/**
+	 * Sets the value of the '{@link WatERP.CardinalityRestriction#getCardinality <em>Cardinality</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Cardinality</em>' attribute.
+	 * @see #getCardinality()
+	 * @generated
+	 */
+	void setCardinality(Integer value);
+
+} // CardinalityRestriction

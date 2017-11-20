@@ -1,0 +1,310 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.Model;
+import WatERP.ModelAnnotation;
+import WatERP.Ontology;
+import WatERP.TopNode;
+import WatERP.WatERPPackage;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Top Node</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.TopNodeImpl#getModel <em>Model</em>}</li>
+ *   <li>{@link WatERP.impl.TopNodeImpl#getOntology <em>Ontology</em>}</li>
+ *   <li>{@link WatERP.impl.TopNodeImpl#getAnnotation <em>Annotation</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class TopNodeImpl extends MinimalEObjectImpl.Container implements TopNode {
+	/**
+	 * The cached value of the '{@link #getModel() <em>Model</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getModel()
+	 * @generated
+	 * @ordered
+	 */
+	protected Model model;
+
+	/**
+	 * The cached value of the '{@link #getOntology() <em>Ontology</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getOntology()
+	 * @generated
+	 * @ordered
+	 */
+	protected Ontology ontology;
+
+	/**
+	 * The cached value of the '{@link #getAnnotation() <em>Annotation</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAnnotation()
+	 * @generated
+	 * @ordered
+	 */
+	protected ModelAnnotation annotation;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected TopNodeImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.TOP_NODE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Model getModel() {
+		return model;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetModel(Model newModel, NotificationChain msgs) {
+		Model oldModel = model;
+		model = newModel;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, WatERPPackage.TOP_NODE__MODEL, oldModel, newModel);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setModel(Model newModel) {
+		if (newModel != model) {
+			NotificationChain msgs = null;
+			if (model != null)
+				msgs = ((InternalEObject)model).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.TOP_NODE__MODEL, null, msgs);
+			if (newModel != null)
+				msgs = ((InternalEObject)newModel).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.TOP_NODE__MODEL, null, msgs);
+			msgs = basicSetModel(newModel, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.TOP_NODE__MODEL, newModel, newModel));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Ontology getOntology() {
+		return ontology;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetOntology(Ontology newOntology, NotificationChain msgs) {
+		Ontology oldOntology = ontology;
+		ontology = newOntology;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, WatERPPackage.TOP_NODE__ONTOLOGY, oldOntology, newOntology);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setOntology(Ontology newOntology) {
+		if (newOntology != ontology) {
+			NotificationChain msgs = null;
+			if (ontology != null)
+				msgs = ((InternalEObject)ontology).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.TOP_NODE__ONTOLOGY, null, msgs);
+			if (newOntology != null)
+				msgs = ((InternalEObject)newOntology).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.TOP_NODE__ONTOLOGY, null, msgs);
+			msgs = basicSetOntology(newOntology, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.TOP_NODE__ONTOLOGY, newOntology, newOntology));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ModelAnnotation getAnnotation() {
+		return annotation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetAnnotation(ModelAnnotation newAnnotation, NotificationChain msgs) {
+		ModelAnnotation oldAnnotation = annotation;
+		annotation = newAnnotation;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, WatERPPackage.TOP_NODE__ANNOTATION, oldAnnotation, newAnnotation);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAnnotation(ModelAnnotation newAnnotation) {
+		if (newAnnotation != annotation) {
+			NotificationChain msgs = null;
+			if (annotation != null)
+				msgs = ((InternalEObject)annotation).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.TOP_NODE__ANNOTATION, null, msgs);
+			if (newAnnotation != null)
+				msgs = ((InternalEObject)newAnnotation).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.TOP_NODE__ANNOTATION, null, msgs);
+			msgs = basicSetAnnotation(newAnnotation, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.TOP_NODE__ANNOTATION, newAnnotation, newAnnotation));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case WatERPPackage.TOP_NODE__MODEL:
+				return basicSetModel(null, msgs);
+			case WatERPPackage.TOP_NODE__ONTOLOGY:
+				return basicSetOntology(null, msgs);
+			case WatERPPackage.TOP_NODE__ANNOTATION:
+				return basicSetAnnotation(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.TOP_NODE__MODEL:
+				return getModel();
+			case WatERPPackage.TOP_NODE__ONTOLOGY:
+				return getOntology();
+			case WatERPPackage.TOP_NODE__ANNOTATION:
+				return getAnnotation();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.TOP_NODE__MODEL:
+				setModel((Model)newValue);
+				return;
+			case WatERPPackage.TOP_NODE__ONTOLOGY:
+				setOntology((Ontology)newValue);
+				return;
+			case WatERPPackage.TOP_NODE__ANNOTATION:
+				setAnnotation((ModelAnnotation)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.TOP_NODE__MODEL:
+				setModel((Model)null);
+				return;
+			case WatERPPackage.TOP_NODE__ONTOLOGY:
+				setOntology((Ontology)null);
+				return;
+			case WatERPPackage.TOP_NODE__ANNOTATION:
+				setAnnotation((ModelAnnotation)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.TOP_NODE__MODEL:
+				return model != null;
+			case WatERPPackage.TOP_NODE__ONTOLOGY:
+				return ontology != null;
+			case WatERPPackage.TOP_NODE__ANNOTATION:
+				return annotation != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //TopNodeImpl

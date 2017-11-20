@@ -1,0 +1,18 @@
+/**
+ */
+package WatERP;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Atom</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ *
+ * @see WatERP.WatERPPackage#getAtom()
+ * @model
+ * @generated
+ */
+public interface Atom extends EObject {
+} // Atom

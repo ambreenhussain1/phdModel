@@ -1,0 +1,259 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.MCProperty;
+import WatERP.MClass;
+import WatERP.MDProperty;
+import WatERP.WatERPPackage;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>MClass</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.MClassImpl#getName <em>Name</em>}</li>
+ *   <li>{@link WatERP.impl.MClassImpl#getDataproperty <em>Dataproperty</em>}</li>
+ *   <li>{@link WatERP.impl.MClassImpl#getClassProperty <em>Class Property</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class MClassImpl extends MinimalEObjectImpl.Container implements MClass {
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getDataproperty() <em>Dataproperty</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDataproperty()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<MDProperty> dataproperty;
+
+	/**
+	 * The cached value of the '{@link #getClassProperty() <em>Class Property</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getClassProperty()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<MCProperty> classProperty;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MClassImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.MCLASS;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.MCLASS__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<MDProperty> getDataproperty() {
+		if (dataproperty == null) {
+			dataproperty = new EObjectContainmentEList<MDProperty>(MDProperty.class, this, WatERPPackage.MCLASS__DATAPROPERTY);
+		}
+		return dataproperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<MCProperty> getClassProperty() {
+		if (classProperty == null) {
+			classProperty = new EObjectContainmentEList<MCProperty>(MCProperty.class, this, WatERPPackage.MCLASS__CLASS_PROPERTY);
+		}
+		return classProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case WatERPPackage.MCLASS__DATAPROPERTY:
+				return ((InternalEList<?>)getDataproperty()).basicRemove(otherEnd, msgs);
+			case WatERPPackage.MCLASS__CLASS_PROPERTY:
+				return ((InternalEList<?>)getClassProperty()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.MCLASS__NAME:
+				return getName();
+			case WatERPPackage.MCLASS__DATAPROPERTY:
+				return getDataproperty();
+			case WatERPPackage.MCLASS__CLASS_PROPERTY:
+				return getClassProperty();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.MCLASS__NAME:
+				setName((String)newValue);
+				return;
+			case WatERPPackage.MCLASS__DATAPROPERTY:
+				getDataproperty().clear();
+				getDataproperty().addAll((Collection<? extends MDProperty>)newValue);
+				return;
+			case WatERPPackage.MCLASS__CLASS_PROPERTY:
+				getClassProperty().clear();
+				getClassProperty().addAll((Collection<? extends MCProperty>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.MCLASS__NAME:
+				setName(NAME_EDEFAULT);
+				return;
+			case WatERPPackage.MCLASS__DATAPROPERTY:
+				getDataproperty().clear();
+				return;
+			case WatERPPackage.MCLASS__CLASS_PROPERTY:
+				getClassProperty().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.MCLASS__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case WatERPPackage.MCLASS__DATAPROPERTY:
+				return dataproperty != null && !dataproperty.isEmpty();
+			case WatERPPackage.MCLASS__CLASS_PROPERTY:
+				return classProperty != null && !classProperty.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (name: ");
+		result.append(name);
+		result.append(')');
+		return result.toString();
+	}
+
+} //MClassImpl

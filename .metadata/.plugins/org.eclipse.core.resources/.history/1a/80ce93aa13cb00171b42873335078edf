@@ -1,0 +1,402 @@
+/**
+ */
+package WatERP;
+
+import org.eclipse.emf.ecore.EFactory;
+
+/**
+ * <!-- begin-user-doc -->
+ * The <b>Factory</b> for the model.
+ * It provides a create method for each non-abstract class of the model.
+ * <!-- end-user-doc -->
+ * @see WatERP.WatERPPackage
+ * @generated
+ */
+public interface WatERPFactory extends EFactory {
+	/**
+	 * The singleton instance of the factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	WatERPFactory eINSTANCE = WatERP.impl.WatERPFactoryImpl.init();
+
+	/**
+	 * Returns a new object of class '<em>Model Annotation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Model Annotation</em>'.
+	 * @generated
+	 */
+	ModelAnnotation createModelAnnotation();
+
+	/**
+	 * Returns a new object of class '<em>Class Annotation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Class Annotation</em>'.
+	 * @generated
+	 */
+	ClassAnnotation createClassAnnotation();
+
+	/**
+	 * Returns a new object of class '<em>Ontology</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Ontology</em>'.
+	 * @generated
+	 */
+	Ontology createOntology();
+
+	/**
+	 * Returns a new object of class '<em>Model</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Model</em>'.
+	 * @generated
+	 */
+	Model createModel();
+
+	/**
+	 * Returns a new object of class '<em>Property Annotation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Property Annotation</em>'.
+	 * @generated
+	 */
+	PropertyAnnotation createPropertyAnnotation();
+
+	/**
+	 * Returns a new object of class '<em>Expression</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Expression</em>'.
+	 * @generated
+	 */
+	Expression createExpression();
+
+	/**
+	 * Returns a new object of class '<em>Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Property</em>'.
+	 * @generated
+	 */
+	Property createProperty();
+
+	/**
+	 * Returns a new object of class '<em>MClass</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>MClass</em>'.
+	 * @generated
+	 */
+	MClass createMClass();
+
+	/**
+	 * Returns a new object of class '<em>MProperty</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>MProperty</em>'.
+	 * @generated
+	 */
+	MProperty createMProperty();
+
+	/**
+	 * Returns a new object of class '<em>MC Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>MC Property</em>'.
+	 * @generated
+	 */
+	MCProperty createMCProperty();
+
+	/**
+	 * Returns a new object of class '<em>MD Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>MD Property</em>'.
+	 * @generated
+	 */
+	MDProperty createMDProperty();
+
+	/**
+	 * Returns a new object of class '<em>OClass</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>OClass</em>'.
+	 * @generated
+	 */
+	OClass createOClass();
+
+	/**
+	 * Returns a new object of class '<em>OProperty</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>OProperty</em>'.
+	 * @generated
+	 */
+	OProperty createOProperty();
+
+	/**
+	 * Returns a new object of class '<em>Ontology Constraint</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Ontology Constraint</em>'.
+	 * @generated
+	 */
+	OntologyConstraint createOntologyConstraint();
+
+	/**
+	 * Returns a new object of class '<em>Equivalence</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Equivalence</em>'.
+	 * @generated
+	 */
+	Equivalence createEquivalence();
+
+	/**
+	 * Returns a new object of class '<em>Union Class</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Union Class</em>'.
+	 * @generated
+	 */
+	UnionClass createUnionClass();
+
+	/**
+	 * Returns a new object of class '<em>Object Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Object Property</em>'.
+	 * @generated
+	 */
+	ObjectProperty createObjectProperty();
+
+	/**
+	 * Returns a new object of class '<em>Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Restriction</em>'.
+	 * @generated
+	 */
+	Restriction createRestriction();
+
+	/**
+	 * Returns a new object of class '<em>Has Data Value Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Has Data Value Restriction</em>'.
+	 * @generated
+	 */
+	HasDataValueRestriction createHasDataValueRestriction();
+
+	/**
+	 * Returns a new object of class '<em>All Values From Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>All Values From Restriction</em>'.
+	 * @generated
+	 */
+	AllValuesFromRestriction createAllValuesFromRestriction();
+
+	/**
+	 * Returns a new object of class '<em>All Values From Data Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>All Values From Data Restriction</em>'.
+	 * @generated
+	 */
+	AllValuesFromDataRestriction createAllValuesFromDataRestriction();
+
+	/**
+	 * Returns a new object of class '<em>All Values From Class Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>All Values From Class Restriction</em>'.
+	 * @generated
+	 */
+	AllValuesFromClassRestriction createAllValuesFromClassRestriction();
+
+	/**
+	 * Returns a new object of class '<em>Data Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Data Property</em>'.
+	 * @generated
+	 */
+	DataProperty createDataProperty();
+
+	/**
+	 * Returns a new object of class '<em>Some Values From Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Some Values From Restriction</em>'.
+	 * @generated
+	 */
+	SomeValuesFromRestriction createSomeValuesFromRestriction();
+
+	/**
+	 * Returns a new object of class '<em>Some Values From Data Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Some Values From Data Restriction</em>'.
+	 * @generated
+	 */
+	SomeValuesFromDataRestriction createSomeValuesFromDataRestriction();
+
+	/**
+	 * Returns a new object of class '<em>Some Values From Class Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Some Values From Class Restriction</em>'.
+	 * @generated
+	 */
+	SomeValuesFromClassRestriction createSomeValuesFromClassRestriction();
+
+	/**
+	 * Returns a new object of class '<em>Cardinality Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Cardinality Restriction</em>'.
+	 * @generated
+	 */
+	CardinalityRestriction createCardinalityRestriction();
+
+	/**
+	 * Returns a new object of class '<em>Maximum Cardinality Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Maximum Cardinality Restriction</em>'.
+	 * @generated
+	 */
+	MaximumCardinalityRestriction createMaximumCardinalityRestriction();
+
+	/**
+	 * Returns a new object of class '<em>Minimum Cardinality Restriction</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Minimum Cardinality Restriction</em>'.
+	 * @generated
+	 */
+	MinimumCardinalityRestriction createMinimumCardinalityRestriction();
+
+	/**
+	 * Returns a new object of class '<em>Top Node</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Top Node</em>'.
+	 * @generated
+	 */
+	TopNode createTopNode();
+
+	/**
+	 * Returns a new object of class '<em>Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Observation</em>'.
+	 * @generated
+	 */
+	Observation createObservation();
+
+	/**
+	 * Returns a new object of class '<em>Sensor</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Sensor</em>'.
+	 * @generated
+	 */
+	Sensor createSensor();
+
+	/**
+	 * Returns a new object of class '<em>Export</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Export</em>'.
+	 * @generated
+	 */
+	Export createExport();
+
+	/**
+	 * Returns a new object of class '<em>Observed Property</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Observed Property</em>'.
+	 * @generated
+	 */
+	ObservedProperty createObservedProperty();
+
+	/**
+	 * Returns a new object of class '<em>DL Safe Rule</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>DL Safe Rule</em>'.
+	 * @generated
+	 */
+	DLSafeRule createDLSafeRule();
+
+	/**
+	 * Returns a new object of class '<em>Head</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Head</em>'.
+	 * @generated
+	 */
+	Head createHead();
+
+	/**
+	 * Returns a new object of class '<em>Body</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Body</em>'.
+	 * @generated
+	 */
+	Body createBody();
+
+	/**
+	 * Returns a new object of class '<em>Atom</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Atom</em>'.
+	 * @generated
+	 */
+	Atom createAtom();
+
+	/**
+	 * Returns a new object of class '<em>Object Property Atom</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Object Property Atom</em>'.
+	 * @generated
+	 */
+	ObjectPropertyAtom createObjectPropertyAtom();
+
+	/**
+	 * Returns a new object of class '<em>Class Atom</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Class Atom</em>'.
+	 * @generated
+	 */
+	ClassAtom createClassAtom();
+
+	/**
+	 * Returns a new object of class '<em>Variable</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Variable</em>'.
+	 * @generated
+	 */
+	Variable createVariable();
+
+	/**
+	 * Returns the package supported by this factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the package supported by this factory.
+	 * @generated
+	 */
+	WatERPPackage getWatERPPackage();
+
+} //WatERPFactory

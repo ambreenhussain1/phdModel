@@ -1,0 +1,6 @@
+import 'platform:/resource/org.eclipse.example.EMSModel/model/diplomas.ecore'
+
+context DiplomaModel::Student
+def: oclDebuggerExpression() : OclAny = 
+	self.nextDiploma = 'p' implies let c = ClassAnnotation.allInstances()->select (inst|inst.annotatedClass = self.previousDiploma)
+			 in Equivalence.allInstances()->exists(eq|eq.right= c or eq.left = c)

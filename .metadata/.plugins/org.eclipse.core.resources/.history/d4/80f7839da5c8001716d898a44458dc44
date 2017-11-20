@@ -1,0 +1,49 @@
+/**
+ */
+package WatERP;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Maximum Cardinality Restriction</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.MaximumCardinalityRestriction#getMaxCardinality <em>Max Cardinality</em>}</li>
+ * </ul>
+ *
+ * @see WatERP.WatERPPackage#getMaximumCardinalityRestriction()
+ * @model
+ * @generated
+ */
+public interface MaximumCardinalityRestriction extends Restriction {
+	/**
+	 * Returns the value of the '<em><b>Max Cardinality</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Max Cardinality</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Max Cardinality</em>' attribute.
+	 * @see #setMaxCardinality(Integer)
+	 * @see WatERP.WatERPPackage#getMaximumCardinalityRestriction_MaxCardinality()
+	 * @model dataType="WatERP.Integer"
+	 * @generated
+	 */
+	Integer getMaxCardinality();
+
+	/**
+	 * Sets the value of the '{@link WatERP.MaximumCardinalityRestriction#getMaxCardinality <em>Max Cardinality</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Max Cardinality</em>' attribute.
+	 * @see #getMaxCardinality()
+	 * @generated
+	 */
+	void setMaxCardinality(Integer value);
+
+} // MaximumCardinalityRestriction

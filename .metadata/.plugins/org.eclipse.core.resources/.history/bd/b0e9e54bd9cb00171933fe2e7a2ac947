@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.eclipse.example.EMSModel/src" modelPluginID="org.eclipse.example.EMSModel"
+    modelName="Water" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>water.ecore</foreignModel>
+  <genPackages prefix="WatERP" disposableProviderFactory="true" ecorePackage="water.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="water.ecore#//ExpressionType">
+      <genEnumLiterals ecoreEnumLiteral="water.ecore#//ExpressionType/restrictionConstraint"/>
+      <genEnumLiterals ecoreEnumLiteral="water.ecore#//ExpressionType/ruleConstraint"/>
+      <genEnumLiterals ecoreEnumLiteral="water.ecore#//ExpressionType/algebric"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="water.ecore#//dataType">
+      <genEnumLiterals ecoreEnumLiteral="water.ecore#//dataType/String"/>
+      <genEnumLiterals ecoreEnumLiteral="water.ecore#//dataType/Integer"/>
+      <genEnumLiterals ecoreEnumLiteral="water.ecore#//dataType/Date"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="water.ecore#//constraintType">
+      <genEnumLiterals ecoreEnumLiteral="water.ecore#//constraintType/restriction"/>
+      <genEnumLiterals ecoreEnumLiteral="water.ecore#//constraintType/rule"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="water.ecore#//String"/>
+    <genDataTypes ecoreDataType="water.ecore#//Integer"/>
+    <genDataTypes ecoreDataType="water.ecore#//Boolean"/>
+    <genClasses ecoreClass="water.ecore#//ModelAnnotation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//ModelAnnotation/annotations"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//ModelAnnotation/annotatedModel"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//ModelAnnotation/annotatingModel"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//ClassAnnotation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//ClassAnnotation/annotatingClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//ClassAnnotation/annotatedClass"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//ClassAnnotation/propertyAnnotations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//ClassAnnotation/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//Ontology">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//Ontology/OClass"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//Ontology/name"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//Model/MClass"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//Model/name"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//PropertyAnnotation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//PropertyAnnotation/annotatedProperty"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//PropertyAnnotation/annotatingProperty"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//PropertyAnnotation/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//Expression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//Expression/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//Expression/value"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//Property">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//Property/name"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//MClass">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//MClass/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//MClass/dataproperty"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//MClass/classProperty"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//MProperty">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//MProperty/value"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//MCProperty">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//MCProperty/classType"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//MDProperty">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//MDProperty/type"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//OClass">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//OClass/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//OClass/isDeprecated"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//OClass/subClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//OClass/subClassOf"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//OClass/equivalentClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//OClass/unionClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//OClass/disjointClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//OClass/allValuesFromRestriction"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//OClass/someValuesFromRestriction"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//OClass/dataProperty"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//OClass/objectProperty"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//OClass/rule"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//OProperty">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//OProperty/isDeprecated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//OProperty/isFunctional"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//OProperty/subProperty"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//OProperty/subPropertyOf"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//OProperty/domain"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//OProperty/equivalentProperty"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//OProperty/propertyRestriction"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//OntologyConstraint"/>
+    <genClasses ecoreClass="water.ecore#//Equivalence">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//Equivalence/right"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//Equivalence/left"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//UnionClass">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//UnionClass/unionOf"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//ObjectProperty">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//ObjectProperty/IsInverseFunctional"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//ObjectProperty/isTransitive"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//ObjectProperty/IsSymmetric"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//ObjectProperty/range"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//ObjectProperty/inverseOf"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//Restriction">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference water.ecore#//Restriction/onProperty"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//HasDataValueRestriction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//HasDataValueRestriction/hasDataValueLiteral"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//AllValuesFromRestriction"/>
+    <genClasses ecoreClass="water.ecore#//AllValuesFromDataRestriction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//AllValuesFromDataRestriction/allValuesFromData"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//AllValuesFromClassRestriction">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//AllValuesFromClassRestriction/allValuesFromClass"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//DataProperty">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//DataProperty/range"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//SomeValuesFromRestriction"/>
+    <genClasses ecoreClass="water.ecore#//SomeValuesFromDataRestriction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//SomeValuesFromDataRestriction/someValuesFromData"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//SomeValuesFromClassRestriction">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//SomeValuesFromClassRestriction/someValuesFromClass"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//CardinalityRestriction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//CardinalityRestriction/cardinality"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//MaximumCardinalityRestriction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//MaximumCardinalityRestriction/maxCardinality"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//MinimumCardinalityRestriction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//MinimumCardinalityRestriction/minCardinality"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//TopNode">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//TopNode/Model"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//TopNode/Ontology"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//TopNode/Annotation"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//Observation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//Observation/foi"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//Observation/procedure"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//Observation/observedProperty"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//Observation/result"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//Observation/unit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//Observation/assignedSensorID"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//Sensor">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//Sensor/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//Sensor/uri"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//Sensor/desc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//Sensor/observations"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//Export"/>
+    <genClasses ecoreClass="water.ecore#//ObservedProperty"/>
+    <genClasses ecoreClass="water.ecore#//DLSafeRule">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//DLSafeRule/head"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//DLSafeRule/body"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//Head">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//Head/atoms"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//Body">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//Body/atoms"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//Atom"/>
+    <genClasses ecoreClass="water.ecore#//ObjectPropertyAtom">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//ObjectPropertyAtom/objectProperty"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//ObjectPropertyAtom/variable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//ObjectPropertyAtom/namedIndividual"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//ClassAtom">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference water.ecore#//ClassAtom/class"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference water.ecore#//ClassAtom/variable"/>
+    </genClasses>
+    <genClasses ecoreClass="water.ecore#//Variable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute water.ecore#//Variable/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

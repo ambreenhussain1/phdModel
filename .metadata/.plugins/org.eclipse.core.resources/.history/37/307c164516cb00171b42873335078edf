@@ -1,0 +1,87 @@
+/**
+ */
+package WatERP;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>MClass</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.MClass#getName <em>Name</em>}</li>
+ *   <li>{@link WatERP.MClass#getDataproperty <em>Dataproperty</em>}</li>
+ *   <li>{@link WatERP.MClass#getClassProperty <em>Class Property</em>}</li>
+ * </ul>
+ *
+ * @see WatERP.WatERPPackage#getMClass()
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='coOccuranceConstraint count ProcedureCount'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot coOccuranceConstraint='\n\t\tself.name = \'Observation\' implies \n\t\tlet c = self.classProperty->select(i|i.name =\'ObservedProperty\'), v = c.value->at(1)  \n\t\tin self.dataproperty->select(d|d.name=\'Unit\').value->asSequence()->at(1) = \'m3/h\' and v=\'FlowDischarge\'' count='\n\t\tself.name = \'Observation\' implies\n\t\tself.dataproperty.name->count(\'Procedure\') = 1 and\n\t\tself.dataproperty.name->count(\'Result\') = 1 and\n\t\tself.classProperty.name->count(\'ObservedProperty\') = 1' ProcedureCount='\n\t\tlet mc = MClass.allInstances()->select(mc|mc.name.indexOf(\'Obs\') = 1),\n\t\t c = ClassAnnotation.allInstances()->select(e|e.annotatedClass.name.indexOf(\'Obs\') =1 ),\n\t\tpa= PropertyAnnotation.allInstances()->select(p|p.annotatedProperty.name = \'Procedure\' ) \t\t\n\t\tin mc.dataproperty.name->count(\'Procedure\') = 1 and pa.expression.value.indexOf(\'1\') <> -1'"
+ * @generated
+ */
+public interface MClass extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see WatERP.WatERPPackage#getMClass_Name()
+	 * @model dataType="WatERP.String"
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link WatERP.MClass#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Dataproperty</b></em>' containment reference list.
+	 * The list contents are of type {@link WatERP.MDProperty}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Dataproperty</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Dataproperty</em>' containment reference list.
+	 * @see WatERP.WatERPPackage#getMClass_Dataproperty()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<MDProperty> getDataproperty();
+
+	/**
+	 * Returns the value of the '<em><b>Class Property</b></em>' containment reference list.
+	 * The list contents are of type {@link WatERP.MCProperty}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Class Property</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Class Property</em>' containment reference list.
+	 * @see WatERP.WatERPPackage#getMClass_ClassProperty()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<MCProperty> getClassProperty();
+
+} // MClass

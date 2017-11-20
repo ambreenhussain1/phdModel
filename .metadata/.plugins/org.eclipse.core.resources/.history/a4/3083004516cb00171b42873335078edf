@@ -1,0 +1,51 @@
+/**
+ */
+package WatERP;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>All Values From Class Restriction</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.AllValuesFromClassRestriction#getAllValuesFromClass <em>All Values From Class</em>}</li>
+ * </ul>
+ *
+ * @see WatERP.WatERPPackage#getAllValuesFromClassRestriction()
+ * @model
+ * @generated
+ */
+public interface AllValuesFromClassRestriction extends AllValuesFromRestriction {
+	/**
+	 * Returns the value of the '<em><b>All Values From Class</b></em>' reference.
+	 * It is bidirectional and its opposite is '{@link WatERP.OClass#getAllValuesFromRestriction <em>All Values From Restriction</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>All Values From Class</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>All Values From Class</em>' reference.
+	 * @see #setAllValuesFromClass(OClass)
+	 * @see WatERP.WatERPPackage#getAllValuesFromClassRestriction_AllValuesFromClass()
+	 * @see WatERP.OClass#getAllValuesFromRestriction
+	 * @model opposite="allValuesFromRestriction" required="true"
+	 * @generated
+	 */
+	OClass getAllValuesFromClass();
+
+	/**
+	 * Sets the value of the '{@link WatERP.AllValuesFromClassRestriction#getAllValuesFromClass <em>All Values From Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>All Values From Class</em>' reference.
+	 * @see #getAllValuesFromClass()
+	 * @generated
+	 */
+	void setAllValuesFromClass(OClass value);
+
+} // AllValuesFromClassRestriction

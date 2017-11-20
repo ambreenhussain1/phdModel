@@ -1,0 +1,437 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.OClass;
+import WatERP.OProperty;
+import WatERP.Restriction;
+import WatERP.WatERPPackage;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>OProperty</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.OPropertyImpl#getIsDeprecated <em>Is Deprecated</em>}</li>
+ *   <li>{@link WatERP.impl.OPropertyImpl#getIsFunctional <em>Is Functional</em>}</li>
+ *   <li>{@link WatERP.impl.OPropertyImpl#getSubProperty <em>Sub Property</em>}</li>
+ *   <li>{@link WatERP.impl.OPropertyImpl#getSubPropertyOf <em>Sub Property Of</em>}</li>
+ *   <li>{@link WatERP.impl.OPropertyImpl#getDomain <em>Domain</em>}</li>
+ *   <li>{@link WatERP.impl.OPropertyImpl#getEquivalentProperty <em>Equivalent Property</em>}</li>
+ *   <li>{@link WatERP.impl.OPropertyImpl#getPropertyRestriction <em>Property Restriction</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class OPropertyImpl extends PropertyImpl implements OProperty {
+	/**
+	 * The default value of the '{@link #getIsDeprecated() <em>Is Deprecated</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIsDeprecated()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Boolean IS_DEPRECATED_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getIsDeprecated() <em>Is Deprecated</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIsDeprecated()
+	 * @generated
+	 * @ordered
+	 */
+	protected Boolean isDeprecated = IS_DEPRECATED_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getIsFunctional() <em>Is Functional</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIsFunctional()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Boolean IS_FUNCTIONAL_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getIsFunctional() <em>Is Functional</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIsFunctional()
+	 * @generated
+	 * @ordered
+	 */
+	protected Boolean isFunctional = IS_FUNCTIONAL_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getSubProperty() <em>Sub Property</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSubProperty()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<OProperty> subProperty;
+
+	/**
+	 * The cached value of the '{@link #getSubPropertyOf() <em>Sub Property Of</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSubPropertyOf()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<OProperty> subPropertyOf;
+
+	/**
+	 * The cached value of the '{@link #getDomain() <em>Domain</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDomain()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<OClass> domain;
+
+	/**
+	 * The cached value of the '{@link #getEquivalentProperty() <em>Equivalent Property</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEquivalentProperty()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<OProperty> equivalentProperty;
+
+	/**
+	 * The cached value of the '{@link #getPropertyRestriction() <em>Property Restriction</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPropertyRestriction()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Restriction> propertyRestriction;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected OPropertyImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.OPROPERTY;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Boolean getIsDeprecated() {
+		return isDeprecated;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setIsDeprecated(Boolean newIsDeprecated) {
+		Boolean oldIsDeprecated = isDeprecated;
+		isDeprecated = newIsDeprecated;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.OPROPERTY__IS_DEPRECATED, oldIsDeprecated, isDeprecated));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Boolean getIsFunctional() {
+		return isFunctional;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setIsFunctional(Boolean newIsFunctional) {
+		Boolean oldIsFunctional = isFunctional;
+		isFunctional = newIsFunctional;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.OPROPERTY__IS_FUNCTIONAL, oldIsFunctional, isFunctional));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<OProperty> getSubProperty() {
+		if (subProperty == null) {
+			subProperty = new EObjectWithInverseResolvingEList.ManyInverse<OProperty>(OProperty.class, this, WatERPPackage.OPROPERTY__SUB_PROPERTY, WatERPPackage.OPROPERTY__SUB_PROPERTY_OF);
+		}
+		return subProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<OProperty> getSubPropertyOf() {
+		if (subPropertyOf == null) {
+			subPropertyOf = new EObjectWithInverseResolvingEList.ManyInverse<OProperty>(OProperty.class, this, WatERPPackage.OPROPERTY__SUB_PROPERTY_OF, WatERPPackage.OPROPERTY__SUB_PROPERTY);
+		}
+		return subPropertyOf;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<OClass> getDomain() {
+		if (domain == null) {
+			domain = new EObjectResolvingEList<OClass>(OClass.class, this, WatERPPackage.OPROPERTY__DOMAIN);
+		}
+		return domain;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<OProperty> getEquivalentProperty() {
+		if (equivalentProperty == null) {
+			equivalentProperty = new EObjectResolvingEList<OProperty>(OProperty.class, this, WatERPPackage.OPROPERTY__EQUIVALENT_PROPERTY);
+		}
+		return equivalentProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Restriction> getPropertyRestriction() {
+		if (propertyRestriction == null) {
+			propertyRestriction = new EObjectContainmentWithInverseEList<Restriction>(Restriction.class, this, WatERPPackage.OPROPERTY__PROPERTY_RESTRICTION, WatERPPackage.RESTRICTION__ON_PROPERTY);
+		}
+		return propertyRestriction;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case WatERPPackage.OPROPERTY__SUB_PROPERTY:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getSubProperty()).basicAdd(otherEnd, msgs);
+			case WatERPPackage.OPROPERTY__SUB_PROPERTY_OF:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getSubPropertyOf()).basicAdd(otherEnd, msgs);
+			case WatERPPackage.OPROPERTY__PROPERTY_RESTRICTION:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getPropertyRestriction()).basicAdd(otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case WatERPPackage.OPROPERTY__SUB_PROPERTY:
+				return ((InternalEList<?>)getSubProperty()).basicRemove(otherEnd, msgs);
+			case WatERPPackage.OPROPERTY__SUB_PROPERTY_OF:
+				return ((InternalEList<?>)getSubPropertyOf()).basicRemove(otherEnd, msgs);
+			case WatERPPackage.OPROPERTY__PROPERTY_RESTRICTION:
+				return ((InternalEList<?>)getPropertyRestriction()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.OPROPERTY__IS_DEPRECATED:
+				return getIsDeprecated();
+			case WatERPPackage.OPROPERTY__IS_FUNCTIONAL:
+				return getIsFunctional();
+			case WatERPPackage.OPROPERTY__SUB_PROPERTY:
+				return getSubProperty();
+			case WatERPPackage.OPROPERTY__SUB_PROPERTY_OF:
+				return getSubPropertyOf();
+			case WatERPPackage.OPROPERTY__DOMAIN:
+				return getDomain();
+			case WatERPPackage.OPROPERTY__EQUIVALENT_PROPERTY:
+				return getEquivalentProperty();
+			case WatERPPackage.OPROPERTY__PROPERTY_RESTRICTION:
+				return getPropertyRestriction();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.OPROPERTY__IS_DEPRECATED:
+				setIsDeprecated((Boolean)newValue);
+				return;
+			case WatERPPackage.OPROPERTY__IS_FUNCTIONAL:
+				setIsFunctional((Boolean)newValue);
+				return;
+			case WatERPPackage.OPROPERTY__SUB_PROPERTY:
+				getSubProperty().clear();
+				getSubProperty().addAll((Collection<? extends OProperty>)newValue);
+				return;
+			case WatERPPackage.OPROPERTY__SUB_PROPERTY_OF:
+				getSubPropertyOf().clear();
+				getSubPropertyOf().addAll((Collection<? extends OProperty>)newValue);
+				return;
+			case WatERPPackage.OPROPERTY__DOMAIN:
+				getDomain().clear();
+				getDomain().addAll((Collection<? extends OClass>)newValue);
+				return;
+			case WatERPPackage.OPROPERTY__EQUIVALENT_PROPERTY:
+				getEquivalentProperty().clear();
+				getEquivalentProperty().addAll((Collection<? extends OProperty>)newValue);
+				return;
+			case WatERPPackage.OPROPERTY__PROPERTY_RESTRICTION:
+				getPropertyRestriction().clear();
+				getPropertyRestriction().addAll((Collection<? extends Restriction>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.OPROPERTY__IS_DEPRECATED:
+				setIsDeprecated(IS_DEPRECATED_EDEFAULT);
+				return;
+			case WatERPPackage.OPROPERTY__IS_FUNCTIONAL:
+				setIsFunctional(IS_FUNCTIONAL_EDEFAULT);
+				return;
+			case WatERPPackage.OPROPERTY__SUB_PROPERTY:
+				getSubProperty().clear();
+				return;
+			case WatERPPackage.OPROPERTY__SUB_PROPERTY_OF:
+				getSubPropertyOf().clear();
+				return;
+			case WatERPPackage.OPROPERTY__DOMAIN:
+				getDomain().clear();
+				return;
+			case WatERPPackage.OPROPERTY__EQUIVALENT_PROPERTY:
+				getEquivalentProperty().clear();
+				return;
+			case WatERPPackage.OPROPERTY__PROPERTY_RESTRICTION:
+				getPropertyRestriction().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.OPROPERTY__IS_DEPRECATED:
+				return IS_DEPRECATED_EDEFAULT == null ? isDeprecated != null : !IS_DEPRECATED_EDEFAULT.equals(isDeprecated);
+			case WatERPPackage.OPROPERTY__IS_FUNCTIONAL:
+				return IS_FUNCTIONAL_EDEFAULT == null ? isFunctional != null : !IS_FUNCTIONAL_EDEFAULT.equals(isFunctional);
+			case WatERPPackage.OPROPERTY__SUB_PROPERTY:
+				return subProperty != null && !subProperty.isEmpty();
+			case WatERPPackage.OPROPERTY__SUB_PROPERTY_OF:
+				return subPropertyOf != null && !subPropertyOf.isEmpty();
+			case WatERPPackage.OPROPERTY__DOMAIN:
+				return domain != null && !domain.isEmpty();
+			case WatERPPackage.OPROPERTY__EQUIVALENT_PROPERTY:
+				return equivalentProperty != null && !equivalentProperty.isEmpty();
+			case WatERPPackage.OPROPERTY__PROPERTY_RESTRICTION:
+				return propertyRestriction != null && !propertyRestriction.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (isDeprecated: ");
+		result.append(isDeprecated);
+		result.append(", isFunctional: ");
+		result.append(isFunctional);
+		result.append(')');
+		return result.toString();
+	}
+
+} //OPropertyImpl

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.eclipse.ocl.ecore.delegate.OCLDelegateDomain"/>
+<fullyQualifiedTypeName name="org.eclipse.emf.ecore.EOperation"/>
+<fullyQualifiedTypeName name="org.eclipse.ocl.ecore.delegate.OCLInvocationDelegateFactory"/>
+<fullyQualifiedTypeName name="org.eclipse.emf.ecore.EStructuralFeature"/>
+<fullyQualifiedTypeName name="org.eclipse.ocl.ecore.delegate.OCLSettingDelegateFactory"/>
+<fullyQualifiedTypeName name="org.eclipse.emf.ecore.EValidator"/>
+<fullyQualifiedTypeName name="org.eclipse.ocl.ecore.delegate.OCLValidationDelegateFactory"/>
+</qualifiedTypeNameHistroy>

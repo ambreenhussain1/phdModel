@@ -1,0 +1,110 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-SymbolicName: org.eclipse.qvtd.examples;singleton:=true
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/mmt/or
+ g.eclipse.qvtd.git
+Bundle-Activator: org.eclipse.qvtd.examples.QVTDeclarativeExamplesPlug
+ in
+Require-Bundle: org.eclipse.core.resources;bundle-version="[3.5.0,4.0.
+ 0)",org.eclipse.core.runtime;bundle-version="[3.5.0,4.0.0)",org.eclip
+ se.ui;bundle-version="[3.5.0,4.0.0)",org.eclipse.ui.ide;bundle-versio
+ n="[3.5.0,4.0.0)",org.eclipse.ui.intro;bundle-version="[3.4.0,4.0.0)"
+ ,org.eclipse.emf.common.ui;bundle-version="[2.7.0,3.0.0)"
+Bundle-Version: 0.13.0.v20160607-1505
+Export-Package: org.eclipse.qvtd.examples,org.eclipse.qvtd.examples.qv
+ tc.wizards,org.eclipse.qvtd.examples.qvtr.wizards,org.eclipse.qvtd.ex
+ amples.wizards
+Ant-Version: Apache Ant 1.9.4
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Created-By: 1.8.0_51-b16 (Oracle Corporation)
+Bundle-ManifestVersion: 2
+
+Name: zips/qvtc/empty.zip
+SHA1-Digest: /xgj3soB0LA+3EiNGbBZoJoOmlo=
+
+Name: zips/qvtr/modelmorf.zip
+SHA1-Digest: VWcJgkg5VZ4ql6VXAxExZH9sDzQ=
+
+Name: org/eclipse/qvtd/examples/wizards/AbstractExampleWizard$1.class
+SHA1-Digest: xCMjEeyva729a3WrkACcVcU72Sc=
+
+Name: org/eclipse/qvtd/examples/qvtr/wizards/EmptyExampleWizard.class
+SHA1-Digest: el2x28RrZ5NP7RGuYVCWL+lmPE8=
+
+Name: org/eclipse/qvtd/examples/qvtc/wizards/UML2RDBMSExampleWizard.cl
+ ass
+SHA1-Digest: 5wiRrSpN9HlA5or98/Qro95XRjg=
+
+Name: plugin.properties
+SHA1-Digest: QC3oCVv4F5QVN+oLczLhhiwZr78=
+
+Name: intro/css/sample.css
+SHA1-Digest: OggosCS5Yg5Kqa11bEKo0gG4Bjw=
+
+Name: zips/qvtr/empty.zip
+SHA1-Digest: ldJkRQh+qm1XJpE1mRDOuB9hXT4=
+
+Name: org/eclipse/qvtd/examples/wizards/AbstractExampleWizard$1$1.clas
+ s
+SHA1-Digest: 2F3XuGdti2eLOvo6WdSDDh4G/VA=
+
+Name: icons/QVTcModelFile.gif
+SHA1-Digest: koU2X63/Bw3/9D1qtxUh3Cs+EEU=
+
+Name: intro/sample.xml
+SHA1-Digest: ZCSclwek+MkKc5z/YP0IrsytikM=
+
+Name: icons/OCLModelFile.gif
+SHA1-Digest: JKpEpEkHa3RJ0GqQ2m2hJd7gWwY=
+
+Name: org/eclipse/qvtd/examples/wizards/AbstractExampleWizard$ProjectD
+ escriptor.class
+SHA1-Digest: 6lbCajGmjnaLMc3CqGqpNnp+tfQ=
+
+Name: plugin.xml
+SHA1-Digest: yAnF8BtsoSjpdGb8hBnF/KFlOcA=
+
+Name: org/eclipse/qvtd/examples/QVTDeclarativeExamplesPlugin.class
+SHA1-Digest: RuxebDyNL5XUMn9df+3+sUt/Ljk=
+
+Name: org/eclipse/qvtd/examples/qvtr/wizards/RelToCoreExampleWizard.cl
+ ass
+SHA1-Digest: W55NR3djQOmc5PZgzKXLdhm5t2k=
+
+Name: icons/QVTrModelFile.gif
+SHA1-Digest: PxCwr8yJO3ZzdNUGkndTt96Pw/w=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: about.html
+SHA1-Digest: vWAsXILjKfPTzh/flzE7qdytznU=
+
+Name: zips/qvtc/uml2rdbms.zip
+SHA1-Digest: Tp/kIr4iHmS1gd5JMFqj/Q88Xog=
+
+Name: intro/css/graphics/tx.gif
+SHA1-Digest: sa9WNyJFwxPQmquZjziejcy7k+A=
+
+Name: build.properties
+SHA1-Digest: OvGW1WTREkwqtJGHtXFeRGzJLnw=
+
+Name: org/eclipse/qvtd/examples/qvtr/wizards/ModelMorfExampleWizard.cl
+ ass
+SHA1-Digest: JGqKbj2t8RpcFVODDYhqE2aupHk=
+
+Name: org/eclipse/qvtd/examples/qvtc/wizards/EmptyExampleWizard.class
+SHA1-Digest: cx9k+VuhLQYeXrV/KqLLRKyYM4w=
+
+Name: org/eclipse/qvtd/examples/wizards/AbstractExampleWizard.class
+SHA1-Digest: f7z9Kgkga60XnqlfvpZ79QGGyy0=
+
+Name: zips/qvtr/reltocore.zip
+SHA1-Digest: ZOLU9SkOC+06xYdpKcPPS02mGx0=
+
+Name: zips/qvtr/hstm2fstm.zip
+SHA1-Digest: F6FP9hi+f+FYDTAMnGMmH1gLsm0=
+

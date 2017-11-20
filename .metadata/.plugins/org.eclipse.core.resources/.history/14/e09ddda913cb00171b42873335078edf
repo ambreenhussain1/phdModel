@@ -1,0 +1,266 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.ObjectProperty;
+import WatERP.ObjectPropertyAtom;
+import WatERP.Variable;
+import WatERP.WatERPPackage;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Object Property Atom</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.ObjectPropertyAtomImpl#getObjectProperty <em>Object Property</em>}</li>
+ *   <li>{@link WatERP.impl.ObjectPropertyAtomImpl#getVariable <em>Variable</em>}</li>
+ *   <li>{@link WatERP.impl.ObjectPropertyAtomImpl#getNamedIndividual <em>Named Individual</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class ObjectPropertyAtomImpl extends AtomImpl implements ObjectPropertyAtom {
+	/**
+	 * The cached value of the '{@link #getObjectProperty() <em>Object Property</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getObjectProperty()
+	 * @generated
+	 * @ordered
+	 */
+	protected ObjectProperty objectProperty;
+
+	/**
+	 * The cached value of the '{@link #getVariable() <em>Variable</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getVariable()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Variable> variable;
+
+	/**
+	 * The default value of the '{@link #getNamedIndividual() <em>Named Individual</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNamedIndividual()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAMED_INDIVIDUAL_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getNamedIndividual() <em>Named Individual</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNamedIndividual()
+	 * @generated
+	 * @ordered
+	 */
+	protected String namedIndividual = NAMED_INDIVIDUAL_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ObjectPropertyAtomImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.OBJECT_PROPERTY_ATOM;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ObjectProperty getObjectProperty() {
+		if (objectProperty != null && objectProperty.eIsProxy()) {
+			InternalEObject oldObjectProperty = (InternalEObject)objectProperty;
+			objectProperty = (ObjectProperty)eResolveProxy(oldObjectProperty);
+			if (objectProperty != oldObjectProperty) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, WatERPPackage.OBJECT_PROPERTY_ATOM__OBJECT_PROPERTY, oldObjectProperty, objectProperty));
+			}
+		}
+		return objectProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ObjectProperty basicGetObjectProperty() {
+		return objectProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setObjectProperty(ObjectProperty newObjectProperty) {
+		ObjectProperty oldObjectProperty = objectProperty;
+		objectProperty = newObjectProperty;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.OBJECT_PROPERTY_ATOM__OBJECT_PROPERTY, oldObjectProperty, objectProperty));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Variable> getVariable() {
+		if (variable == null) {
+			variable = new EObjectResolvingEList<Variable>(Variable.class, this, WatERPPackage.OBJECT_PROPERTY_ATOM__VARIABLE);
+		}
+		return variable;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getNamedIndividual() {
+		return namedIndividual;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setNamedIndividual(String newNamedIndividual) {
+		String oldNamedIndividual = namedIndividual;
+		namedIndividual = newNamedIndividual;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.OBJECT_PROPERTY_ATOM__NAMED_INDIVIDUAL, oldNamedIndividual, namedIndividual));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.OBJECT_PROPERTY_ATOM__OBJECT_PROPERTY:
+				if (resolve) return getObjectProperty();
+				return basicGetObjectProperty();
+			case WatERPPackage.OBJECT_PROPERTY_ATOM__VARIABLE:
+				return getVariable();
+			case WatERPPackage.OBJECT_PROPERTY_ATOM__NAMED_INDIVIDUAL:
+				return getNamedIndividual();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.OBJECT_PROPERTY_ATOM__OBJECT_PROPERTY:
+				setObjectProperty((ObjectProperty)newValue);
+				return;
+			case WatERPPackage.OBJECT_PROPERTY_ATOM__VARIABLE:
+				getVariable().clear();
+				getVariable().addAll((Collection<? extends Variable>)newValue);
+				return;
+			case WatERPPackage.OBJECT_PROPERTY_ATOM__NAMED_INDIVIDUAL:
+				setNamedIndividual((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.OBJECT_PROPERTY_ATOM__OBJECT_PROPERTY:
+				setObjectProperty((ObjectProperty)null);
+				return;
+			case WatERPPackage.OBJECT_PROPERTY_ATOM__VARIABLE:
+				getVariable().clear();
+				return;
+			case WatERPPackage.OBJECT_PROPERTY_ATOM__NAMED_INDIVIDUAL:
+				setNamedIndividual(NAMED_INDIVIDUAL_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.OBJECT_PROPERTY_ATOM__OBJECT_PROPERTY:
+				return objectProperty != null;
+			case WatERPPackage.OBJECT_PROPERTY_ATOM__VARIABLE:
+				return variable != null && !variable.isEmpty();
+			case WatERPPackage.OBJECT_PROPERTY_ATOM__NAMED_INDIVIDUAL:
+				return NAMED_INDIVIDUAL_EDEFAULT == null ? namedIndividual != null : !NAMED_INDIVIDUAL_EDEFAULT.equals(namedIndividual);
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (namedIndividual: ");
+		result.append(namedIndividual);
+		result.append(')');
+		return result.toString();
+	}
+
+} //ObjectPropertyAtomImpl

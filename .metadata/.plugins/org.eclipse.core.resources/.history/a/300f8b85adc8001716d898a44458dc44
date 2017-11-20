@@ -1,0 +1,313 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.ClassAnnotation;
+import WatERP.Expression;
+import WatERP.MClass;
+import WatERP.OClass;
+import WatERP.PropertyAnnotation;
+import WatERP.WatERPPackage;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Class Annotation</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.ClassAnnotationImpl#getAnnotatingClass <em>Annotating Class</em>}</li>
+ *   <li>{@link WatERP.impl.ClassAnnotationImpl#getAnnotatedClass <em>Annotated Class</em>}</li>
+ *   <li>{@link WatERP.impl.ClassAnnotationImpl#getPropertyAnnotations <em>Property Annotations</em>}</li>
+ *   <li>{@link WatERP.impl.ClassAnnotationImpl#getExpression <em>Expression</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class ClassAnnotationImpl extends MinimalEObjectImpl.Container implements ClassAnnotation {
+	/**
+	 * The cached value of the '{@link #getAnnotatingClass() <em>Annotating Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAnnotatingClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected OClass annotatingClass;
+
+	/**
+	 * The cached value of the '{@link #getAnnotatedClass() <em>Annotated Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAnnotatedClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected MClass annotatedClass;
+
+	/**
+	 * The cached value of the '{@link #getPropertyAnnotations() <em>Property Annotations</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPropertyAnnotations()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<PropertyAnnotation> propertyAnnotations;
+
+	/**
+	 * The cached value of the '{@link #getExpression() <em>Expression</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getExpression()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Expression> expression;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ClassAnnotationImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.CLASS_ANNOTATION;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OClass getAnnotatingClass() {
+		if (annotatingClass != null && annotatingClass.eIsProxy()) {
+			InternalEObject oldAnnotatingClass = (InternalEObject)annotatingClass;
+			annotatingClass = (OClass)eResolveProxy(oldAnnotatingClass);
+			if (annotatingClass != oldAnnotatingClass) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, WatERPPackage.CLASS_ANNOTATION__ANNOTATING_CLASS, oldAnnotatingClass, annotatingClass));
+			}
+		}
+		return annotatingClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OClass basicGetAnnotatingClass() {
+		return annotatingClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAnnotatingClass(OClass newAnnotatingClass) {
+		OClass oldAnnotatingClass = annotatingClass;
+		annotatingClass = newAnnotatingClass;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.CLASS_ANNOTATION__ANNOTATING_CLASS, oldAnnotatingClass, annotatingClass));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MClass getAnnotatedClass() {
+		if (annotatedClass != null && annotatedClass.eIsProxy()) {
+			InternalEObject oldAnnotatedClass = (InternalEObject)annotatedClass;
+			annotatedClass = (MClass)eResolveProxy(oldAnnotatedClass);
+			if (annotatedClass != oldAnnotatedClass) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, WatERPPackage.CLASS_ANNOTATION__ANNOTATED_CLASS, oldAnnotatedClass, annotatedClass));
+			}
+		}
+		return annotatedClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MClass basicGetAnnotatedClass() {
+		return annotatedClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAnnotatedClass(MClass newAnnotatedClass) {
+		MClass oldAnnotatedClass = annotatedClass;
+		annotatedClass = newAnnotatedClass;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.CLASS_ANNOTATION__ANNOTATED_CLASS, oldAnnotatedClass, annotatedClass));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<PropertyAnnotation> getPropertyAnnotations() {
+		if (propertyAnnotations == null) {
+			propertyAnnotations = new EObjectContainmentEList<PropertyAnnotation>(PropertyAnnotation.class, this, WatERPPackage.CLASS_ANNOTATION__PROPERTY_ANNOTATIONS);
+		}
+		return propertyAnnotations;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Expression> getExpression() {
+		if (expression == null) {
+			expression = new EObjectContainmentEList<Expression>(Expression.class, this, WatERPPackage.CLASS_ANNOTATION__EXPRESSION);
+		}
+		return expression;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case WatERPPackage.CLASS_ANNOTATION__PROPERTY_ANNOTATIONS:
+				return ((InternalEList<?>)getPropertyAnnotations()).basicRemove(otherEnd, msgs);
+			case WatERPPackage.CLASS_ANNOTATION__EXPRESSION:
+				return ((InternalEList<?>)getExpression()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.CLASS_ANNOTATION__ANNOTATING_CLASS:
+				if (resolve) return getAnnotatingClass();
+				return basicGetAnnotatingClass();
+			case WatERPPackage.CLASS_ANNOTATION__ANNOTATED_CLASS:
+				if (resolve) return getAnnotatedClass();
+				return basicGetAnnotatedClass();
+			case WatERPPackage.CLASS_ANNOTATION__PROPERTY_ANNOTATIONS:
+				return getPropertyAnnotations();
+			case WatERPPackage.CLASS_ANNOTATION__EXPRESSION:
+				return getExpression();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.CLASS_ANNOTATION__ANNOTATING_CLASS:
+				setAnnotatingClass((OClass)newValue);
+				return;
+			case WatERPPackage.CLASS_ANNOTATION__ANNOTATED_CLASS:
+				setAnnotatedClass((MClass)newValue);
+				return;
+			case WatERPPackage.CLASS_ANNOTATION__PROPERTY_ANNOTATIONS:
+				getPropertyAnnotations().clear();
+				getPropertyAnnotations().addAll((Collection<? extends PropertyAnnotation>)newValue);
+				return;
+			case WatERPPackage.CLASS_ANNOTATION__EXPRESSION:
+				getExpression().clear();
+				getExpression().addAll((Collection<? extends Expression>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.CLASS_ANNOTATION__ANNOTATING_CLASS:
+				setAnnotatingClass((OClass)null);
+				return;
+			case WatERPPackage.CLASS_ANNOTATION__ANNOTATED_CLASS:
+				setAnnotatedClass((MClass)null);
+				return;
+			case WatERPPackage.CLASS_ANNOTATION__PROPERTY_ANNOTATIONS:
+				getPropertyAnnotations().clear();
+				return;
+			case WatERPPackage.CLASS_ANNOTATION__EXPRESSION:
+				getExpression().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.CLASS_ANNOTATION__ANNOTATING_CLASS:
+				return annotatingClass != null;
+			case WatERPPackage.CLASS_ANNOTATION__ANNOTATED_CLASS:
+				return annotatedClass != null;
+			case WatERPPackage.CLASS_ANNOTATION__PROPERTY_ANNOTATIONS:
+				return propertyAnnotations != null && !propertyAnnotations.isEmpty();
+			case WatERPPackage.CLASS_ANNOTATION__EXPRESSION:
+				return expression != null && !expression.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //ClassAnnotationImpl

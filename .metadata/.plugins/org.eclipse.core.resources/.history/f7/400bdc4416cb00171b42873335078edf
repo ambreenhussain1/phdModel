@@ -1,0 +1,508 @@
+/**
+ */
+package WatERP.impl;
+
+import WatERP.MCProperty;
+import WatERP.MDProperty;
+import WatERP.Observation;
+import WatERP.WatERPPackage;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Observation</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.impl.ObservationImpl#getFoi <em>Foi</em>}</li>
+ *   <li>{@link WatERP.impl.ObservationImpl#getProcedure <em>Procedure</em>}</li>
+ *   <li>{@link WatERP.impl.ObservationImpl#getObservedProperty <em>Observed Property</em>}</li>
+ *   <li>{@link WatERP.impl.ObservationImpl#getResult <em>Result</em>}</li>
+ *   <li>{@link WatERP.impl.ObservationImpl#getUnit <em>Unit</em>}</li>
+ *   <li>{@link WatERP.impl.ObservationImpl#getAssignedSensorID <em>Assigned Sensor ID</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class ObservationImpl extends MClassImpl implements Observation {
+	/**
+	 * The cached value of the '{@link #getFoi() <em>Foi</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFoi()
+	 * @generated
+	 * @ordered
+	 */
+	protected MDProperty foi;
+
+	/**
+	 * The cached value of the '{@link #getProcedure() <em>Procedure</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getProcedure()
+	 * @generated
+	 * @ordered
+	 */
+	protected MDProperty procedure;
+
+	/**
+	 * The cached value of the '{@link #getObservedProperty() <em>Observed Property</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getObservedProperty()
+	 * @generated
+	 * @ordered
+	 */
+	protected MCProperty observedProperty;
+
+	/**
+	 * The cached value of the '{@link #getResult() <em>Result</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getResult()
+	 * @generated
+	 * @ordered
+	 */
+	protected MDProperty result;
+
+	/**
+	 * The cached value of the '{@link #getUnit() <em>Unit</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUnit()
+	 * @generated
+	 * @ordered
+	 */
+	protected MDProperty unit;
+
+	/**
+	 * The default value of the '{@link #getAssignedSensorID() <em>Assigned Sensor ID</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAssignedSensorID()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int ASSIGNED_SENSOR_ID_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getAssignedSensorID() <em>Assigned Sensor ID</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAssignedSensorID()
+	 * @generated
+	 * @ordered
+	 */
+	protected int assignedSensorID = ASSIGNED_SENSOR_ID_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ObservationImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return WatERPPackage.Literals.OBSERVATION;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MDProperty getFoi() {
+		return foi;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetFoi(MDProperty newFoi, NotificationChain msgs) {
+		MDProperty oldFoi = foi;
+		foi = newFoi;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, WatERPPackage.OBSERVATION__FOI, oldFoi, newFoi);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setFoi(MDProperty newFoi) {
+		if (newFoi != foi) {
+			NotificationChain msgs = null;
+			if (foi != null)
+				msgs = ((InternalEObject)foi).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.OBSERVATION__FOI, null, msgs);
+			if (newFoi != null)
+				msgs = ((InternalEObject)newFoi).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.OBSERVATION__FOI, null, msgs);
+			msgs = basicSetFoi(newFoi, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.OBSERVATION__FOI, newFoi, newFoi));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MDProperty getProcedure() {
+		return procedure;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetProcedure(MDProperty newProcedure, NotificationChain msgs) {
+		MDProperty oldProcedure = procedure;
+		procedure = newProcedure;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, WatERPPackage.OBSERVATION__PROCEDURE, oldProcedure, newProcedure);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setProcedure(MDProperty newProcedure) {
+		if (newProcedure != procedure) {
+			NotificationChain msgs = null;
+			if (procedure != null)
+				msgs = ((InternalEObject)procedure).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.OBSERVATION__PROCEDURE, null, msgs);
+			if (newProcedure != null)
+				msgs = ((InternalEObject)newProcedure).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.OBSERVATION__PROCEDURE, null, msgs);
+			msgs = basicSetProcedure(newProcedure, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.OBSERVATION__PROCEDURE, newProcedure, newProcedure));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MCProperty getObservedProperty() {
+		return observedProperty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetObservedProperty(MCProperty newObservedProperty, NotificationChain msgs) {
+		MCProperty oldObservedProperty = observedProperty;
+		observedProperty = newObservedProperty;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, WatERPPackage.OBSERVATION__OBSERVED_PROPERTY, oldObservedProperty, newObservedProperty);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setObservedProperty(MCProperty newObservedProperty) {
+		if (newObservedProperty != observedProperty) {
+			NotificationChain msgs = null;
+			if (observedProperty != null)
+				msgs = ((InternalEObject)observedProperty).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.OBSERVATION__OBSERVED_PROPERTY, null, msgs);
+			if (newObservedProperty != null)
+				msgs = ((InternalEObject)newObservedProperty).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.OBSERVATION__OBSERVED_PROPERTY, null, msgs);
+			msgs = basicSetObservedProperty(newObservedProperty, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.OBSERVATION__OBSERVED_PROPERTY, newObservedProperty, newObservedProperty));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MDProperty getResult() {
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetResult(MDProperty newResult, NotificationChain msgs) {
+		MDProperty oldResult = result;
+		result = newResult;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, WatERPPackage.OBSERVATION__RESULT, oldResult, newResult);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setResult(MDProperty newResult) {
+		if (newResult != result) {
+			NotificationChain msgs = null;
+			if (result != null)
+				msgs = ((InternalEObject)result).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.OBSERVATION__RESULT, null, msgs);
+			if (newResult != null)
+				msgs = ((InternalEObject)newResult).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.OBSERVATION__RESULT, null, msgs);
+			msgs = basicSetResult(newResult, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.OBSERVATION__RESULT, newResult, newResult));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MDProperty getUnit() {
+		return unit;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetUnit(MDProperty newUnit, NotificationChain msgs) {
+		MDProperty oldUnit = unit;
+		unit = newUnit;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, WatERPPackage.OBSERVATION__UNIT, oldUnit, newUnit);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setUnit(MDProperty newUnit) {
+		if (newUnit != unit) {
+			NotificationChain msgs = null;
+			if (unit != null)
+				msgs = ((InternalEObject)unit).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.OBSERVATION__UNIT, null, msgs);
+			if (newUnit != null)
+				msgs = ((InternalEObject)newUnit).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - WatERPPackage.OBSERVATION__UNIT, null, msgs);
+			msgs = basicSetUnit(newUnit, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.OBSERVATION__UNIT, newUnit, newUnit));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public int getAssignedSensorID() {
+		return assignedSensorID;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAssignedSensorID(int newAssignedSensorID) {
+		int oldAssignedSensorID = assignedSensorID;
+		assignedSensorID = newAssignedSensorID;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, WatERPPackage.OBSERVATION__ASSIGNED_SENSOR_ID, oldAssignedSensorID, assignedSensorID));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case WatERPPackage.OBSERVATION__FOI:
+				return basicSetFoi(null, msgs);
+			case WatERPPackage.OBSERVATION__PROCEDURE:
+				return basicSetProcedure(null, msgs);
+			case WatERPPackage.OBSERVATION__OBSERVED_PROPERTY:
+				return basicSetObservedProperty(null, msgs);
+			case WatERPPackage.OBSERVATION__RESULT:
+				return basicSetResult(null, msgs);
+			case WatERPPackage.OBSERVATION__UNIT:
+				return basicSetUnit(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case WatERPPackage.OBSERVATION__FOI:
+				return getFoi();
+			case WatERPPackage.OBSERVATION__PROCEDURE:
+				return getProcedure();
+			case WatERPPackage.OBSERVATION__OBSERVED_PROPERTY:
+				return getObservedProperty();
+			case WatERPPackage.OBSERVATION__RESULT:
+				return getResult();
+			case WatERPPackage.OBSERVATION__UNIT:
+				return getUnit();
+			case WatERPPackage.OBSERVATION__ASSIGNED_SENSOR_ID:
+				return getAssignedSensorID();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case WatERPPackage.OBSERVATION__FOI:
+				setFoi((MDProperty)newValue);
+				return;
+			case WatERPPackage.OBSERVATION__PROCEDURE:
+				setProcedure((MDProperty)newValue);
+				return;
+			case WatERPPackage.OBSERVATION__OBSERVED_PROPERTY:
+				setObservedProperty((MCProperty)newValue);
+				return;
+			case WatERPPackage.OBSERVATION__RESULT:
+				setResult((MDProperty)newValue);
+				return;
+			case WatERPPackage.OBSERVATION__UNIT:
+				setUnit((MDProperty)newValue);
+				return;
+			case WatERPPackage.OBSERVATION__ASSIGNED_SENSOR_ID:
+				setAssignedSensorID((Integer)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.OBSERVATION__FOI:
+				setFoi((MDProperty)null);
+				return;
+			case WatERPPackage.OBSERVATION__PROCEDURE:
+				setProcedure((MDProperty)null);
+				return;
+			case WatERPPackage.OBSERVATION__OBSERVED_PROPERTY:
+				setObservedProperty((MCProperty)null);
+				return;
+			case WatERPPackage.OBSERVATION__RESULT:
+				setResult((MDProperty)null);
+				return;
+			case WatERPPackage.OBSERVATION__UNIT:
+				setUnit((MDProperty)null);
+				return;
+			case WatERPPackage.OBSERVATION__ASSIGNED_SENSOR_ID:
+				setAssignedSensorID(ASSIGNED_SENSOR_ID_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case WatERPPackage.OBSERVATION__FOI:
+				return foi != null;
+			case WatERPPackage.OBSERVATION__PROCEDURE:
+				return procedure != null;
+			case WatERPPackage.OBSERVATION__OBSERVED_PROPERTY:
+				return observedProperty != null;
+			case WatERPPackage.OBSERVATION__RESULT:
+				return result != null;
+			case WatERPPackage.OBSERVATION__UNIT:
+				return unit != null;
+			case WatERPPackage.OBSERVATION__ASSIGNED_SENSOR_ID:
+				return assignedSensorID != ASSIGNED_SENSOR_ID_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (assignedSensorID: ");
+		result.append(assignedSensorID);
+		result.append(')');
+		return result.toString();
+	}
+
+} //ObservationImpl

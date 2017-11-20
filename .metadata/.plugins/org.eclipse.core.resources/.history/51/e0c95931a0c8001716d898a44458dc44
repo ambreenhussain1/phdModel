@@ -1,0 +1,17 @@
+/**
+ */
+package WatERP;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Some Values From Restriction</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ *
+ * @see WatERP.WatERPPackage#getSomeValuesFromRestriction()
+ * @model
+ * @generated
+ */
+public interface SomeValuesFromRestriction extends Restriction {
+} // SomeValuesFromRestriction

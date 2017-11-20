@@ -1,0 +1,257 @@
+/**
+ */
+package WatERP;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>OClass</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.OClass#getName <em>Name</em>}</li>
+ *   <li>{@link WatERP.OClass#getIsDeprecated <em>Is Deprecated</em>}</li>
+ *   <li>{@link WatERP.OClass#getSubClass <em>Sub Class</em>}</li>
+ *   <li>{@link WatERP.OClass#getSubClassOf <em>Sub Class Of</em>}</li>
+ *   <li>{@link WatERP.OClass#getEquivalentClass <em>Equivalent Class</em>}</li>
+ *   <li>{@link WatERP.OClass#getUnionClass <em>Union Class</em>}</li>
+ *   <li>{@link WatERP.OClass#getDisjointClass <em>Disjoint Class</em>}</li>
+ *   <li>{@link WatERP.OClass#getAllValuesFromRestriction <em>All Values From Restriction</em>}</li>
+ *   <li>{@link WatERP.OClass#getSomeValuesFromRestriction <em>Some Values From Restriction</em>}</li>
+ *   <li>{@link WatERP.OClass#getDataProperty <em>Data Property</em>}</li>
+ *   <li>{@link WatERP.OClass#getObjectProperty <em>Object Property</em>}</li>
+ *   <li>{@link WatERP.OClass#getRule <em>Rule</em>}</li>
+ * </ul>
+ *
+ * @see WatERP.WatERPPackage#getOClass()
+ * @model
+ * @generated
+ */
+public interface OClass extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see WatERP.WatERPPackage#getOClass_Name()
+	 * @model dataType="WatERP.String"
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link WatERP.OClass#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Is Deprecated</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Is Deprecated</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Is Deprecated</em>' attribute.
+	 * @see #setIsDeprecated(Boolean)
+	 * @see WatERP.WatERPPackage#getOClass_IsDeprecated()
+	 * @model dataType="WatERP.Boolean"
+	 * @generated
+	 */
+	Boolean getIsDeprecated();
+
+	/**
+	 * Sets the value of the '{@link WatERP.OClass#getIsDeprecated <em>Is Deprecated</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Is Deprecated</em>' attribute.
+	 * @see #getIsDeprecated()
+	 * @generated
+	 */
+	void setIsDeprecated(Boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Sub Class</b></em>' reference list.
+	 * The list contents are of type {@link WatERP.OClass}.
+	 * It is bidirectional and its opposite is '{@link WatERP.OClass#getSubClassOf <em>Sub Class Of</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Sub Class</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Sub Class</em>' reference list.
+	 * @see WatERP.WatERPPackage#getOClass_SubClass()
+	 * @see WatERP.OClass#getSubClassOf
+	 * @model opposite="subClassOf"
+	 * @generated
+	 */
+	EList<OClass> getSubClass();
+
+	/**
+	 * Returns the value of the '<em><b>Sub Class Of</b></em>' reference list.
+	 * The list contents are of type {@link WatERP.OClass}.
+	 * It is bidirectional and its opposite is '{@link WatERP.OClass#getSubClass <em>Sub Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Sub Class Of</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Sub Class Of</em>' reference list.
+	 * @see WatERP.WatERPPackage#getOClass_SubClassOf()
+	 * @see WatERP.OClass#getSubClass
+	 * @model opposite="subClass"
+	 * @generated
+	 */
+	EList<OClass> getSubClassOf();
+
+	/**
+	 * Returns the value of the '<em><b>Equivalent Class</b></em>' reference list.
+	 * The list contents are of type {@link WatERP.OClass}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Equivalent Class</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Equivalent Class</em>' reference list.
+	 * @see WatERP.WatERPPackage#getOClass_EquivalentClass()
+	 * @model
+	 * @generated
+	 */
+	EList<OClass> getEquivalentClass();
+
+	/**
+	 * Returns the value of the '<em><b>Union Class</b></em>' reference list.
+	 * The list contents are of type {@link WatERP.UnionClass}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Union Class</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Union Class</em>' reference list.
+	 * @see WatERP.WatERPPackage#getOClass_UnionClass()
+	 * @model
+	 * @generated
+	 */
+	EList<UnionClass> getUnionClass();
+
+	/**
+	 * Returns the value of the '<em><b>Disjoint Class</b></em>' reference list.
+	 * The list contents are of type {@link WatERP.OClass}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Disjoint Class</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Disjoint Class</em>' reference list.
+	 * @see WatERP.WatERPPackage#getOClass_DisjointClass()
+	 * @model
+	 * @generated
+	 */
+	EList<OClass> getDisjointClass();
+
+	/**
+	 * Returns the value of the '<em><b>All Values From Restriction</b></em>' reference list.
+	 * The list contents are of type {@link WatERP.AllValuesFromClassRestriction}.
+	 * It is bidirectional and its opposite is '{@link WatERP.AllValuesFromClassRestriction#getAllValuesFromClass <em>All Values From Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>All Values From Restriction</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>All Values From Restriction</em>' reference list.
+	 * @see WatERP.WatERPPackage#getOClass_AllValuesFromRestriction()
+	 * @see WatERP.AllValuesFromClassRestriction#getAllValuesFromClass
+	 * @model opposite="allValuesFromClass"
+	 * @generated
+	 */
+	EList<AllValuesFromClassRestriction> getAllValuesFromRestriction();
+
+	/**
+	 * Returns the value of the '<em><b>Some Values From Restriction</b></em>' reference list.
+	 * The list contents are of type {@link WatERP.SomeValuesFromClassRestriction}.
+	 * It is bidirectional and its opposite is '{@link WatERP.SomeValuesFromClassRestriction#getSomeValuesFromClass <em>Some Values From Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Some Values From Restriction</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Some Values From Restriction</em>' reference list.
+	 * @see WatERP.WatERPPackage#getOClass_SomeValuesFromRestriction()
+	 * @see WatERP.SomeValuesFromClassRestriction#getSomeValuesFromClass
+	 * @model opposite="someValuesFromClass"
+	 * @generated
+	 */
+	EList<SomeValuesFromClassRestriction> getSomeValuesFromRestriction();
+
+	/**
+	 * Returns the value of the '<em><b>Data Property</b></em>' containment reference list.
+	 * The list contents are of type {@link WatERP.DataProperty}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Data Property</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Data Property</em>' containment reference list.
+	 * @see WatERP.WatERPPackage#getOClass_DataProperty()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<DataProperty> getDataProperty();
+
+	/**
+	 * Returns the value of the '<em><b>Object Property</b></em>' containment reference list.
+	 * The list contents are of type {@link WatERP.ObjectProperty}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Object Property</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Object Property</em>' containment reference list.
+	 * @see WatERP.WatERPPackage#getOClass_ObjectProperty()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<ObjectProperty> getObjectProperty();
+
+	/**
+	 * Returns the value of the '<em><b>Rule</b></em>' containment reference list.
+	 * The list contents are of type {@link WatERP.DLSafeRule}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Rule</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Rule</em>' containment reference list.
+	 * @see WatERP.WatERPPackage#getOClass_Rule()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<DLSafeRule> getRule();
+
+} // OClass

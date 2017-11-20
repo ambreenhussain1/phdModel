@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="MoDiscoModelBrowserSettings">
+	<section name="http://org/eclipse/example/Diplomas">
+		<list key="LastAppliedFacets">
+		</list>
+		<list key="LastAppliedCustomizations">
+		</list>
+	</section>
+	<section name="http://org/eclipse/example/WatERP">
+		<list key="LastAppliedFacets">
+		</list>
+		<list key="LastAppliedCustomizations">
+		</list>
+	</section>
+</section>

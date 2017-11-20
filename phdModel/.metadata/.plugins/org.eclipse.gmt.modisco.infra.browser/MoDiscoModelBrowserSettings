@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="MoDiscoModelBrowserSettings">
+	<section name="http://www.eclipse.org/ocl/2015/Pivot">
+		<list key="LastAppliedFacets">
+		</list>
+		<list key="LastAppliedCustomizations">
+		</list>
+	</section>
+	<section name="http://org/eclipse/example/EMSModel">
+		<list key="LastAppliedFacets">
+		</list>
+		<list key="LastAppliedCustomizations">
+			<item value="java"/>
+			<item value="XML"/>
+			<item value="JSP"/>
+			<item value="filterJavaComposition"/>
+			<item value="javaApplication"/>
+		</list>
+	</section>
+	<section name="http://org/eclipse/example/Diplomas">
+		<list key="LastAppliedFacets">
+		</list>
+		<list key="LastAppliedCustomizations">
+		</list>
+	</section>
+	<section name="http://org/eclipse/example/WatERP">
+		<list key="LastAppliedFacets">
+		</list>
+		<list key="LastAppliedCustomizations">
+		</list>
+	</section>
+</section>

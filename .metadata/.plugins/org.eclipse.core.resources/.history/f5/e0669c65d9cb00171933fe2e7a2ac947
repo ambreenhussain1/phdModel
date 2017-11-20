@@ -1,0 +1,104 @@
+/**
+ */
+package WatERP;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Top Node</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link WatERP.TopNode#getModel <em>Model</em>}</li>
+ *   <li>{@link WatERP.TopNode#getOntology <em>Ontology</em>}</li>
+ *   <li>{@link WatERP.TopNode#getAnnotation <em>Annotation</em>}</li>
+ * </ul>
+ *
+ * @see WatERP.WatERPPackage#getTopNode()
+ * @model
+ * @generated
+ */
+public interface TopNode extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Model</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Model</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Model</em>' containment reference.
+	 * @see #setModel(Model)
+	 * @see WatERP.WatERPPackage#getTopNode_Model()
+	 * @model containment="true" required="true"
+	 * @generated
+	 */
+	Model getModel();
+
+	/**
+	 * Sets the value of the '{@link WatERP.TopNode#getModel <em>Model</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Model</em>' containment reference.
+	 * @see #getModel()
+	 * @generated
+	 */
+	void setModel(Model value);
+
+	/**
+	 * Returns the value of the '<em><b>Ontology</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Ontology</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Ontology</em>' containment reference.
+	 * @see #setOntology(Ontology)
+	 * @see WatERP.WatERPPackage#getTopNode_Ontology()
+	 * @model containment="true" required="true"
+	 * @generated
+	 */
+	Ontology getOntology();
+
+	/**
+	 * Sets the value of the '{@link WatERP.TopNode#getOntology <em>Ontology</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Ontology</em>' containment reference.
+	 * @see #getOntology()
+	 * @generated
+	 */
+	void setOntology(Ontology value);
+
+	/**
+	 * Returns the value of the '<em><b>Annotation</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Annotation</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Annotation</em>' containment reference.
+	 * @see #setAnnotation(ModelAnnotation)
+	 * @see WatERP.WatERPPackage#getTopNode_Annotation()
+	 * @model containment="true" required="true"
+	 * @generated
+	 */
+	ModelAnnotation getAnnotation();
+
+	/**
+	 * Sets the value of the '{@link WatERP.TopNode#getAnnotation <em>Annotation</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Annotation</em>' containment reference.
+	 * @see #getAnnotation()
+	 * @generated
+	 */
+	void setAnnotation(ModelAnnotation value);
+
+} // TopNode
